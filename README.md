@@ -1,10 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pousada Maks</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-11426807866');
+  </script>
+
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
     header, footer { background: #333; color: #fff; text-align: center; padding: 20px; }
@@ -46,6 +56,11 @@
     <p>Email: contato@pousadamaks.com.br</p>
     <p><a href="https://wa.me/5516997073816" target="_blank">Fale conosco pelo WhatsApp</a></p>
   </section>
+
+  <!-- Event snippet for Visualização de página conversion page -->
+  <script>
+    gtag('event', 'conversion', {'send_to': 'AW-11426807866/ttFWCLWQq-kaELqA3cgq'});
+  </script>
 
   <footer>
     <p>&copy; 2025 Pousada Maks. Todos os direitos reservados.</p>
