@@ -3,7 +3,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <img src="https://pousadamaks.wordpress.com/wp-content/uploads/2025/06/host-maria-40-x-60-in-1.jpg?w=683)" alt="Descrição da imagem" style="width:100%; border-radius:8px;">
   <title>Pousada Maks</title>
   <meta name="description" content="Pousada Maks">
   <link rel="canonical" href="https://arg-marketing.github.io/pousadamaks/">
