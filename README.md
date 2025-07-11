@@ -40,10 +40,10 @@
   <section id="quartos">
     <h2>Nossos produtos</h2>
     <h3>Diarias</h3>
-    <img src="img/quarto-standard.jpg" alt="diaria">
+    <img src="img/quarto-standard.jpg" alt="descrição">
     <p>Check-in as 14h00 e check-out as 12h00 com direito a café da manha.</p>
     <h3>Pernoite</h3>
-    <img src="img/quarto-standard.jpg" alt="Pernoite">
+    <img src="img/quarto-standard.jpg" alt="descrição">
     <p>Check-in as 19h00 e check-out as 12h00 com direito a café da manha.</p>
  
   </section>
