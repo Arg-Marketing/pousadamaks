@@ -52,7 +52,7 @@
     <h2>Contato</h2>
     <p>Endereço: Rua Exemplo, 123 - Cidade/Estado</p>
     <p>Telefone: (16) 99707-3816</p>
-    <p>Email: contato@pousadamaks.com.br</p>
+    <p>Email: pousadamaks@gmail.com</p>
     <p><a href="https://wa.me/5516997073816" target="_blank">Fale conosco pelo WhatsApp</a></p>
   </section>
 
