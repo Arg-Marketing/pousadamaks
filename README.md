@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -85,7 +85,7 @@
       <h2>Pernoite</h2>
       <p>R$ 90,00 por pessoa</p>
       <p>Check-in 19:00</p>
-      <p>Check-out 12:00</p>
+      <p>Check-out 10:00</p>
       <p>Com café da manhã</p>
     </div>
 
