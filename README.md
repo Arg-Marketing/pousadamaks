@@ -28,7 +28,7 @@
     }
   </script>
 
- <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -36,6 +36,11 @@
   gtag('js', new Date());
 
   gtag('config', 'AW-11426807866');
+
+  // Código de conversão
+  gtag('event', 'conversion', {
+    'send_to': 'AW-11426807866/0ly3CNKVxu4aELqA3cgq'
+  });
 </script>
 
   <link rel="stylesheet" href="/pousadamaks/assets/css/style.css">
