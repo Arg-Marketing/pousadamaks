@@ -38,14 +38,14 @@
   </section>
 
   <section id="quartos">
-    <h2>Nossos Quartos</h2>
-    <h3>Quarto Standard</h3>
+    <h2>Nossos produtos</h2>
+    <h3>Diarias</h3>
     <img src="img/quarto-standard.jpg" alt="Quarto Standard">
-    <p>Quartos confortáveis com TV, ar-condicionado e Wi-Fi gratuito.</p>
-
-    <h3>Suíte Luxo</h3>
-    <img src="img/suite-luxo.jpg" alt="Suíte Luxo">
-    <p>Suíte espaçosa com varanda e vista para o jardim.</p>
+    <p>Check-in as 14h00 e check-out as 12h00 com direito a café da manha.</p>
+    <h3>Pernoite</h3>
+    <img src="img/quarto-standard.jpg" alt="Quarto Standard">
+    <p>Check-in as 19h00 e check-out as 12h00 com direito a café da manha.</p>
+ 
   </section>
 
   <section id="contato">
