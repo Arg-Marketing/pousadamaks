@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -92,7 +92,7 @@
     <div class="card reserva">
       <h2>Faça sua RESERVA</h2>
       <p>(16) 99707-3816</p>
-      <p>Host: Raquel</p>
+      <p> Host: Raquel</p>
     </div>
   </div>
 </body>
