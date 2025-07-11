@@ -92,11 +92,9 @@
       <h2>Faça sua RESERVA</h2>
       <p>(16) 99707-3816</p>
       <p> Host: Raquel</p>
-    </div>
-  </div>
+
 
   <footer>
     Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto SP, 14078-560
   </footer>
-</body>
 </html>
