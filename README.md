@@ -78,7 +78,7 @@
       <p>R$ 112,00 por pessoa</p>
       <p>Check-in 14:00</p>
       <p>Check-out 12:00</p>
-      <p>Com café da manhã</p>
+      <p>Com café da manhã incluso</p>
     </div>
 
     <div class="card">
@@ -86,7 +86,7 @@
       <p>R$ 90,00 por pessoa</p>
       <p>Check-in 19:00</p>
       <p>Check-out 10:00</p>
-      <p>Com café da manhã</p>
+      <p>Com café da manhã incluso</p>
     </div>
 
     <div class="card reserva">
