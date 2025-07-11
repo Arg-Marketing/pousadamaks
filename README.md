@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+  <img src="URL_DA_IMAGEM" alt="Descrição da imagem" style="width:100%; border-radius:8px;">
   <title>Pousada Maks</title>
   <meta name="description" content="Pousada Maks">
   <link rel="canonical" href="https://arg-marketing.github.io/pousadamaks/">
