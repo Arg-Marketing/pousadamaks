@@ -1,8 +1,45 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <title>Pousada Maks</title>
+  <meta name="description" content="Pousada Maks">
+  <link rel="canonical" href="https://arg-marketing.github.io/pousadamaks/">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pousada Maks">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:description" content="Pousada Maks">
+  <meta property="og:url" content="https://arg-marketing.github.io/pousadamaks/">
+  <meta property="og:site_name" content="Pousada Maks">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:title" content="Pousada Maks">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Pousada Maks",
+      "url": "https://arg-marketing.github.io/pousadamaks/",
+      "description": "Pousada Maks"
+    }
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+
+  <link rel="stylesheet" href="/pousadamaks/assets/css/style.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -62,6 +99,12 @@
     .reserva h2 {
       margin: 0 0 10px 0;
     }
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
@@ -91,14 +134,15 @@
     <div class="card reserva">
       <h2>Faça sua RESERVA</h2>
       <p>(16) 99707-3816</p>
-      <p> Host: Raquel</p>
-
-
-
+      <p>Host: Raquel</p>
+    </div>
   </div>
+
   <footer>
     Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto SP, 14078-560
   </footer>
-  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" crossorigin="anonymous"></script>
+  <script>anchors.add();</script>
+</body>
 </html>
- 
