@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -68,7 +67,7 @@
 <body>
   <header>
     <h1>Pousada Maks</h1>
-    <p>Sua pousada rústica em Ribeirão Preto, refúgio de tranquilidade</p>
+    <p>Sua pousada rústica em Ribeirão Preto, um refúgio de tranquilidade</p>
     <a class="reserva-button" href="https://wa.me/5516997073816" target="_blank">Clique aqui e fale conosco pelo WhatsApp</a>
   </header>
 
@@ -95,5 +94,11 @@
       <p> Host: Raquel</p>
     </div>
   </div>
+</body>
+    </div>
+  </div>
+  <footer>
+    Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto SP, 14078-560
+  </footer>
 </body>
 </html>
