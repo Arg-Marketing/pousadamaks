@@ -24,6 +24,8 @@
   </style>
 </head>
 <body>
+    <p><a href="https://wa.me/5516997073816" target="_blank">FAÇA SUA RESERVA</a></p>
+  </section>
   <header>
     <h1>Pousada Maks</h1>
     <nav>
