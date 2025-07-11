@@ -6,7 +6,7 @@
   <title>Pousada Maks</title>
   <meta name="description" content="Pousada Maks">
   <link rel="canonical" href="https://arg-marketing.github.io/pousadamaks/">
-  
+
   <!-- Open Graph -->
   <meta property="og:title" content="Pousada Maks">
   <meta property="og:locale" content="pt_BR">
@@ -28,20 +28,15 @@
     }
   </script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'AW-11426807866');
-
-  // Código de conversão
-  gtag('event', 'conversion', {
-    'send_to': 'AW-11426807866/0ly3CNKVxu4aELqA3cgq'
-  });
-</script>
+    gtag('config', 'AW-11426807866');
+  </script>
 
   <link rel="stylesheet" href="/pousadamaks/assets/css/style.css">
   <style>
@@ -146,5 +141,18 @@
     Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto SP, 14078-560
   </footer>
 
+  <!-- Conversão Google Ads por clique -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const whatsappButton = document.querySelector('.reserva-button');
+      if (whatsappButton) {
+        whatsappButton.addEventListener('click', function () {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-11426807866/0ly3CNKVxu4aELqA3cgq'
+          });
+        });
+      }
+    });
+  </script>
 </body>
 </html>
