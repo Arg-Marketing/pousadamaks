@@ -29,7 +29,7 @@
    <title>Pousada Maks &#8211; </title> <h1>Pousada Maks</h1>
     <p><a href="https://wa.me/5516997073816" target="_blank">FAÇA SUA RESERVA</a></p>
   </section>
-<title>Pousada Maks &#8211; Venha desfrutar nossa pousada em Ribeirão Preto, um refúgio de tranquilidade em meio a natureza</title>
+   <p>Pousada Maks &#8211; Venha desfrutar nossa pousada em Ribeirão Preto, um refúgio de tranquilidade em meio a natureza<p>
   </header>
 
   <section id="sobre">
