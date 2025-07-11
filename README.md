@@ -38,6 +38,11 @@
     gtag('config', 'AW-11426807866');
   </script>
 
+  <!-- Event snippet for entrar no site conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-11426807866/0Iy3CNKVxu4aELqA3cgq'});
+</script>
+
   <link rel="stylesheet" href="/pousadamaks/assets/css/style.css">
   <style>
     body {
