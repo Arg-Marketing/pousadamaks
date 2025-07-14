@@ -25,6 +25,26 @@
   gtag('config', 'AW-11426807866');
 </script>
 
+<!-- Event snippet for Pousada Maks conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-11426807866/A2pBCOOGzPAaELqA3cgq',
+      'value': 1.0,
+      'currency': 'BRL',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+
 
   <!-- Open Graph -->
   <meta property="og:title" content="Pousada Maks">
