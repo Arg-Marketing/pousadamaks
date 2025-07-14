@@ -1,3 +1,45 @@
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PQ82S8X');</script>
+<!-- End Google Tag Manager -->
+✅ Logo depois da tag <body>, cola isso:
+html
+Copiar
+Editar
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQ82S8X"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+⚡️ Resultado final:
+GTM vai rodar antes de tudo, organizando suas tags.
+
+Pode manter o gtag.js dentro do GTM se quiser, fica mais limpo.
+
+Não misture GTM + gtag.js separado se não souber configurar — senão dispara evento duplicado.
+
+Quer que eu gere seu HTML final já com isso colado?
+
+
+
+
+
+
+
+
+Você disse:
+sim
+
+
+O ChatGPT disse:
+Fechado! Aqui está seu HTML final com o Google Tag Manager inserido certinho:
+
+html
+Copiar
+Editar
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -6,6 +48,14 @@
   <title>Pousada Maks</title>
   <meta name="description" content="Pousada Maks">
   <link rel="canonical" href="https://arg-marketing.github.io/pousadamaks/">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PQ82S8X');</script>
+  <!-- End Google Tag Manager -->
 
   <!-- Open Graph -->
   <meta property="og:title" content="Pousada Maks">
@@ -106,6 +156,12 @@
   </style>
 </head>
 <body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQ82S8X"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <header>
     <h1>Pousada Maks</h1>
     <p>Sua pousada rústica em Ribeirão Preto, um refúgio de tranquilidade </p>
@@ -153,5 +209,6 @@
       }
     });
   </script>
+
 </body>
 </html>
