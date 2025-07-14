@@ -115,7 +115,7 @@
 <body>
   <header>
     <h1>Pousada Maks</h1>
-    <p>Sua pousada rústica em Ribeirão Preto, um refúgio de tranquilidade</p>
+    <p>Sua pousada rústica em Ribeirão Preto, um refúgio de tranquilidade.</p>
     <a class="reserva-button" href="https://wa.me/5516997073816" target="_blank">Clique aqui e fale conosco pelo WhatsApp</a>
   </header>
 
