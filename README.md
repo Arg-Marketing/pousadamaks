@@ -28,21 +28,14 @@
     }
   </script>
 
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-11426807866');
-</script>
-
-  <!-- Event snippet for entrar no site conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-11426807866/0Iy3CNKVxu4aELqA3cgq'});
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-11426807866');
+  </script>
 
   <link rel="stylesheet" href="/pousadamaks/assets/css/style.css">
   <style>
@@ -115,7 +108,7 @@
 <body>
   <header>
     <h1>Pousada Maks</h1>
-    <p>Sua pousada rústica em Ribeirão Preto, um refúgio de tranquilidade.</p>
+    <p>Sua pousada rústica em Ribeirão Preto, um refúgio de tranquilidade </p>
     <a class="reserva-button" href="https://wa.me/5516997073816" target="_blank">Clique aqui e fale conosco pelo WhatsApp</a>
   </header>
 
