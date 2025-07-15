@@ -122,7 +122,7 @@ Recomendadíssimo 👏👏👏"</p>
     </div>
     <div class="depoimento">
       <h3>Ricardo M.</h3>
-      <p>"Fui muito bem tratado, cada detalhe na limpeza no cuidado com as roupas as de cama e banho e até os talheres ali arrumados e certinho. 😌"</p>
+      <p>"Fui muito bem tratado, cada detalhe na limpeza no cuidado com as roupas de cama e banho, até os talheres ali arrumados e certinho. 😌"</p>
     </div>
     <div class="depoimento">
       <h3>Camila R.</h3>
