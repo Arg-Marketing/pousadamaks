@@ -84,7 +84,6 @@
 
 <body>
   <header>
-    <h1>Pousada Maks</h1>
     <h1 style="text-align: center; margin-bottom: 5px;">Pousada Maks</h1>
 
 <!-- Subtítulo menor, sem linha -->
