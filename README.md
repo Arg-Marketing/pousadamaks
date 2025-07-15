@@ -126,7 +126,7 @@ Recomendadíssimo 👏👏👏"</p>
     </div>
     <div class="depoimento">
       <h3>Camila R.</h3>
-      <p>"Lugar lindo onde fui atendido como parte da família. Podemos ter contato direto com a natureza, otimo para relaxar e curtir com a família.☘️"</p>
+      <p>"Lugar lindo onde fui atendida como parte da família. Podemos ter contato direto com a natureza, otimo lugar para relaxar e curtir com a família.☘️"</p>
     </div>
   </section>
 
