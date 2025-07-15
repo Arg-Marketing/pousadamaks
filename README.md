@@ -1,3 +1,4 @@
+ <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -131,7 +132,7 @@
     </div>
   </section>
 
-  <!-- Botão de Mapa logo após a reserva -->
+  <!-- Botão de Mapa -->
   <div class="button-group" style="margin-top: -30px;">
     <a class="map-button" href="https://maps.app.goo.gl/kLAstWSYVMQY6zYv6" target="_blank">
       Ver endereço no mapa
@@ -172,39 +173,43 @@
   </section>
 
   <!-- Rodapé com contador -->
- <footer>
-  Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto - SP, 14078-560
-  <br><br>
-  <div style="margin-top: 10px; text-align: center;">
-    <a href="https://www.freecounterstat.com" title="contador de visitas">
-      <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=9tkpugtujtfhxnnxax817xyereb7uaej" 
-           border="0" title="contador de visitas" alt="contador de visitas" />
-    </a>
-  </div>
-</footer>
+  <footer>
+    Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto - SP, 14078-560
+    <br><br>
+    <div style="margin-top: 10px; text-align: center;">
+      <a href="https://www.freecounterstat.com" title="contador de visitas">
+        <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=9tkpugtujtfhxnnxax817xyereb7uaej" 
+             border="0" title="contador de visitas" alt="contador de visitas" />
+      </a>
+    </div>
+  </footer>
 
   <!-- Feather Icons -->
   <script>feather.replace()</script>
 
-  <!-- Google Ads Conversão -->
+  <!-- Google Ads Tag com conversão -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){ dataLayer.push(arguments); }
+
     gtag('js', new Date());
     gtag('config', 'AW-11426807866');
 
     document.addEventListener('DOMContentLoaded', function () {
       const btn = document.querySelector('.reserva-button');
-      btn.addEventListener('click', function () {
-        gtag('event', 'conversion', {
-          'send_to': 'AW-11426807866/0ly3CNKVxu4aELqA3cgq'
+      if (btn) {
+        btn.addEventListener('click', function () {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-11426807866/0ly3CNKVxu4aELqA3cgq'
+          });
         });
-      });
+      }
     });
   </script>
 </body>
 </html>
+
 
 
 
