@@ -1,204 +1,156 @@
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pousada Maks</title>
-  <meta name="description" content="Pousada Maks">
+  <meta name="description" content="Pousada Maks - Um refúgio em Ribeirão Preto">
   <link rel="canonical" href="https://arg-marketing.github.io/pousadamaks/">
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PQ82S8X');</script>
-  <!-- End Google Tag Manager -->
-  
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  gtag('config', 'AW-11426807866');
-</script>
+  <!-- Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
 
-<!-- Event snippet for Pousada Maks conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
+  <!-- CSS -->
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #f9f9f9; color: #333; text-align: center; }
+
+    header {
+      background: #fff; padding: 60px 20px 30px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-11426807866/A2pBCOOGzPAaELqA3cgq',
-      'value': 1.0,
-      'currency': 'BRL',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
 
+    header h1 { font-size: 36px; color: #111; }
+    header p { font-size: 18px; color: #555; margin-top: 10px; }
 
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Pousada Maks">
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:description" content="Pousada Maks">
-  <meta property="og:url" content="https://arg-marketing.github.io/pousadamaks/">
-  <meta property="og:site_name" content="Pousada Maks">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary">
-  <meta property="twitter:title" content="Pousada Maks">
-
-  <!-- JSON-LD -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Pousada Maks",
-      "url": "https://arg-marketing.github.io/pousadamaks/",
-      "description": "Pousada Maks"
+    .reserva-button {
+      display: inline-block; margin-top: 30px;
+      background: #25D366; color: white;
+      padding: 14px 32px; font-weight: bold;
+      text-decoration: none; border-radius: 8px;
+      font-size: 16px; transition: background 0.3s;
     }
-  </script>
 
-  <!-- Google tag (gtag.js) -->
+    .reserva-button:hover { background: #1ebe57; }
+
+    .cards, .depoimentos {
+      display: flex; flex-wrap: wrap;
+      justify-content: center;
+      margin: 50px 20px; gap: 20px;
+    }
+
+    .card, .depoimento {
+      background: white;
+      padding: 30px 20px;
+      width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+
+    .card:hover, .depoimento:hover { transform: translateY(-4px); }
+
+    .card h2, .depoimento h3 {
+      font-size: 22px; margin-bottom: 10px;
+    }
+
+    .card.reserva {
+      background: #f44336;
+      color: white;
+    }
+
+    .info-icon {
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+
+    footer {
+      background: #222; color: #fff;
+      padding: 30px 20px; font-size: 14px;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .cards, .depoimentos {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Pousada Maks</h1>
+    <p><i data-feather="map-pin" class="info-icon"></i>Ribeirão Preto - SP</p>
+    <a class="reserva-button" href="https://wa.me/5516997073816" target="_blank">
+      <i data-feather="message-circle" class="info-icon"></i>Fale conosco no WhatsApp
+    </a>
+  </header>
+
+  <section class="cards">
+    <div class="card">
+      <h2><i data-feather="sun" class="info-icon"></i>Diária</h2>
+      <p>R$ 112,00 por pessoa</p>
+      <p>Check-in: 14:00 | Check-out: 12:00</p>
+      <p><i data-feather="coffee" class="info-icon"></i> Café da manhã incluso</p>
+    </div>
+
+    <div class="card">
+      <h2><i data-feather="moon" class="info-icon"></i>Pernoite</h2>
+      <p>R$ 90,00 por pessoa</p>
+      <p>Check-in: 19:00 | Check-out: 10:00</p>
+      <p><i data-feather="coffee" class="info-icon"></i> Café da manhã incluso</p>
+    </div>
+
+    <div class="card reserva">
+      <h2>Faça sua RESERVA</h2>
+      <p><i data-feather="phone" class="info-icon"></i> (16) 99707-3816</p>
+      <p><i data-feather="user" class="info-icon"></i> Host: Raquel</p>
+    </div>
+  </section>
+
+  <section class="depoimentos">
+    <div class="depoimento">
+      <h3>Juliana F.</h3>
+      <p>"Lugar maravilhoso, super aconchegante e atendimento excelente!"</p>
+    </div>
+    <div class="depoimento">
+      <h3>Ricardo M.</h3>
+      <p>"Ótimo custo-benefício. Café da manhã delicioso e ambiente tranquilo."</p>
+    </div>
+    <div class="depoimento">
+      <h3>Camila R.</h3>
+      <p>"A Raquel foi super atenciosa! Recomendo muito."</p>
+    </div>
+  </section>
+
+  <footer>
+    Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto - SP, 14078-560
+  </footer>
+
+  <!-- Feather Icons -->
+  <script>feather.replace()</script>
+
+  <!-- Google Ads Conversão -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'AW-11426807866');
-  </script>
 
-  <link rel="stylesheet" href="/pousadamaks/assets/css/style.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #f0f0f0;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #fff;
-      padding: 40px 20px;
-    }
-    header h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-      color: #333;
-    }
-    header p {
-      color: #666;
-    }
-    .reserva-button {
-      display: inline-block;
-      margin-top: 20px;
-      background: #333;
-      color: #fff;
-      padding: 12px 30px;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 40px 20px;
-    }
-    .card {
-      background: #e0e0e0;
-      border-radius: 8px;
-      margin: 10px;
-      padding: 20px;
-      width: 300px;
-    }
-    .card h2 {
-      margin-top: 0;
-      color: #000;
-    }
-    .card p {
-      margin: 5px 0;
-      color: #000;
-    }
-    .reserva {
-      background: #f44336;
-      color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    .reserva h2 {
-      margin: 0 0 10px 0;
-    }
-    footer {
-      background: #333;
-      color: #fff;
-      padding: 20px;
-      margin-top: 40px;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQ82S8X"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-  <header>
-    <h1>Pousada Maks</h1>
-    <p>Sua pousada rústica em Ribeirão Preto, um refúgio de tranquilidade </p>
-    <a class="reserva-button" href="https://wa.me/5516997073816" target="_blank">Clique aqui e fale conosco pelo WhatsApp</a>
-  </header>
-
-  <div class="cards">
-    <div class="card">
-      <h2>Diária</h2>
-      <p>R$ 112,00 por pessoa</p>
-      <p>Check-in 14:00</p>
-      <p>Check-out 12:00</p>
-      <p>Com café da manhã incluso</p>
-    </div>
-
-    <div class="card">
-      <h2>Pernoite</h2>
-      <p>R$ 90,00 por pessoa</p>
-      <p>Check-in 19:00</p>
-      <p>Check-out 10:00</p>
-      <p>Com café da manhã incluso</p>
-    </div>
-
-    <div class="card reserva">
-      <h2>Faça sua RESERVA</h2>
-      <p>(16) 99707-3816</p>
-      <p>Host: Raquel</p>
-    </div>
-  </div>
-
-  <footer>
-    Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto SP, 14078-560
-  </footer>
-
-  <!-- Conversão Google Ads por clique -->
-  <script>
     document.addEventListener('DOMContentLoaded', function () {
-      const whatsappButton = document.querySelector('.reserva-button');
-      if (whatsappButton) {
-        whatsappButton.addEventListener('click', function () {
-          gtag('event', 'conversion', {
-            'send_to': 'AW-11426807866/0ly3CNKVxu4aELqA3cgq'
-          });
+      const btn = document.querySelector('.reserva-button');
+      btn.addEventListener('click', function () {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-11426807866/0ly3CNKVxu4aELqA3cgq'
         });
-      }
+      });
     });
   </script>
+</bod
 
-</body>
-</html>
 
