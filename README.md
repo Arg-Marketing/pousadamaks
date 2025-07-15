@@ -95,7 +95,6 @@
 </a>
     <a class="reserva-button" href="https://wa.me/5516997073816" target="_blank">
       <i data-feather="message-circle" class="info-icon"></i>Fale conosco no WhatsApp
-    </a>
   </header>
 
 <a href="https://maps.app.goo.gl/kLAstWSYVMQY6zYv6" target="_blank">
