@@ -117,7 +117,7 @@
   <section class="depoimentos">
     <div class="depoimento">
       <h3>Juliana F.</h3>
-      <p>"Fomos muito bem acolhidos mesmo chegando tarde da noite para podermos descansar e seguir viagem. Quarto muito confortável e limpo. Café da manhã muito gostoso.
+      <p>"Fomos muito bem acolhidos para podermos descansar e seguir viagem. Quarto muito confortável e limpo. Café da manhã muito gostoso.
 Recomendadíssimo 👏👏👏"</p>
     </div>
     <div class="depoimento">
