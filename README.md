@@ -88,7 +88,7 @@
 
 <!-- Subtítulo menor, sem linha -->
 <h2 style="font-size: 16px; font-weight: normal; color: #666; text-align: center; margin-top: 0;">
-  Hospedagem com conforto em Ribeirão Preto
+  Venha se hospedar e transforme seu descanso em momentos especiais.
 </h2>
     <p><i data-feather="map-pin" class="info-icon"></i>Ribeirão Preto - SP</p>
     <a class="reserva-button" href="https://wa.me/5516997073816" target="_blank">
