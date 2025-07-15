@@ -104,12 +104,13 @@
       <p><i data-feather="phone" class="info-icon"></i> (16) 99707-3816</p>
       <p><i data-feather="user" class="info-icon"></i> Host: Raquel</p>
     </div>
-    
+  </header>  
+  
 <a href="https://maps.app.goo.gl/kLAstWSYVMQY6zYv6" target="_blank">
   <button style="background-color: #ababab; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
     Ver endereço no mapa
   </button>
-  
+    </header>
     
   <section class="cards">
     
