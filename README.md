@@ -171,10 +171,17 @@
     </div>
   </section>
 
-  <!-- Rodapé com endereço original -->
-  <footer>
-    Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto - SP, 14078-560
-  </footer>
+  <!-- Rodapé com contador -->
+ <footer>
+  Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto - SP, 14078-560
+  <br><br>
+  <div style="margin-top: 10px; text-align: center;">
+    <a href="https://www.freecounterstat.com" title="contador de visitas">
+      <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=9tkpugtujtfhxnnxax817xyereb7uaej" 
+           border="0" title="contador de visitas" alt="contador de visitas" />
+    </a>
+  </div>
+</footer>
 
   <!-- Feather Icons -->
   <script>feather.replace()</script>
