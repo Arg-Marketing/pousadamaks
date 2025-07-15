@@ -85,7 +85,12 @@
 <body>
   <header>
     <h1>Pousada Maks</h1>
-    <h2 style="color: gray; font-weight: normal;">Hospedagem com conforto em Ribeirão Preto</h2>
+    <h1 style="text-align: center; margin-bottom: 5px;">Pousada Maks</h1>
+
+<!-- Subtítulo menor, sem linha -->
+<h2 style="font-size: 16px; font-weight: normal; color: #666; text-align: center; margin-top: 0;">
+  Hospedagem com conforto em Ribeirão Preto
+</h2>
     <p><i data-feather="map-pin" class="info-icon"></i>Ribeirão Preto - SP</p>
     <a class="reserva-button" href="https://wa.me/5516997073816" target="_blank">
       <i data-feather="message-circle" class="info-icon"></i>Fale conosco no WhatsApp
