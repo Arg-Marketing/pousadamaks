@@ -97,6 +97,7 @@
       <p><i data-feather="phone" class="info-icon"></i> (16) 99707-3816</p>
       <p><i data-feather="user" class="info-icon"></i> Host: Raquel</p>
     </div>
+  <section class="cards">
     
     <div class="card">
       <h2><i data-feather="sun" class="info-icon"></i>Diária</h2>
