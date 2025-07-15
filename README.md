@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pousada Maks</title>
+  <title>Pousada Maks.</title>
   <meta name="description" content="Pousada Maks - Um refúgio em Ribeirão Preto">
   <link rel="canonical" href="https://arg-marketing.github.io/pousadamaks/">
 
