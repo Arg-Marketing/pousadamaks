@@ -91,16 +91,18 @@
   Venha se hospedar e transforme seu descanso em momentos especiais.
 </h2>
     <p><i data-feather="map-pin" class="info-icon"></i>Ribeirão Preto - SP</p>
-    <a href="https://maps.app.goo.gl/kLAstWSYVMQY6zYv6" target="_blank">
-  <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
-    Ver endereço no mapa
-  </button>
+  
 </a>
     <a class="reserva-button" href="https://wa.me/5516997073816" target="_blank">
       <i data-feather="message-circle" class="info-icon"></i>Fale conosco no WhatsApp
     </a>
   </header>
 
+<a href="https://maps.app.goo.gl/kLAstWSYVMQY6zYv6" target="_blank">
+  <button style="background-color: #ababab; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+    Ver endereço no mapa
+  </button>
+  
   <section class="cards">
 
     <div class="card reserva">
