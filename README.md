@@ -2,7 +2,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pousada Maks.</title>
+  <title>Pousada Maks</title>
+  
   <meta name="description" content="Pousada Maks - Um refúgio em Ribeirão Preto">
   <link rel="canonical" href="https://arg-marketing.github.io/pousadamaks/">
 
@@ -84,6 +85,7 @@
 <body>
   <header>
     <h1>Pousada Maks</h1>
+    <h2 style="color: gray; font-weight: normal;">Hospedagem com conforto em Ribeirão Preto</h2>
     <p><i data-feather="map-pin" class="info-icon"></i>Ribeirão Preto - SP</p>
     <a class="reserva-button" href="https://wa.me/5516997073816" target="_blank">
       <i data-feather="message-circle" class="info-icon"></i>Fale conosco no WhatsApp
