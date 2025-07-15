@@ -117,7 +117,8 @@
   <section class="depoimentos">
     <div class="depoimento">
       <h3>Juliana F.</h3>
-      <p>"Lugar maravilhoso, super aconchegante e atendimento excelente!"</p>
+      <p>"Fomos muito bem acolhidos mesmo chegando tarde da noite para podermos descansar e seguir viagem. Quarto muito confortável e limpo. Café da manhã muito gostoso.
+Recomendadíssimo 👏👏👏"</p>
     </div>
     <div class="depoimento">
       <h3>Ricardo M.</h3>
@@ -153,6 +154,5 @@
       });
     });
   </script>
-</bod
 
 
