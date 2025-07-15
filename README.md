@@ -114,13 +114,10 @@
     <h2>Venha se hospedar e transforme seu descanso em momentos especiais.</h2>
     <p><i data-feather="map-pin" class="info-icon"></i>Ribeirão Preto - SP</p>
 
-    <!-- Botões -->
+    <!-- Botão WhatsApp -->
     <div class="button-group">
       <a class="reserva-button" href="https://wa.me/5516997073816" target="_blank">
         <i data-feather="message-circle" class="info-icon"></i>Fale conosco no WhatsApp
-      </a>
-      <a class="map-button" href="https://maps.app.goo.gl/kLAstWSYVMQY6zYv6" target="_blank">
-        Ver endereço no mapa
       </a>
     </div>
   </header>
@@ -133,6 +130,13 @@
       <p><i data-feather="user" class="info-icon"></i> Host: Raquel</p>
     </div>
   </section>
+
+  <!-- Botão de Mapa logo após a reserva -->
+  <div class="button-group" style="margin-top: -30px;">
+    <a class="map-button" href="https://maps.app.goo.gl/kLAstWSYVMQY6zYv6" target="_blank">
+      Ver endereço no mapa
+    </a>
+  </div>
 
   <!-- Diária e Pernoite -->
   <section class="cards">
@@ -167,7 +171,7 @@
     </div>
   </section>
 
-  <!-- Rodapé -->
+  <!-- Rodapé com endereço original -->
   <footer>
     Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto - SP, 14078-560
   </footer>
@@ -181,6 +185,19 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config
+    gtag('config', 'AW-11426807866');
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const btn = document.querySelector('.reserva-button');
+      btn.addEventListener('click', function () {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-11426807866/0ly3CNKVxu4aELqA3cgq'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
 
 
