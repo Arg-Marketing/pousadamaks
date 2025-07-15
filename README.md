@@ -91,6 +91,13 @@
   </header>
 
   <section class="cards">
+
+    <div class="card reserva">
+      <h2>Faça sua RESERVA</h2>
+      <p><i data-feather="phone" class="info-icon"></i> (16) 99707-3816</p>
+      <p><i data-feather="user" class="info-icon"></i> Host: Raquel</p>
+    </div>
+    
     <div class="card">
       <h2><i data-feather="sun" class="info-icon"></i>Diária</h2>
       <p>R$ 112,00 por pessoa</p>
@@ -105,11 +112,6 @@
       <p><i data-feather="coffee" class="info-icon"></i> Café da manhã incluso</p>
     </div>
 
-    <div class="card reserva">
-      <h2>Faça sua RESERVA</h2>
-      <p><i data-feather="phone" class="info-icon"></i> (16) 99707-3816</p>
-      <p><i data-feather="user" class="info-icon"></i> Host: Raquel</p>
-    </div>
   </section>
 
   <section class="depoimentos">
