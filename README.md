@@ -1,3 +1,4 @@
+ <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -173,14 +174,16 @@
     </div>
   </footer>
 
-  <!-- Contador em fundo branco com texto discreto -->
+  <!-- Novo contador em fundo claro com texto discreto -->
   <div style="background-color: #f0f0f0; color: #333; text-align: center; padding: 15px 0; font-size: 12px;">
     <div style="margin-bottom: 5px;">Contador de visitas:</div>
-    <img 
-      src="https://counter1.optistats.ovh/private/freecounterstat.php?c=9tkpugtujtfhxnnxax817xyereb7uaej" 
-      alt="contador de visitas da pousada Maks em Ribeirão Preto" 
-      style="height: 30px;"
-    />
+    <div id="sfcz4nlphfy2rc61atk1hcgg25f6n9ewbpf"></div>
+    <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=z4nlphfy2rc61atk1hcgg25f6n9ewbpf&down=async" async></script>
+    <noscript>
+      <a href="https://www.freecounterstat.com" title="website counter">
+        <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=z4nlphfy2rc61atk1hcgg25f6n9ewbpf" border="0" title="website counter" alt="website counter">
+      </a>
+    </noscript>
   </div>
 
   <!-- Feather Icons -->
@@ -208,7 +211,5 @@
   </script>
 </body>
 </html>
-
-
 
 
