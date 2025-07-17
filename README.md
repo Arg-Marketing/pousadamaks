@@ -181,7 +181,7 @@
       Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto - SP, 14078-560
     </div>
     <div class="visit-counter">
-      <div>Contador de visitas:</div>
+     
       <div id="sfcz4nlphfy2rc61atk1hcgg25f6n9ewbpf"></div>
       <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=z4nlphfy2rc61atk1hcgg25f6n9ewbpf&down=async" async></script>
       <noscript>
