@@ -171,17 +171,18 @@
     </div>
   </section>
 
-  <!-- Rodapé com contador com alt descritivo -->
-  <footer>
+  <!-- Footer com contador personalizado -->
+<footer style="background-color: #1c1c1c; color: white; padding: 30px 0; text-align: center;">
+  <div>
     Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto - SP, 14078-560
-    <br><br>
-    <div style="margin-top: 10px; text-align: center;">
-      <a href="https://www.freecounterstat.com" title="contador de visitas">
-        <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=9tkpugtujtfhxnnxax817xyereb7uaej" 
-             border="0" title="contador de visitas" alt="contador de visitas da pousada Maks em Ribeirão Preto" />
-      </a>
-    </div>
-  </footer>
+  </div>
+  <div style="margin-top: 20px;">
+    <img 
+      src="https://counter1.optistats.ovh/private/freecounterstat.php?c=9tkpugtujtfhxnnxax817xyereb7uaej" 
+      alt="contador de visitas da pousada Maks em Ribeirão Preto" 
+      style="filter: brightness(0) invert(1); height: 35px;"
+    />
+  </div>
 
   <!-- Feather Icons -->
   <script>feather.replace()</script>
