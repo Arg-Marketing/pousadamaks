@@ -122,7 +122,7 @@
 <body>
   <header>
     <h1>Pousada Maks</h1>
-    <h2>Venha se hospedar e transforme seu descanso em momentos especiais</h2>
+    <h2>Venha se hospedar e transforme seu descanso em momentos especiais<./h2>
     <p><i data-feather="map-pin" class="info-icon"></i>Ribeirão Preto - SP</p>
 
     <!-- Botão WhatsApp -->
@@ -211,7 +211,7 @@
       if (btn) {
         btn.addEventListener('click', function () {
           gtag('event', 'conversion', {
-            'send_to': 'AW-11426807866/0ly3CNKVxu4aELqA3cgq'
+            'send_to': 'AW-11426807866/A2pBCOOGzPAaELqA3cgq'
           });
         });
       }
