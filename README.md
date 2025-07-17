@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -16,7 +16,7 @@
 
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', sans-serif; background: #f9f9f9; color: #333; text-align: center; }
+    body { font-family: 'Inter', sans-serif; background: #f9f9f9; color: #333; text-align: center; padding-bottom: 120px; }
 
     header {
       background: #fff; padding: 60px 20px 30px;
@@ -97,17 +97,17 @@
     footer {
       background: #1c1c1c;
       color: white;
-      padding: 30px 20px;
+      padding: 30px 20px 60px;
       font-size: 14px;
-      margin-top: 60px;
-      position: relative;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 9999;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
     }
 
     .visit-counter {
-      position: absolute;
-      bottom: 10px;
-      left: 50%;
-      transform: translateX(-50%);
+      margin-top: 20px;
       font-size: 12px;
       color: #ccc;
     }
