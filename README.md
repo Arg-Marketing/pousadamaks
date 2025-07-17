@@ -181,8 +181,6 @@
     </div>
   <footer>
       
-   </footer>
-     </div>
       </a>
       <div id="sfcz4nlphfy2rc61atk1hcgg25f6n9ewbpf"></div>
       <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=z4nlphfy2rc61atk1hcgg25f6n9ewbpf&down=async" async></script>
@@ -191,8 +189,6 @@
           <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=z4nlphfy2rc61atk1hcgg25f6n9ewbpf" border="0" title="website counter" alt="website counter">
         </a>
       </noscript>
-    </div>
-  </footer>
 
   <!-- Feather Icons -->
   <script>feather.replace()</script>
