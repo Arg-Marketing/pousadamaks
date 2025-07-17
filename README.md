@@ -95,9 +95,21 @@
     }
 
     footer {
-      background: #222; color: #fff;
-      padding: 30px 20px; font-size: 14px;
+      background: #1c1c1c;
+      color: white;
+      padding: 30px 20px;
+      font-size: 14px;
       margin-top: 60px;
+      position: relative;
+    }
+
+    .visit-counter {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 12px;
+      color: #ccc;
     }
 
     @media (max-width: 768px) {
@@ -167,25 +179,26 @@
     </div>
   </section>
 
-  <footer style="background-color: #1c1c1c; color: white; padding: 30px 0; text-align: center;">
+  <footer>
     <div>
       Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto - SP, 14078-560
     </div>
+    <div class="visit-counter">
+      <div>Contador de visitas:</div>
+      <div id="sfcz4nlphfy2rc61atk1hcgg25f6n9ewbpf"></div>
+      <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=z4nlphfy2rc61atk1hcgg25f6n9ewbpf&down=async" async></script>
+      <noscript>
+        <a href="https://www.freecounterstat.com" title="website counter">
+          <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=z4nlphfy2rc61atk1hcgg25f6n9ewbpf" border="0" title="website counter" alt="website counter">
+        </a>
+      </noscript>
+    </div>
   </footer>
 
-  <div style="background-color: #f0f0f0; color: #333; text-align: center; padding: 15px 0; font-size: 12px;">
-    <div style="margin-bottom: 5px;">Contador de visitas:</div>
-    <div id="sfcz4nlphfy2rc61atk1hcgg25f6n9ewbpf"></div>
-    <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=z4nlphfy2rc61atk1hcgg25f6n9ewbpf&down=async" async></script>
-    <noscript>
-      <a href="https://www.freecounterstat.com" title="website counter">
-        <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=z4nlphfy2rc61atk1hcgg25f6n9ewbpf" border="0" title="website counter" alt="website counter">
-      </a>
-    </noscript>
-  </div>
-
+  <!-- Feather Icons -->
   <script>feather.replace()</script>
 
+  <!-- Google Ads Tag com conversão -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
