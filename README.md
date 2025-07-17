@@ -4,17 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pousada Maks</title>
 
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-11426807866');
-</script>
-
   <meta name="description" content="Pousada Maks - Um refúgio em Ribeirão Preto">
   <link rel="canonical" href="https://arg-marketing.github.io/pousadamaks/">
 
@@ -125,9 +114,9 @@
     <h2>Venha se hospedar e transforme seu descanso em momentos especiais.</h2>
     <p><i data-feather="map-pin" class="info-icon"></i>Ribeirão Preto - SP</p>
 
-    <!-- Botão WhatsApp -->
+    <!-- Botão WhatsApp com aria-label -->
     <div class="button-group">
-      <a class="reserva-button" href="https://wa.me/5516997073816" target="_blank">
+      <a class="reserva-button" href="https://wa.me/5516997073816" target="_blank" aria-label="Fale conosco no WhatsApp">
         <i data-feather="message-circle" class="info-icon"></i>Fale conosco no WhatsApp
       </a>
     </div>
@@ -182,14 +171,14 @@
     </div>
   </section>
 
-  <!-- Rodapé com contador -->
+  <!-- Rodapé com contador com alt descritivo -->
   <footer>
     Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto - SP, 14078-560
     <br><br>
     <div style="margin-top: 10px; text-align: center;">
       <a href="https://www.freecounterstat.com" title="contador de visitas">
         <img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=9tkpugtujtfhxnnxax817xyereb7uaej" 
-             border="0" title="contador de visitas" alt="contador de visitas" />
+             border="0" title="contador de visitas" alt="contador de visitas da pousada Maks em Ribeirão Preto" />
       </a>
     </div>
   </footer>
@@ -219,6 +208,7 @@
   </script>
 </body>
 </html>
+
 
 
 
