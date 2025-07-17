@@ -16,7 +16,7 @@
 
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', sans-serif; background: #f9f9f9; color: #333; text-align: center; padding-bottom: 120px; }
+    body { font-family: 'Inter', sans-serif; background: #f9f9f9; color: #333; text-align: center; }
 
     header {
       background: #fff; padding: 60px 20px 30px;
@@ -97,19 +97,16 @@
     footer {
       background: #1c1c1c;
       color: white;
-      padding: 30px 20px 60px;
+      padding: 30px 20px;
       font-size: 14px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      z-index: 9999;
-      box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+      margin-top: 60px;
     }
 
     .visit-counter {
       margin-top: 20px;
       font-size: 12px;
       color: #ccc;
+      text-align: center;
     }
 
     @media (max-width: 768px) {
