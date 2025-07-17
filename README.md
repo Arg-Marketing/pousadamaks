@@ -167,14 +167,12 @@
     </div>
   </section>
 
-  <!-- Rodapé escuro com endereço -->
   <footer style="background-color: #1c1c1c; color: white; padding: 30px 0; text-align: center;">
     <div>
       Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto - SP, 14078-560
     </div>
   </footer>
 
-  <!-- Novo contador em fundo claro com texto discreto -->
   <div style="background-color: #f0f0f0; color: #333; text-align: center; padding: 15px 0; font-size: 12px;">
     <div style="margin-bottom: 5px;">Contador de visitas:</div>
     <div id="sfcz4nlphfy2rc61atk1hcgg25f6n9ewbpf"></div>
@@ -186,10 +184,8 @@
     </noscript>
   </div>
 
-  <!-- Feather Icons -->
   <script>feather.replace()</script>
 
-  <!-- Google Ads Tag com conversão -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
