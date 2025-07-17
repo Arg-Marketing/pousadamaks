@@ -114,7 +114,6 @@
     <h2>Venha se hospedar e transforme seu descanso em momentos especiais.</h2>
     <p><i data-feather="map-pin" class="info-icon"></i>Ribeirão Preto - SP</p>
 
-    <!-- Botão WhatsApp com aria-label -->
     <div class="button-group">
       <a class="reserva-button" href="https://wa.me/5516997073816" target="_blank" aria-label="Fale conosco no WhatsApp">
         <i data-feather="message-circle" class="info-icon"></i>Fale conosco no WhatsApp
@@ -122,7 +121,6 @@
     </div>
   </header>
 
-  <!-- Card de Reserva -->
   <section class="cards">
     <div class="card reserva">
       <h2>Faça sua RESERVA</h2>
@@ -131,14 +129,12 @@
     </div>
   </section>
 
-  <!-- Botão de Mapa -->
   <div class="button-group" style="margin-top: -30px;">
     <a class="map-button" href="https://maps.app.goo.gl/kLAstWSYVMQY6zYv6" target="_blank">
       Ver endereço no mapa
     </a>
   </div>
 
-  <!-- Diária e Pernoite -->
   <section class="cards">
     <div class="card">
       <h2><i data-feather="sun" class="info-icon"></i>Diária</h2>
@@ -155,7 +151,6 @@
     </div>
   </section>
 
-  <!-- Depoimentos -->
   <section class="depoimentos">
     <div class="depoimento">
       <h3>Juliana F.</h3>
@@ -171,16 +166,20 @@
     </div>
   </section>
 
-  <!-- Footer com contador personalizado -->
-<footer style="background-color: #1c1c1c; color: white; padding: 30px 0; text-align: center;">
-  <div>
-    Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto - SP, 14078-560
-  </div>
-  <div style="margin-top: 20px;">
+  <!-- Rodapé escuro com endereço -->
+  <footer style="background-color: #1c1c1c; color: white; padding: 30px 0; text-align: center;">
+    <div>
+      Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto - SP, 14078-560
+    </div>
+  </footer>
+
+  <!-- Contador em fundo branco com texto discreto -->
+  <div style="background-color: #f0f0f0; color: #333; text-align: center; padding: 15px 0; font-size: 12px;">
+    <div style="margin-bottom: 5px;">Contador de visitas:</div>
     <img 
       src="https://counter1.optistats.ovh/private/freecounterstat.php?c=9tkpugtujtfhxnnxax817xyereb7uaej" 
       alt="contador de visitas da pousada Maks em Ribeirão Preto" 
-      style="filter: brightness(0) invert(1); height: 35px;"
+      style="height: 30px;"
     />
   </div>
 
@@ -209,7 +208,6 @@
   </script>
 </body>
 </html>
-
 
 
 
