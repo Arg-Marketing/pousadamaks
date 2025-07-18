@@ -1,3 +1,4 @@
+ <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -193,7 +194,7 @@
   <!-- Feather Icons -->
   <script>feather.replace()</script>
 
-  <!-- Google Ads Tag com conversão -->
+  <!-- Google Ads Tag com conversão corrigida -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -207,7 +208,7 @@
       if (btn) {
         btn.addEventListener('click', function () {
           gtag('event', 'conversion', {
-            'send_to': 'AW-11426807866/A2pBCOOGzPAaELqA3cgq'
+            'send_to': 'AW-11426807866/MBzSCLHut_MaELqA3cgq'
           });
         });
       }
@@ -216,7 +217,7 @@
       if (phoneLink) {
         phoneLink.addEventListener('click', function () {
           gtag('event', 'conversion', {
-            'send_to': 'AW-11426807866/A2pBCOOGzPAaELqA3cgq'
+            'send_to': 'AW-11426807866/MBzSCLHut_MaELqA3cgq'
           });
         });
       }
