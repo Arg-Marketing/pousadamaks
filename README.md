@@ -93,6 +93,11 @@
       vertical-align: middle;
     }
 
+    .phone-link {
+      color: white;
+      text-decoration: none;
+    }
+
     footer {
       background: #1c1c1c;
       color: white;
@@ -133,7 +138,11 @@
   <section class="cards">
     <div class="card reserva">
       <h2>Faça sua RESERVA</h2>
-      <p><i data-feather="phone" class="info-icon"></i> (16) 99707-3816</p>
+      <p>
+        <a href="tel:+5516997073816" class="phone-link">
+          <i data-feather="phone" class="info-icon"></i> (16) 99707-3816
+        </a>
+      </p>
       <p><i data-feather="user" class="info-icon"></i> Host: Raquel</p>
     </div>
   </section>
@@ -179,8 +188,8 @@
     <div>
       Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto - SP, 14078-560
     </div>
-  <footer>
-      
+  </footer>
+
   <!-- Feather Icons -->
   <script>feather.replace()</script>
 
@@ -202,7 +211,17 @@
           });
         });
       }
+
+      const phoneLink = document.querySelector('.phone-link');
+      if (phoneLink) {
+        phoneLink.addEventListener('click', function () {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-11426807866/A2pBCOOGzPAaELqA3cgq'
+          });
+        });
+      }
     });
   </script>
 </body>
 </html>
+
