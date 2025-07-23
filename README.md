@@ -13,6 +13,21 @@
   <!-- Feather Icons -->
   <script src="https://unpkg.com/feather-icons"></script>
 
+  <!-- Google Tag: GA4 + Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E84T3NE17C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+
+    gtag('js', new Date());
+
+    // Google Analytics 4
+    gtag('config', 'G-E84T3NE17C');
+
+    // Google Ads
+    gtag('config', 'AW-11426807866');
+  </script>
+
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Inter', sans-serif; background: #f9f9f9; color: #333; text-align: center; }
@@ -125,7 +140,7 @@
 <body>
   <header>
     <h1>Pousada Maks</h1>
-    <h2>Venha se hospedar e transforme seu descanso em momentos especiais.</h2>
+    <h2>Venha se hospedar e transforme seu descanso em momentos especiais</h2>
     <p><i data-feather="map-pin" class="info-icon"></i>Ribeirão Preto - SP</p>
 
     <div class="button-group">
@@ -193,15 +208,8 @@
   <!-- Feather Icons -->
   <script>feather.replace()</script>
 
-  <!-- Google Ads Tag com conversão corrigida -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866"></script>
+  <!-- Evento de conversão Google Ads -->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-
-    gtag('js', new Date());
-    gtag('config', 'AW-11426807866');
-
     document.addEventListener('DOMContentLoaded', function () {
       const btn = document.querySelector('.reserva-button');
       if (btn) {
