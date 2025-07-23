@@ -21,10 +21,7 @@
 
     gtag('js', new Date());
 
-    // Google Analytics 4
     gtag('config', 'G-E84T3NE17C');
-
-    // Google Ads
     gtag('config', 'AW-11426807866');
   </script>
 
@@ -149,6 +146,11 @@
       </a>
     </div>
   </header>
+
+  <!-- IMAGEM CENTRALIZADA -->
+  <section style="margin: 40px auto; max-width: 600px;">
+    <img src="https://github.com/user-attachments/assets/33c6d997-aad5-4931-8651-993123422ca9" alt="Imagem da Pousada Maks" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  </section>
 
   <section class="cards">
     <div class="card reserva">
