@@ -10,7 +10,11 @@
 
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; background: #fff; color: #111; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fff;
+      color: #111;
+    }
 
     .top-bar {
       background: #f1f1f1;
@@ -72,14 +76,6 @@
       background: #1ebe57;
     }
 
-    .hero img {
-      width: 100%;
-      height: auto;
-      max-height: 400px;
-      object-fit: cover;
-      display: block;
-    }
-
     .cards, .depoimentos {
       display: flex;
       flex-wrap: wrap;
@@ -107,10 +103,10 @@
     }
 
     .card.reserva {
-  background: #f44336;
-  color: white;
-  text-align: center; /* <-- centraliza tudo dentro */
-}
+      background: #f44336;
+      color: white;
+      text-align: center;
+    }
 
     .info-icon {
       margin-right: 6px;
@@ -154,6 +150,18 @@
         font-size: 14px;
       }
     }
+
+    /* FORÇA fundo branco em todo o site */
+    section,
+    footer,
+    .top-bar,
+    .hero,
+    .hero-text,
+    .card,
+    .depoimento {
+      background-color: #fff !important;
+      color: #111 !important;
+    }
   </style>
 </head>
 
@@ -188,17 +196,8 @@
     </div>
   </section>
 
-<section class="cards">
-  
-</section>
-
-<!-- AQUI ENTRA A IMAGEM CORRETA -->
-<img src="https://github.com/user-attachments/assets/6019738c-bad5-4da6-bd1d-cf4e58d53995" alt="Foto da pousada" style="width: 100%; max-width: 900px; margin: 40px auto; display: block; border-radius: 12px;">
-
-<section class="depoimentos">
-  
-</section>
-
+  <!-- IMAGEM CENTRALIZADA -->
+  <img src="https://github.com/user-attachments/assets/6019738c-bad5-4da6-bd1d-cf4e58d53995" alt="Foto da pousada" style="width: 100%; max-width: 900px; margin: 40px auto; display: block; border-radius: 12px; background: #fff; padding: 10px;">
 
   <section class="depoimentos">
     <div class="depoimento">
