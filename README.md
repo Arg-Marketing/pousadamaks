@@ -166,7 +166,7 @@
   </div>
 
   <div class="hero">
-    <img src="https://github.com/user-attachments/assets/cd0a7e72-6855-4846-b0c1-0d279bc4b51c" alt="Imagem da pousada">
+    <img src="https://github.com/user-attachments/assets/dfc7b9a9-eea9-4b19-a8b0-635dd6b72ae1" alt="Imagem da pousada">
     <div class="hero-text">
       <h1></h1>
       <p></p>
