@@ -180,7 +180,8 @@
     </div>
   </section>
 
-  ![Image](https://github.com/user-attachments/assets/24d4017c-2b93-401a-b025-e4553b5c63b9)
+<img src="https://github.com/user-attachments/assets/24d4017c-2b93-401a-b025-e4553b5c63b9" alt="Imagem complementar" style="width: 100%; max-width: 600px; display: block; margin: 40px auto;">
+
 
   <section class="depoimentos">
     <div class="depoimento">
