@@ -188,7 +188,17 @@
     </div>
   </section>
 
-<img src="(https://github.com/user-attachments/assets/faa91e86-daca-4605-a2e8-4aa3767a1997"> alt="Foto da pousada" style="width: 100%; max-width: 900px; margin: 40px auto; display: block; border-radius: 12px;">
+<section class="cards">
+  ...
+</section>
+
+<!-- AQUI ENTRA A IMAGEM CORRETA -->
+<img src="https://i.postimg.cc/wBbD74sd/pousada-maks.png" alt="Foto da pousada" style="width: 100%; max-width: 900px; margin: 40px auto; display: block; border-radius: 12px;">
+
+<section class="depoimentos">
+  ...
+</section>
+
 
   <section class="depoimentos">
     <div class="depoimento">
