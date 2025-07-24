@@ -189,14 +189,14 @@
   </section>
 
 <section class="cards">
-  ...
+  
 </section>
 
 <!-- AQUI ENTRA A IMAGEM CORRETA -->
 <img src="https://github.com/user-attachments/assets/6019738c-bad5-4da6-bd1d-cf4e58d53995" alt="Foto da pousada" style="width: 100%; max-width: 900px; margin: 40px auto; display: block; border-radius: 12px;">
 
 <section class="depoimentos">
-  ...
+  
 </section>
 
 
