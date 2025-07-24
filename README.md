@@ -180,6 +180,8 @@
     </div>
   </section>
 
+  ![Image](https://github.com/user-attachments/assets/24d4017c-2b93-401a-b025-e4553b5c63b9)
+
   <section class="depoimentos">
     <div class="depoimento">
       <h3>Juliana F.</h3>
