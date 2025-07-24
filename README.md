@@ -72,6 +72,14 @@
       background: #1ebe57;
     }
 
+    .hero img {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+
     .cards, .depoimentos {
       display: flex;
       flex-wrap: wrap;
@@ -180,8 +188,7 @@
     </div>
   </section>
 
-<img src="[https://github-production-user-asset-6210df.s3.amazonaws.com/220231022/470340085-faa91e86-daca-4605-a2e8-4aa3767a1997.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250724%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250724T135542Z&X-Amz-Expires=300&X-Amz-Signature=d44be19d83ad670ccccb58854c0e0c377fa407b39de67f6ae20a826d42f19d4f&X-Amz-SignedHeaders=host](https://github.com/Arg-Marketing/pousadamaks/issues/3)](https://github.com/Arg-Marketing/pousadamaks/issues/3#issue-3259996501)">
-
+<img src="(https://github.com/user-attachments/assets/faa91e86-daca-4605-a2e8-4aa3767a1997"> alt="Foto da pousada" style="width: 100%; max-width: 900px; margin: 40px auto; display: block; border-radius: 12px;">
 
   <section class="depoimentos">
     <div class="depoimento">
