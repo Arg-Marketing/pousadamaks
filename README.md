@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pousada Maks</title>
+  <title></title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -166,10 +166,10 @@
   </div>
 
   <div class="hero">
-    <img src="https://github.com/user-attachments/assets/33c6d997-aad5-4931-8651-993123422ca9" alt="Imagem da pousada">
+    <img src="https://github.com/user-attachments/assets/cd0a7e72-6855-4846-b0c1-0d279bc4b51c" alt="Imagem da pousada">
     <div class="hero-text">
-      <h1>Pousada Maks</h1>
-      <p>Venha se hospedar e transforme seu descanso em momentos especiais</p>
+      <h1></h1>
+      <p></p>
       <a href="https://wa.me/5516997073816" target="_blank" class="reserva-button">
         Fale conosco no WhatsApp
       </a>
