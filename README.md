@@ -180,7 +180,7 @@
     </div>
   </section>
 
-<img src="https://github.com/user-attachments/assets/24d4017c-2b93-401a-b025-e4553b5c63b9" alt="Imagem complementar" style="width: 100%; max-width: 600px; display: block; margin: 40px auto;">
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/220231022/470340085-faa91e86-daca-4605-a2e8-4aa3767a1997.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250724%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250724T135542Z&X-Amz-Expires=300&X-Amz-Signature=d44be19d83ad670ccccb58854c0e0c377fa407b39de67f6ae20a826d42f19d4f&X-Amz-SignedHeaders=host">
 
 
   <section class="depoimentos">
