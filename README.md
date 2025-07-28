@@ -1,8 +1,8 @@
- <html lang="pt-BR">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>Pousada Maks</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -99,10 +99,10 @@
     }
 
     .card.reserva {
-      background: #f44336;
-      color: white;
-      text-align: center;
-    }
+  background: #f44336;
+  color: white;
+  text-align: center; /* <-- centraliza tudo dentro */
+}
 
     .info-icon {
       margin-right: 6px;
@@ -147,15 +147,6 @@
       }
     }
   </style>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11462087866"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-11462087866');
-  </script>
 </head>
 
 <body>
@@ -167,10 +158,10 @@
   </div>
 
   <div class="hero">
-    <img src="https://github.com/user-attachments/assets/dfc7b9a9-eea9-4b19-a8b0-635dd6b72ae1" alt="Imagem da pousada">
+    <img src="https://github.com/user-attachments/assets/33c6d997-aad5-4931-8651-993123422ca9" alt="Imagem da pousada">
     <div class="hero-text">
-      <h1></h1>
-      <p></p>
+      <h1>Pousada Maks</h1>
+      <p>Venha se hospedar e transforme seu descanso em momentos especiais</p>
       <a href="https://wa.me/5516997073816" target="_blank" class="reserva-button">
         Fale conosco no WhatsApp
       </a>
@@ -188,11 +179,6 @@
       <p><i data-feather="user" class="info-icon"></i> Host: Raquel</p>
     </div>
   </section>
-
-  <section class="cards"></section>
-
-  <!-- AQUI ENTRA A IMAGEM CORRETA -->
-  <img src="https://github.com/user-attachments/assets/6019738c-bad5-4da6-bd1d-cf4e58d53995" alt="Foto da pousada" style="width: 100%; max-width: 900px; margin: 40px auto; display: block; border-radius: 12px;">
 
   <section class="depoimentos">
     <div class="depoimento">
