@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -6,6 +7,15 @@
 
   <meta name="description" content="Pousada Maks - Um refúgio em Ribeirão Preto">
   <link rel="canonical" href="https://arg-marketing.github.io/pousadamaks/">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-11426807866');
+  </script>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -194,14 +204,8 @@
   <!-- Feather Icons -->
   <script>feather.replace()</script>
 
-  <!-- Google Ads Conversão -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866"></script>
+  <!-- Evento de conversão do botão WhatsApp -->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-11426807866');
-
     document.addEventListener('DOMContentLoaded', function () {
       const btn = document.querySelector('.reserva-button');
       btn.addEventListener('click', function () {
@@ -213,4 +217,5 @@
   </script>
 </body>
 </html>
+
 
