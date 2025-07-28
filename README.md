@@ -18,16 +18,33 @@
     body { font-family: 'Inter', sans-serif; background: #f9f9f9; color: #333; text-align: center; }
 
     header {
-      background: #fff; padding: 60px 20px 30px;
+      background: #fff;
+      padding: 60px 20px 30px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
 
     header h1 { font-size: 36px; color: #111; }
     header h2 {
-      font-size: 16px; font-weight: normal;
-      color: #666; text-align: center; margin-top: 0; margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: normal;
+      color: #666;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
-    header p { font-size: 18px; color: #555; margin-top: 10px; }
+
+    header img.logo {
+      margin-top: 20px;
+      max-width: 300px;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #555;
+      margin-top: 10px;
+    }
 
     .button-group {
       margin-top: 30px;
@@ -53,19 +70,22 @@
       background: #25D366;
       color: white;
     }
+
     .reserva-button:hover { background: #1ebe57; }
 
     .map-button {
       background: #ababab;
       color: white;
     }
+
     .map-button:hover { background: #999999; }
 
     .cards, .depoimentos {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin: 50px 20px; gap: 20px;
+      margin: 50px 20px;
+      gap: 20px;
     }
 
     .card, .depoimento {
@@ -77,10 +97,13 @@
       transition: transform 0.2s;
     }
 
-    .card:hover, .depoimento:hover { transform: translateY(-4px); }
+    .card:hover, .depoimento:hover {
+      transform: translateY(-4px);
+    }
 
     .card h2, .depoimento h3 {
-      font-size: 22px; margin-bottom: 10px;
+      font-size: 22px;
+      margin-bottom: 10px;
     }
 
     .card.reserva {
@@ -94,8 +117,10 @@
     }
 
     footer {
-      background: #222; color: #fff;
-      padding: 30px 20px; font-size: 14px;
+      background: #222;
+      color: #fff;
+      padding: 30px 20px;
+      font-size: 14px;
       margin-top: 60px;
     }
 
@@ -111,10 +136,14 @@
 <body>
   <header>
     <h1>Pousada Maks</h1>
+    <img
+      class="logo"
+      src="https://github.com/user-attachments/assets/7f0c81ed-4b96-46bc-863e-59e52be25078"
+      alt="Imagem da Pousada Maks"
+    />
     <h2>Venha se hospedar e transforme seu descanso em momentos especiais.</h2>
     <p><i data-feather="map-pin" class="info-icon"></i>Ribeirão Preto - SP</p>
 
-    <!-- Botão WhatsApp -->
     <div class="button-group">
       <a class="reserva-button" href="https://wa.me/5516997073816" target="_blank">
         <i data-feather="message-circle" class="info-icon"></i>Fale conosco no WhatsApp
@@ -122,7 +151,6 @@
     </div>
   </header>
 
-  <!-- Card de Reserva -->
   <section class="cards">
     <div class="card reserva">
       <h2>Faça sua RESERVA</h2>
@@ -131,14 +159,12 @@
     </div>
   </section>
 
-  <!-- Botão de Mapa logo após a reserva -->
   <div class="button-group" style="margin-top: -30px;">
     <a class="map-button" href="https://maps.app.goo.gl/kLAstWSYVMQY6zYv6" target="_blank">
       Ver endereço no mapa
     </a>
   </div>
 
-  <!-- Diária e Pernoite -->
   <section class="cards">
     <div class="card">
       <h2><i data-feather="sun" class="info-icon"></i>Diária</h2>
@@ -155,7 +181,6 @@
     </div>
   </section>
 
-  <!-- Depoimentos -->
   <section class="depoimentos">
     <div class="depoimento">
       <h3>Juliana F.</h3>
@@ -171,12 +196,10 @@
     </div>
   </section>
 
-  <!-- Rodapé com endereço original -->
   <footer>
     Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto - SP, 14078-560
   </footer>
 
-  <!-- Feather Icons -->
   <script>feather.replace()</script>
 
   <!-- Google Ads Conversão -->
