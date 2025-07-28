@@ -140,7 +140,7 @@
 
     <!-- Botão WhatsApp -->
     <div class="button-group">
-      <a class="reserva-button" href="https://wa.me/5516997073816" target="_blank">
+      <a class="reserva-button" href="#" id="whatsappButton">
         <i data-feather="message-circle" class="info-icon"></i>Fale conosco no WhatsApp
       </a>
     </div>
@@ -155,7 +155,7 @@
     </div>
   </section>
 
-  <!-- Botão de Mapa logo após a reserva -->
+  <!-- Botão de Mapa -->
   <div class="button-group" style="margin-top: -30px;">
     <a class="map-button" href="https://maps.app.goo.gl/kLAstWSYVMQY6zYv6" target="_blank">
       Ver endereço no mapa
@@ -195,7 +195,7 @@
     </div>
   </section>
 
-  <!-- Rodapé com endereço original -->
+  <!-- Rodapé -->
   <footer>
     Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto - SP, 14078-560
   </footer>
@@ -203,18 +203,23 @@
   <!-- Feather Icons -->
   <script>feather.replace()</script>
 
-  <!-- Evento de conversão do botão WhatsApp -->
+  <!-- Evento de conversão ajustado -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      const btn = document.querySelector('.reserva-button');
-      btn.addEventListener('click', function () {
+      const btn = document.getElementById('whatsappButton');
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
         gtag('event', 'conversion', {
           'send_to': 'AW-11426807866/0ly3CNKVxu4aELqA3cgq'
         });
+        setTimeout(function () {
+          window.open('https://wa.me/5516997073816', '_blank');
+        }, 500);
       });
     });
   </script>
 </body>
 </html>
+
 
 
