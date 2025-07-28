@@ -1,4 +1,4 @@
-<html lang="pt-BR">
+ <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -72,14 +72,6 @@
       background: #1ebe57;
     }
 
-    .hero img {
-      width: 100%;
-      height: auto;
-      max-height: 400px;
-      object-fit: cover;
-      display: block;
-    }
-
     .cards, .depoimentos {
       display: flex;
       flex-wrap: wrap;
@@ -107,10 +99,10 @@
     }
 
     .card.reserva {
-  background: #f44336;
-  color: white;
-  text-align: center; /* <-- centraliza tudo dentro */
-}
+      background: #f44336;
+      color: white;
+      text-align: center;
+    }
 
     .info-icon {
       margin-right: 6px;
@@ -155,6 +147,15 @@
       }
     }
   </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11462087866"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-11462087866');
+  </script>
 </head>
 
 <body>
@@ -188,17 +189,10 @@
     </div>
   </section>
 
-<section class="cards">
-  
-</section>
+  <section class="cards"></section>
 
-<!-- AQUI ENTRA A IMAGEM CORRETA -->
-<img src="https://github.com/user-attachments/assets/6019738c-bad5-4da6-bd1d-cf4e58d53995" alt="Foto da pousada" style="width: 100%; max-width: 900px; margin: 40px auto; display: block; border-radius: 12px;">
-
-<section class="depoimentos">
-  
-</section>
-
+  <!-- AQUI ENTRA A IMAGEM CORRETA -->
+  <img src="https://github.com/user-attachments/assets/6019738c-bad5-4da6-bd1d-cf4e58d53995" alt="Foto da pousada" style="width: 100%; max-width: 900px; margin: 40px auto; display: block; border-radius: 12px;">
 
   <section class="depoimentos">
     <div class="depoimento">
@@ -222,4 +216,5 @@
   <script>feather.replace()</script>
 </body>
 </html>
+
 
