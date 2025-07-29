@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <!-- Google Tag Manager -->
@@ -10,6 +9,15 @@
     })(window,document,'script','dataLayer','GTM-PQ2SBBX');
   </script>
   <!-- End Google Tag Manager -->
+
+  <!-- Google Ads: Global site tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-11426807866');
+  </script>
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
