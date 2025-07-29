@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <!-- Google Tag Manager -->
@@ -220,7 +221,7 @@
   <!-- Feather Icons -->
   <script>feather.replace()</script>
 
-  <!-- Evento WhatsApp (gatilho que será reconhecido pelo GTM se configurado) -->
+  <!-- Evento WhatsApp -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const btn = document.getElementById('whatsappButton');
@@ -232,5 +233,6 @@
   </script>
 </body>
 </html>
+
 
 
