@@ -1,18 +1,9 @@
- <html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <!-- Google Tag Manager -->
-  <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PQ2SBBX');
-  </script>
-  <!-- End Google Tag Manager -->
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pousada Maks.</title>
+  <title>Pousada Maks</title>
 
   <meta name="description" content="Pousada Maks - Um refúgio em Ribeirão Preto">
   <link rel="canonical" href="https://arg-marketing.github.io/pousadamaks/">
@@ -28,8 +19,7 @@
     body { font-family: 'Inter', sans-serif; background: #f9f9f9; color: #333; text-align: center; }
 
     header {
-      background: #fff;
-      padding: 60px 20px 30px;
+      background: #fff; padding: 60px 20px 30px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
 
@@ -39,13 +29,6 @@
       color: #666; text-align: center; margin-top: 0; margin-bottom: 10px;
     }
     header p { font-size: 18px; color: #555; margin-top: 10px; }
-
-    .header-img {
-      width: 100%;
-      height: auto;
-      display: block;
-      margin-top: 20px;
-    }
 
     .button-group {
       margin-top: 30px;
@@ -127,28 +110,14 @@
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQ2SBBX"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
   <header>
     <h1>Pousada Maks</h1>
     <h2>Venha se hospedar e transforme seu descanso em momentos especiais.</h2>
     <p><i data-feather="map-pin" class="info-icon"></i>Ribeirão Preto - SP</p>
 
-    <!-- IMAGEM DESTACADA -->
-    <img 
-      src="https://github.com/user-attachments/assets/7f0c81ed-4b96-46bc-863e-59e52be25078" 
-      alt="Imagem da pousada" 
-      class="header-img"
-    >
-
     <!-- Botão WhatsApp -->
     <div class="button-group">
-      <a class="reserva-button" href="#" id="whatsappButton">
+      <a class="reserva-button" href="https://wa.me/5516997073816" target="_blank">
         <i data-feather="message-circle" class="info-icon"></i>Fale conosco no WhatsApp
       </a>
     </div>
@@ -163,7 +132,7 @@
     </div>
   </section>
 
-  <!-- Botão de Mapa -->
+  <!-- Botão de Mapa logo após a reserva -->
   <div class="button-group" style="margin-top: -30px;">
     <a class="map-button" href="https://maps.app.goo.gl/kLAstWSYVMQY6zYv6" target="_blank">
       Ver endereço no mapa
@@ -203,7 +172,7 @@
     </div>
   </section>
 
-  <!-- Rodapé -->
+  <!-- Rodapé com endereço original -->
   <footer>
     Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto - SP, 14078-560
   </footer>
@@ -211,21 +180,23 @@
   <!-- Feather Icons -->
   <script>feather.replace()</script>
 
-  <!-- Evento WhatsApp via dataLayer -->
+  <!-- Google Ads Conversão -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866"></script>
   <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-11426807866');
+
     document.addEventListener('DOMContentLoaded', function () {
-      const btn = document.getElementById('whatsappButton');
-      btn.addEventListener('click', function (e) {
-        e.preventDefault();
-        window.dataLayer = window.dataLayer || [];
-        dataLayer.push({ event: 'whatsapp_conversion' });
-        setTimeout(function() {
-          window.open('https://wa.me/5516997073816', '_blank');
-        }, 300);
+      const btn = document.querySelector('.reserva-button');
+      btn.addEventListener('click', function () {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-11426807866/0ly3CNKVxu4aELqA3cgq'
+        });
       });
     });
   </script>
 </body>
 </html>
-
 
