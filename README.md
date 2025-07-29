@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <!-- Google Tag Manager -->
@@ -221,18 +220,22 @@
   <!-- Feather Icons -->
   <script>feather.replace()</script>
 
-  <!-- Evento WhatsApp -->
+  <!-- Evento WhatsApp com conversão Google Ads -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const btn = document.getElementById('whatsappButton');
       btn.addEventListener('click', function (e) {
         e.preventDefault();
-        window.open('https://wa.me/5516997073816', '_blank');
+        gtag('event', 'conversion', {
+          'send_to': 'AW-11426807866/ttFWCLWQq-kaELqA3cgq',
+          'event_callback': function() {
+            window.open('https://wa.me/5516997073816', '_blank');
+          }
+        });
       });
     });
   </script>
 </body>
 </html>
-
 
 
