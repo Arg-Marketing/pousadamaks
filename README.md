@@ -1,4 +1,4 @@
-<html lang="pt-BR">
+ <html lang="pt-BR">
 <head>
   <!-- Google Tag Manager -->
   <script>
@@ -10,18 +10,9 @@
   </script>
   <!-- End Google Tag Manager -->
 
-  <!-- Google Ads: Global site tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-11426807866');
-  </script>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pousada Maks</title>
+  <title>Pousada Maks.</title>
 
   <meta name="description" content="Pousada Maks - Um refúgio em Ribeirão Preto">
   <link rel="canonical" href="https://arg-marketing.github.io/pousadamaks/">
@@ -220,18 +211,17 @@
   <!-- Feather Icons -->
   <script>feather.replace()</script>
 
-  <!-- Evento WhatsApp com conversão Google Ads -->
+  <!-- Evento WhatsApp via dataLayer -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const btn = document.getElementById('whatsappButton');
       btn.addEventListener('click', function (e) {
         e.preventDefault();
-        gtag('event', 'conversion', {
-          'send_to': 'AW-11426807866/ttFWCLWQq-kaELqA3cgq',
-          'event_callback': function() {
-            window.open('https://wa.me/5516997073816', '_blank');
-          }
-        });
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({ event: 'whatsapp_conversion' });
+        setTimeout(function() {
+          window.open('https://wa.me/5516997073816', '_blank');
+        }, 300);
       });
     });
   </script>
