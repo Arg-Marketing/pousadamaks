@@ -11,6 +11,11 @@
   gtag('config', 'AW-11426807866');
 </script>
 
+<!-- Event snippet for Site conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-11426807866/A2pBCOOGzPAaELqA3cgq'});
+</script>
+
   <!-- Google Tag Manager -->
   <script>
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
