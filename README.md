@@ -160,7 +160,7 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <header>
-    <h1>Pousada Maks.</h1>
+    <h1>Pousada Maks</h1>
     <h2>Venha se hospedar e transforme seu descanso em momentos especiais.</h2>
     <p><i data-feather="map-pin" class="info-icon"></i>Ribeirão Preto - SP</p>
 
