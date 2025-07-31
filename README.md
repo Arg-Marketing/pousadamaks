@@ -11,6 +11,10 @@
   gtag('config', 'AW-11426807866');
 </script>
 
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-11426807866/A2pBCOOGzPAaELqA3cgq'});
+</script>
+
 <!-- Event snippet for Site conversion page -->
 <script>
   gtag('event', 'conversion', {'send_to': 'AW-11426807866/A2pBCOOGzPAaELqA3cgq'});
