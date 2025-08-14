@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pousada Maks</title>
+  <title>..</title>
 
   <meta name="description" content="Pousada Maks - Um refúgio em Ribeirão Preto">
   <link rel="canonical" href="https://arg-marketing.github.io/pousadamaks/">
@@ -145,7 +145,7 @@
   <header>
     <img src="https://github.com/user-attachments/assets/34c62a0d-271d-43e4-a543-c380e51fd98d" alt="Logo Pousada Maks" class="logo">
     <div>
-      <h1>Pousada Maks</h1>
+      <h1>.</h1>
       
       <h2>Venha se hospedar e transforme seu descanso em momentos especiais.</h2>
       <p><i data-feather="map-pin" class="info-icon"></i>Ribeirão Preto - SP</p>
