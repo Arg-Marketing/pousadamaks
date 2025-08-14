@@ -18,14 +18,8 @@
     body { font-family: 'Inter', sans-serif; background: #f9f9f9; color: #333; text-align: center; }
 
     header {
-      background: #fff; padding: 40px 20px 30px;
+      background: #fff; padding: 60px 20px 30px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-
-    /* Área da logo */
-    .logo {
-      max-width: 180px;
-      margin-bottom: 20px;
     }
 
     header h1 { font-size: 36px; color: #111; }
@@ -137,9 +131,6 @@
 
 <body>
   <header>
-    <!-- Espaço da logo -->
-    <img src="https://via.placeholder.com/180x80?text=Sua+Logo" alt="Logo Pousada Maks" class="logo">
-
     <h1>Pousada Maks</h1>
     <h2>Venha se hospedar e transforme seu descanso em momentos especiais.</h2>
     <p><i data-feather="map-pin" class="info-icon"></i>Ribeirão Preto - SP</p>
@@ -194,7 +185,7 @@
     </div>
   </section>
 
-  <!-- Rodapé -->
+  <!-- Rodapé com endereço original -->
   <footer>
     Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto - SP, 14078-560
   </footer>
@@ -226,3 +217,4 @@
   </script>
 </body>
 </html>
+
