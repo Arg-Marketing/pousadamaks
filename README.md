@@ -146,6 +146,7 @@
     <img src="https://github.com/user-attachments/assets/34c62a0d-271d-43e4-a543-c380e51fd98d" alt="Logo Pousada Maks" class="logo">
     <div>
       <h1>Pousada Maks</h1>
+      
       <h2>Venha se hospedar e transforme seu descanso em momentos especiais.</h2>
       <p><i data-feather="map-pin" class="info-icon"></i>Ribeirão Preto - SP</p>
     </div>
