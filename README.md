@@ -1,8 +1,9 @@
+
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>..</title>
+  <title>Pousada Maks</title>
 
   <meta name="description" content="Pousada Maks - Um refúgio em Ribeirão Preto">
   <link rel="canonical" href="https://arg-marketing.github.io/pousadamaks/">
@@ -18,26 +19,38 @@
     body { font-family: 'Inter', sans-serif; background: #f9f9f9; color: #333; text-align: center; }
 
     header {
-      display: flex;
-      align-items: center;
-      gap: 15px;
       background: #fff;
-      padding: 20px;
+      padding: 40px 20px 20px 20px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-      flex-wrap: wrap;
+    }
+
+    header div {
+      text-align: center;
     }
 
     .logo {
-      width: 60px;
+      width: 120px; /* logo maior */
       height: auto;
+      margin-bottom: 15px;
     }
 
-    header h1 { font-size: 36px; color: #111; text-align: left; }
-    header h2 {
-      font-size: 16px; font-weight: normal;
-      color: #666; text-align: left; margin-bottom: 10px;
+    header h1 {
+      font-size: 36px;
+      color: #111;
+      margin-bottom: 10px;
     }
-    header p { font-size: 18px; color: #555; margin-top: 10px; text-align: left; }
+
+    header h2 {
+      font-size: 18px;
+      font-weight: normal;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 16px;
+      color: #555;
+    }
 
     .button-group {
       margin-top: 30px;
@@ -101,8 +114,6 @@
     }
 
     @media (max-width: 768px) {
-      header { justify-content: center; text-align: center; }
-      header h1, header h2, header p { text-align: center; }
       .cards, .depoimentos {
         flex-direction: column;
         align-items: center;
@@ -143,10 +154,9 @@
 
 <body>
   <header>
-    <img src="https://github.com/user-attachments/assets/34c62a0d-271d-43e4-a543-c380e51fd98d" alt="Logo Pousada Maks" class="logo">
     <div>
-      <h1>.</h1>
-      
+      <img src="https://github.com/user-attachments/assets/34c62a0d-271d-43e4-a543-c380e51fd98d" alt="Logo Pousada Maks" class="logo">
+      <h1>Pousada Maks</h1>
       <h2>Venha se hospedar e transforme seu descanso em momentos especiais.</h2>
       <p><i data-feather="map-pin" class="info-icon"></i>Ribeirão Preto - SP</p>
     </div>
