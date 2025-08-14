@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -23,23 +22,31 @@
       align-items: center; /* centraliza verticalmente */
       gap: 15px;
       background: #fff;
-      padding: 20px; /* padding reduzido */
+      padding: 20px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
       flex-wrap: wrap;
     }
 
-    /* Área da logo */
+    /* Logo ajustada */
     .logo {
-      width: 60px;  /* tamanho fixo menor */
-      height: auto;
+      width: 50px;  
+      height: 50px;
+      object-fit: contain;
     }
 
-    header h1 { font-size: 36px; color: #111; text-align: left; }
-    header h2 {
-      font-size: 16px; font-weight: normal;
-      color: #666; text-align: left; margin-top: 0; margin-bottom: 10px;
+    /* Bloco de texto centralizado */
+    header div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* centraliza o texto */
     }
-    header p { font-size: 18px; color: #555; margin-top: 10px; text-align: left; }
+
+    header h1 { font-size: 20px; color: #111; text-align: left; }
+    header h2 {
+      font-size: 14px; font-weight: normal;
+      color: #666; text-align: left; margin: 3px 0;
+    }
+    header p { font-size: 14px; color: #555; margin-top: 3px; text-align: left; }
 
     .button-group {
       margin-top: 30px;
@@ -210,32 +217,8 @@
   </footer>
 
   <!-- Botão flutuante WhatsApp -->
-  <a class="reserva-button" id="whatsapp-float" href="https://wa.me/5516997073816" target="_blank">
-    <i data-feather="message-circle" class="info-icon"></i> Fale conosco
-  </a>
+  <a class="reserva-button" id="whatsapp-float" href="https:
 
-  <!-- Feather Icons -->
-  <script>feather.replace()</script>
-
-  <!-- Google Ads Conversão -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-11426807866');
-
-    document.addEventListener('DOMContentLoaded', function () {
-      const btn = document.querySelector('#whatsapp-float');
-      btn.addEventListener('click', function () {
-        gtag('event', 'conversion', {
-          'send_to': 'AW-11426807866/0ly3CNKVxu4aELqA3cgq'
-        });
-      });
-    });
-  </script>
-</body>
-</html>
 
 
 
