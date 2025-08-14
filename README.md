@@ -18,8 +18,14 @@
     body { font-family: 'Inter', sans-serif; background: #f9f9f9; color: #333; text-align: center; }
 
     header {
-      background: #fff; padding: 60px 20px 30px;
+      background: #fff; padding: 40px 20px 30px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    /* Área da logo */
+    .logo {
+      max-width: 180px;
+      margin-bottom: 20px;
     }
 
     header h1 { font-size: 36px; color: #111; }
@@ -37,7 +43,7 @@
       gap: 10px;
     }
 
-    .reserva-button, .map-button {
+    .map-button {
       display: inline-block;
       padding: 14px 32px;
       font-weight: bold;
@@ -47,15 +53,6 @@
       text-decoration: none;
       transition: background 0.3s;
       cursor: pointer;
-    }
-
-    .reserva-button {
-      background: #25D366;
-      color: white;
-    }
-    .reserva-button:hover { background: #1ebe57; }
-
-    .map-button {
       background: #ababab;
       color: white;
     }
@@ -105,21 +102,47 @@
         align-items: center;
       }
     }
+
+    /* Botão flutuante WhatsApp */
+    #whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 18px 36px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 50px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      z-index: 999;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    #whatsapp-float:hover {
+      background: #1ebe57;
+      transform: scale(1.05);
+    }
+
+    #whatsapp-float .info-icon {
+      width: 24px;
+      height: 24px;
+    }
   </style>
 </head>
 
 <body>
   <header>
+    <!-- Espaço da logo -->
+    <img src="https://via.placeholder.com/180x80?text=Sua+Logo" alt="Logo Pousada Maks" class="logo">
+
     <h1>Pousada Maks</h1>
     <h2>Venha se hospedar e transforme seu descanso em momentos especiais.</h2>
     <p><i data-feather="map-pin" class="info-icon"></i>Ribeirão Preto - SP</p>
-
-    <!-- Botão WhatsApp -->
-    <div class="button-group">
-      <a class="reserva-button" href="https://wa.me/5516997073816" target="_blank">
-        <i data-feather="message-circle" class="info-icon"></i>Fale conosco no WhatsApp
-      </a>
-    </div>
   </header>
 
   <!-- Card de Reserva -->
@@ -171,10 +194,15 @@
     </div>
   </section>
 
-  <!-- Rodapé com endereço original -->
+  <!-- Rodapé -->
   <footer>
     Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto - SP, 14078-560
   </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a class="reserva-button" id="whatsapp-float" href="https://wa.me/5516997073816" target="_blank">
+    <i data-feather="message-circle" class="info-icon"></i> Fale conosco
+  </a>
 
   <!-- Feather Icons -->
   <script>feather.replace()</script>
@@ -188,7 +216,7 @@
     gtag('config', 'AW-11426807866');
 
     document.addEventListener('DOMContentLoaded', function () {
-      const btn = document.querySelector('.reserva-button');
+      const btn = document.querySelector('#whatsapp-float');
       btn.addEventListener('click', function () {
         gtag('event', 'conversion', {
           'send_to': 'AW-11426807866/0ly3CNKVxu4aELqA3cgq'
