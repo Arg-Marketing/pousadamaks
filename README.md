@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -19,18 +20,17 @@
 
     header {
       display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 20px;
+      align-items: center; /* centraliza verticalmente */
+      gap: 15px;
       background: #fff;
-      padding: 40px 20px 30px;
+      padding: 20px; /* padding reduzido */
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
       flex-wrap: wrap;
     }
 
     /* Área da logo */
     .logo {
-      max-width: 120px;
+      width: 60px;  /* tamanho fixo menor */
       height: auto;
     }
 
@@ -236,6 +236,7 @@
   </script>
 </body>
 </html>
+
 
 
 
