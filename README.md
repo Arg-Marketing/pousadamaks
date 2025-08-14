@@ -138,7 +138,7 @@
 <body>
   <header>
     <!-- Espaço da logo -->
-    <img src="https://via.placeholder.com/180x80?text=Sua+Logo" alt="Logo Pousada Maks" class="logo">
+    <img src="https://github.com/user-attachments/assets/34c62a0d-271d-43e4-a543-c380e51fd98d" alt="Logo Pousada Maks" class="logo">
 
     <h1>Pousada Maks</h1>
     <h2>Venha se hospedar e transforme seu descanso em momentos especiais.</h2>
