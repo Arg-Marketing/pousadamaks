@@ -182,14 +182,14 @@
   <section class="cards">
     <div class="card">
       <h2><i data-feather="sun" class="info-icon"></i>Diária</h2>
-      <p>R$ 112,00 por pessoa</p>
+      <p>Consulte nossos valores</p>
       <p>Check-in: 14:00 | Check-out: 12:00</p>
       <p><i data-feather="coffee" class="info-icon"></i> Café da manhã incluso</p>
     </div>
 
     <div class="card">
       <h2><i data-feather="moon" class="info-icon"></i>Pernoite</h2>
-      <p>R$ 90,00 por pessoa</p>
+      <p>Consulte nossos valores</p>
       <p>Check-in: 19:00 | Check-out: 10:00</p>
       <p><i data-feather="coffee" class="info-icon"></i> Café da manhã incluso</p>
     </div>
