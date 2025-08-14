@@ -19,24 +19,23 @@
 
     header {
       display: flex;
-      align-items: center; /* centraliza verticalmente */
+      align-items: center;
       gap: 15px;
       background: #fff;
-      padding: 20px; /* padding reduzido */
+      padding: 20px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
       flex-wrap: wrap;
     }
 
-    /* Área da logo */
     .logo {
-      width: 60px;  /* tamanho fixo menor */
+      width: 60px;
       height: auto;
     }
 
     header h1 { font-size: 36px; color: #111; text-align: left; }
     header h2 {
       font-size: 16px; font-weight: normal;
-      color: #666; text-align: left; margin-top: 0; margin-bottom: 10px;
+      color: #666; text-align: left; margin-bottom: 10px;
     }
     header p { font-size: 18px; color: #555; margin-top: 10px; text-align: left; }
 
@@ -144,9 +143,7 @@
 
 <body>
   <header>
-    <!-- Logo à esquerda -->
     <img src="https://github.com/user-attachments/assets/34c62a0d-271d-43e4-a543-c380e51fd98d" alt="Logo Pousada Maks" class="logo">
-
     <div>
       <h1>Pousada Maks</h1>
       <h2>Venha se hospedar e transforme seu descanso em momentos especiais.</h2>
@@ -154,7 +151,6 @@
     </div>
   </header>
 
-  <!-- Card de Reserva -->
   <section class="cards">
     <div class="card reserva">
       <h2>Faça sua RESERVA</h2>
@@ -163,14 +159,12 @@
     </div>
   </section>
 
-  <!-- Botão de Mapa logo após a reserva -->
   <div class="button-group" style="margin-top: -30px;">
     <a class="map-button" href="https://maps.app.goo.gl/kLAstWSYVMQY6zYv6" target="_blank">
       Ver endereço no mapa
     </a>
   </div>
 
-  <!-- Diária e Pernoite -->
   <section class="cards">
     <div class="card">
       <h2><i data-feather="sun" class="info-icon"></i>Diária</h2>
@@ -187,7 +181,6 @@
     </div>
   </section>
 
-  <!-- Depoimentos -->
   <section class="depoimentos">
     <div class="depoimento">
       <h3>Juliana F.</h3>
@@ -203,20 +196,29 @@
     </div>
   </section>
 
-  <!-- Rodapé -->
+  <!-- Seção Galeria de Fotos -->
+  <section style="text-align:center; margin: 50px 0;">
+    <h2 style="font-size: 24px; margin-bottom: 15px;">Veja nossa galeria de fotos</h2>
+    <a href="https://www.instagram.com/seu_usuario_aqui" target="_blank" 
+       style="display: inline-flex; align-items: center; gap: 10px; background: #E1306C; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: background 0.3s ease;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" viewBox="0 0 24 24">
+        <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.5.2.8.4 1.2.8.4.4.6.7.8 1.2.2.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.5-.4.8-.8 1.2-.4.4-.7.6-1.2.8-.4.2-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.5-.2-.8-.4-1.2-.8-.4-.4-.6-.7-.8-1.2-.2-.4-.3-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.5.4-.8.8-1.2.4-.4.7-.6 1.2-.8.4-.2 1-.3 2.2-.4 1.3-.1 1.7-.1 4.9-.1m0-2.2C8.7 0 8.3 0 7 0 5.6 0 4.6.1 3.8.3 3 .6 2.3.9 1.6 1.6.9 2.3.6 3 0 3.8.1 4.6 0 5.6 0 7c0 1.3 0 1.7-.1 5s0 3.6.1 5c.1 1.3.2 1.8.4 2.2.2.5.4.8.8 1.2.4.4.7.6 1.2.8.4.2 1 .3 2.2.4 1.3.1 1.7.1 5 .1s3.6 0 5-.1c1.2-.1 1.8-.2 2.2-.4.5-.2.8-.4 1.2-.8.4-.4.6-.7.8-1.2.2-.4.3-1 .4-2.2.1-1.3.1-1.7.1-5s0-3.6-.1-5c-.1-1.2-.2-1.8-.4-2.2-.2-.5-.4-.8-.8-1.2-.4-.4-.7-.6-1.2-.8-.4-.2-1-.3-2.2-.4-1.3-.1-1.7-.1-5-.1z"/>
+        <path d="M12 5.8A6.2 6.2 0 1 0 12 18.2 6.2 6.2 0 1 0 12 5.8zm0 10.2a4 4 0 1 1 0-8.1 4 4 0 1 1 0 8.1zM18.4 4.6a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 1 0 0-2.88z"/>
+      </svg>
+      Ver no Instagram
+    </a>
+  </section>
+
   <footer>
     Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto - SP, 14078-560
   </footer>
 
-  <!-- Botão flutuante WhatsApp -->
   <a class="reserva-button" id="whatsapp-float" href="https://wa.me/5516997073816" target="_blank">
     <i data-feather="message-circle" class="info-icon"></i> Fale conosco
   </a>
 
-  <!-- Feather Icons -->
   <script>feather.replace()</script>
 
-  <!-- Google Ads Conversão -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -235,10 +237,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
