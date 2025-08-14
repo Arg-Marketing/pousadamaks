@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -18,22 +19,28 @@
     body { font-family: 'Inter', sans-serif; background: #f9f9f9; color: #333; text-align: center; }
 
     header {
-      background: #fff; padding: 40px 20px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+      background: #fff;
+      padding: 40px 20px 30px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      flex-wrap: wrap;
     }
 
     /* Área da logo */
     .logo {
-      max-width: 180px;
-      margin-bottom: 20px;
+      max-width: 120px;
+      height: auto;
     }
 
-    header h1 { font-size: 36px; color: #111; }
+    header h1 { font-size: 36px; color: #111; text-align: left; }
     header h2 {
       font-size: 16px; font-weight: normal;
-      color: #666; text-align: center; margin-top: 0; margin-bottom: 10px;
+      color: #666; text-align: left; margin-top: 0; margin-bottom: 10px;
     }
-    header p { font-size: 18px; color: #555; margin-top: 10px; }
+    header p { font-size: 18px; color: #555; margin-top: 10px; text-align: left; }
 
     .button-group {
       margin-top: 30px;
@@ -97,6 +104,8 @@
     }
 
     @media (max-width: 768px) {
+      header { justify-content: center; text-align: center; }
+      header h1, header h2, header p { text-align: center; }
       .cards, .depoimentos {
         flex-direction: column;
         align-items: center;
@@ -137,12 +146,14 @@
 
 <body>
   <header>
-    <!-- Espaço da logo -->
+    <!-- Logo à esquerda -->
     <img src="https://github.com/user-attachments/assets/34c62a0d-271d-43e4-a543-c380e51fd98d" alt="Logo Pousada Maks" class="logo">
 
-    <h1>Pousada Maks</h1>
-    <h2>Venha se hospedar e transforme seu descanso em momentos especiais.</h2>
-    <p><i data-feather="map-pin" class="info-icon"></i>Ribeirão Preto - SP</p>
+    <div>
+      <h1>Pousada Maks</h1>
+      <h2>Venha se hospedar e transforme seu descanso em momentos especiais.</h2>
+      <p><i data-feather="map-pin" class="info-icon"></i>Ribeirão Preto - SP</p>
+    </div>
   </header>
 
   <!-- Card de Reserva -->
@@ -226,3 +237,5 @@
   </script>
 </body>
 </html>
+
+
