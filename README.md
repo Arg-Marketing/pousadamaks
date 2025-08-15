@@ -65,7 +65,7 @@
     <div class="card reserva">
       <h2>Faça sua RESERVA</h2>
       <p><i data-feather="phone" class="info-icon"></i> (16) 99707-3816</p>
-      <p><i data-feather="user" class="info-icon"></i> Host: Raquel</p>
+      <p><i data-feather="user" class="info-icon"></i> Responsavel: Raquel</p>
     </div>
   </section>
 
