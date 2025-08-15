@@ -1,354 +1,149 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hotel/Pousada – Sua Mansão Clássica na Montanha</title>
-  <meta name="description" content="Hotel/Pousada: conforto, lazer e natureza. Acomodações aconchegantes, piscina aquecida, restaurante e trilhas. Faça sua reserva." />
-  <link rel="canonical" href="https://seudominio.com.br/" />
-  <meta property="og:title" content="Hotel/Pousada – Conforto e Natureza" />
-  <meta property="og:description" content="Acomodações charmosas, lazer completo e gastronomia." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://seudominio.com.br/" />
-  <meta property="og:image" content="https://seudominio.com.br/assets/og-image.jpg" />
-  <meta name="theme-color" content="#00c853" />
-  
-  <!-- Favicon -->
-  <link rel="icon" href="/assets/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pousada Maks</title>
+  <meta name="description" content="Pousada Maks - Um refúgio em Ribeirão Preto">
+  <link rel="canonical" href="https://arg-marketing.github.io/pousadamaks/">
 
-  <!-- CSS base no próprio arquivo para facilidade de uso no GitHub Pages -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
   <style>
-    :root{
-      --bg:#00c853;           /* verde-limão principal */
-      --bg-2:#009624;         /* verde mais escuro */
-      --gold:#ccff90;         /* verde-limão claro para botões/destaques */
-      --text:#1b1b1b;         /* texto escuro */
-      --muted:#6b7280;        /* cinza */
-      --card-bg:#ffffff;
-      --max:1200px;
-      --radius:18px;
-      --shadow:0 10px 30px rgba(0,0,0,.12);
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #f9f9f9; color: #333; text-align: center; }
+
+    header { background: #fff; padding: 40px 20px 20px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    header div { text-align: center; }
+    .logo { width: 120px; height: auto; margin-bottom: 15px; }
+    header h1 { font-size: 36px; color: #111; margin-bottom: 10px; }
+    header h2 { font-size: 18px; font-weight: normal; color: #666; margin-bottom: 10px; }
+    header p { font-size: 16px; color: #555; }
+
+    .button-group { margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+    .map-button { display: inline-block; padding: 14px 32px; font-weight: bold; font-size: 16px; border: none; border-radius: 8px; text-decoration: none; transition: background 0.3s; cursor: pointer; background: #ababab; color: white; }
+    .map-button:hover { background: #999999; }
+
+    .cards, .depoimentos { display: flex; flex-wrap: wrap; justify-content: center; margin: 50px 20px; gap: 20px; }
+    .card, .depoimento { background: white; padding: 30px 20px; width: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.2s; }
+    .card:hover, .depoimento:hover { transform: translateY(-4px); }
+    .card h2, .depoimento h3 { font-size: 22px; margin-bottom: 10px; }
+    .card.reserva { background: #f44336; color: white; }
+
+    .info-icon { margin-right: 6px; vertical-align: middle; }
+
+    footer { background: #222; color: #fff; padding: 30px 20px; font-size: 14px; margin-top: 60px; }
+
+    @media (max-width: 768px) { .cards, .depoimentos { flex-direction: column; align-items: center; } }
+
+    /* Botão flutuante WhatsApp */
+    #whatsapp-float {
+      position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white;
+      padding: 18px 36px; font-size: 18px; font-weight: bold; border-radius: 50px;
+      text-decoration: none; display: flex; align-items: center; gap: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 999; transition: transform 0.3s ease, background 0.3s ease;
     }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;color:var(--text);background:#f7f7fb}
-    a{color:inherit;text-decoration:none}
-    img{max-width:100%;display:block}
-    .container{max-width:var(--max);margin:0 auto;padding:0 20px}
-
-    /* Header */
-    header{position:sticky;top:0;z-index:50;background:rgba(0,200,83,.9);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid rgba(255,255,255,.08)}
-    .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
-    .brand{display:flex;align-items:center;gap:12px;color:#fff}
-    .brand img{height:38px;width:auto;border-radius:8px}
-    .brand strong{font-size:18px;letter-spacing:.4px}
-    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
-    nav a{color:#eafff0;font-weight:500;padding:10px 12px;border-radius:12px}
-    nav a:hover{background:rgba(255,255,255,.08)}
-    .cta{background:var(--gold);color:#1b1b1b;padding:10px 16px;border-radius:14px;font-weight:700}
-
-    /* Hero */
-    .hero{position:relative;background:linear-gradient(180deg,rgba(0,200,83,.85),rgba(0,200,83,.55)),url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1600&q=60') center/cover no-repeat;color:#fff}
-    .hero .container{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;min-height:72vh;padding:56px 20px}
-    .hero h1{font-size:clamp(28px,5vw,50px);line-height:1.1;margin:0 0 14px}
-    .hero p{font-size:clamp(15px,1.7vw,18px);opacity:.95;margin:0 0 22px}
-    .hero .badges{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
-    .badge{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:8px 12px;border-radius:999px;font-size:14px}
-    .hero .card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);padding:18px;border-radius:var(--radius)}
-
-    /* Secões */
-    section{padding:64px 0}
-    .section-title{font-size:clamp(24px,3.5vw,34px);margin:0 0 8px;text-align:center}
-    .section-sub{color:var(--muted);text-align:center;margin:0 0 28px}
-
-    /* Vantagens */
-    .grid{display:grid;gap:18px}
-    .grid-4{grid-template-columns:repeat(4,1fr)}
-    .grid-3{grid-template-columns:repeat(3,1fr)}
-    .grid-2{grid-template-columns:repeat(2,1fr)}
-    .feature{background:var(--card-bg);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);display:flex;gap:14px;align-items:flex-start}
-    .feature .icon{font-size:26px}
-    .feature h3{margin:4px 0 6px;font-size:18px}
-    .feature p{margin:0;color:#4b5563;font-size:14px}
-
-    /* Acomodações */
-    .card{background:var(--card-bg);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
-    .card .content{padding:16px}
-    .card h3{margin:0 0 8px}
-    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    .chip{border:1px solid #e5e7eb;padding:6px 10px;border-radius:999px;font-size:12px;color:#374151}
-
-    /* Galeria */
-    .gallery{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
-    .gallery img{border-radius:12px;height:150px;object-fit:cover}
-
-    /* CTA Tarifas */
-    .cta-strip{background:linear-gradient(90deg,var(--bg),var(--bg-2));color:#fff;padding:34px;border-radius:var(--radius);display:flex;align-items:center;justify-content:space-between;gap:18px}
-    .cta-strip .btn{background:var(--gold);color:#1b1b1b;font-weight:700;padding:12px 18px;border-radius:12px}
-
-    /* Localização */
-    .map{border:0;width:100%;height:360px;border-radius:14px;box-shadow:var(--shadow)}
-
-    /* Footer */
-    footer{background:#0a3b20;color:#dfe6f7;margin-top:40px}
-    .foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px;padding:40px 20px}
-    .foot h4{margin:0 0 10px}
-    .foot a{color:#dfe6f7;opacity:.9}
-    .copyright{border-top:1px solid rgba(255,255,255,.1);padding:18px;text-align:center;color:#b9c3de}
-
-    /* Responsivo */
-    @media (max-width: 960px){
-      .hero .container{grid-template-columns:1fr}
-      .grid-4{grid-template-columns:repeat(2,1fr)}
-      .foot{grid-template-columns:1fr}
-    }
-    @media (max-width: 640px){
-      nav ul{display:none}
-      .gallery{grid-template-columns:repeat(3,1fr)}
-      .grid-3,.grid-2,.grid-4{grid-template-columns:1fr}
-    }
-
-    /* Botões flutuantes (WhatsApp/Instagram) */
-    .float-wrap{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:10px;z-index:60}
-    .float-btn{display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;padding:12px 14px;border-radius:999px;box-shadow:var(--shadow);font-weight:700}
-    .float-btn.instagram{background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4)}
+    #whatsapp-float:hover { background: #1ebe57; transform: scale(1.05); }
+    #whatsapp-float .info-icon { width: 24px; height: 24px; }
   </style>
 </head>
+
 <body>
   <header>
-    <div class="container nav">
-      <a class="brand" href="#inicio" aria-label="Página inicial">
-        <img src="/assets/logo.png" alt="Logo do Hotel/Pousada" />
-        <strong>Hotel/Pousada</strong>
-      </a>
-      <nav aria-label="Principal">
-        <ul>
-          <li><a href="#acomodacoes">Acomodações</a></li>
-          <li><a href="#lazer">Lazer</a></li>
-          <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#localizacao">Localização</a></li>
-          <li><a class="cta" href="#reservas">Reservas</a></li>
-        </ul>
-      </nav>
+    <div>
+      <img src="https://github.com/user-attachments/assets/34c62a0d-271d-43e4-a543-c380e51fd98d" alt="Logo Pousada Maks" class="logo">
+      <h1>Pousada Maks</h1>
+      <h2>Venha se hospedar e transforme seu descanso em momentos especiais.</h2>
+      <p><i data-feather="map-pin" class="info-icon"></i>Ribeirão Preto - SP</p>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero" id="inicio">
-    <div class="container">
-      <div>
-        <h1>Sua mansão clássica e charmosa na montanha</h1>
-        <p>Viva dias de sossego entre jardins, vista para as montanhas e gastronomia especial. Piscina climatizada, saunas, trilhas e muito mais.</p>
-        <div class="badges">
-          <span class="badge">Recepção 24h</span>
-          <span class="badge">Restaurante</span>
-          <span class="badge">Wi-Fi gratuito</span>
-          <span class="badge">Piscina aquecida</span>
-          <span class="badge">Adega</span>
-          <span class="badge">Sala de jogos</span>
-        </div>
-        <a class="cta" href="#reservas">Reserve agora</a>
-      </div>
-      <div class="card">
-        <h3 style="margin-top:0">Consulta rápida de tarifas</h3>
-        <form action="mailto:reservas@seudominio.com.br" method="post" enctype="text/plain">
-          <label>Data de entrada<br><input type="date" name="checkin" required></label><br><br>
-          <label>Data de saída<br><input type="date" name="checkout" required></label><br><br>
-          <label>Hóspedes<br><input type="number" name="hospedes" min="1" value="2"></label><br><br>
-          <button class="cta" type="submit">Solicitar cotação</button>
-        </form>
-        <p style="font-size:12px;opacity:.9;margin-top:8px">* Você pode substituir por um motor de reservas.</p>
-      </div>
+  <section class="cards">
+    <div class="card reserva">
+      <h2>Faça sua RESERVA</h2>
+      <p><i data-feather="phone" class="info-icon"></i> (16) 99707-3816</p>
+      <p><i data-feather="user" class="info-icon"></i> Responsavel: Raquel</p>
     </div>
   </section>
 
-  <!-- VANTAGENS -->
-  <section>
-    <div class="container">
-      <h2 class="section-title">Algumas vantagens</h2>
-      <p class="section-sub">Conforto, lazer e natureza para sua estadia.</p>
-      <div class="grid grid-4">
-        <div class="feature"><div class="icon">🕑</div><div><h3>Recepção 24h</h3><p>Equipe pronta para ajudar a qualquer hora.</p></div></div>
-        <div class="feature"><div class="icon">🍽️</div><div><h3>Restaurante</h3><p>Café da manhã e culinária regional.</p></div></div>
-        <div class="feature"><div class="icon">📶</div><div><h3>Wi-Fi gratuito</h3><p>Conexão disponível nas áreas comuns.</p></div></div>
-        <div class="feature"><div class="icon">🏊</div><div><h3>Piscina climatizada</h3><p>Vista para as montanhas e deck.</p></div></div>
-        <div class="feature"><div class="icon">🍷</div><div><h3>Adega</h3><p>Rótulos selecionados para harmonizar.</p></div></div>
-        <div class="feature"><div class="icon">🎮</div><div><h3>Sala de jogos</h3><p>Diversão para todas as idades.</p></div></div>
-        <div class="feature"><div class="icon">🎾</div><div><h3>Quadras</h3><p>Esportes ao ar livre com ar puro.</p></div></div>
-        <div class="feature"><div class="icon">🥾</div><div><h3>Trilhas</h3><p>Contato direto com a natureza.</p></div></div>
-      </div>
+  <div class="button-group" style="margin-top: -30px;">
+    <a class="map-button" href="https://maps.app.goo.gl/kLAstWSYVMQY6zYv6" target="_blank">
+      Ver endereço no mapa
+    </a>
+  </div>
+
+  <section class="cards">
+    <div class="card">
+      <h2><i data-feather="sun" class="info-icon"></i>Diária</h2>
+      <p>Consulte nossos valores</p>
+      <p>Check-in: 14:00 | Check-out: 12:00</p>
+      <p><i data-feather="coffee" class="info-icon"></i> Café da manhã incluso</p>
+    </div>
+
+    <div class="card">
+      <h2><i data-feather="moon" class="info-icon"></i>Pernoite</h2>
+      <p>Consulte nossos valores</p>
+      <p>Check-in: 19:00 | Check-out: 10:00</p>
+      <p><i data-feather="coffee" class="info-icon"></i> Café da manhã incluso</p>
     </div>
   </section>
 
-  <!-- ACOMODAÇÕES -->
-  <section id="acomodacoes">
-    <div class="container">
-      <h2 class="section-title">Acomodações</h2>
-      <p class="section-sub">Opções para casais, famílias e grupos.</p>
-      <div class="grid grid-3">
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=60" alt="Suíte com sacada" loading="lazy" />
-          <div class="content">
-            <h3>Suíte Master com Sacada</h3>
-            <p>Vista para as montanhas, cama queen, enxoval premium.</p>
-            <div class="chips">
-              <span class="chip">Até 2 hóspedes</span>
-              <span class="chip">Ar-condicionado</span>
-              <span class="chip">Café incluso</span>
-            </div>
-          </div>
-        </article>
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3b2b8a?auto=format&fit=crop&w=1200&q=60" alt="Apartamento luxo" loading="lazy" />
-          <div class="content">
-            <h3>Apartamento Luxo</h3>
-            <p>Ambiente iluminado e arejado com decoração clássica.</p>
-            <div class="chips">
-              <span class="chip">Até 3 hóspedes</span>
-              <span class="chip">Frigobar</span>
-              <span class="chip">Vista jardim</span>
-            </div>
-          </div>
-        </article>
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=1200&q=60" alt="Quarto família" loading="lazy" />
-          <div class="content">
-            <h3>Quarto Família</h3>
-            <p>Espaço para todos, com camas confortáveis.</p>
-            <div class="chips">
-              <span class="chip">Até 4 hóspedes</span>
-              <span class="chip">Banheiro amplo</span>
-              <span class="chip">Opcional berço</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
+  <!-- Seção Galeria de Fotos (Instagram) antes dos depoimentos -->
+  <section style="text-align:center; margin: 50px 0;">
+    <h2 style="font-size: 24px; margin-bottom: 15px;">Veja nossa galeria de fotos</h2>
+    <a href="https://www.instagram.com/pousada_maks" target="_blank" 
+       style="display: inline-flex; align-items: center; gap: 10px; background: #E1306C; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: background 0.3s ease;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" viewBox="0 0 24 24">
+        <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.5.2.8.4 1.2.8.4.4.6.7.8 1.2.2.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.5-.4.8-.8 1.2-.4.4-.7.6-1.2.8-.4.2-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.5-.2-.8-.4-1.2-.8-.4-.4-.6-.7-.8-1.2-.2-.4-.3-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.5.4-.8.8-1.2.4-.4.7-.6 1.2-.8.4-.2 1-.3 2.2-.4 1.3-.1 1.7-.1 4.9-.1m0-2.2C8.7 0 8.3 0 7 0 5.6 0 4.6.1 3.8.3 3 .6 2.3.9 1.6 1.6.9 2.3.6 3 0 3.8.1 4.6 0 5.6 0 7c0 1.3 0 1.7-.1 5s0 3.6.1 5c.1 1.3.2 1.8.4 2.2.2.5.4.8.8 1.2.4.4.7.6 1.2.8.4.2 1 .3 2.2.4 1.3.1 1.7.1 5 .1s3.6 0 5-.1c1.2-.1 1.8-.2 2.2-.4.5-.2.8-.4 1.2-.8.4-.4.6-.7.8-1.2.2-.4.3-1 .4-2.2.1-1.3.1-1.7.1-5s0-3.6-.1-5c-.1-1.2-.2-1.8-.4-2.2-.2-.5-.4-.8-.8-1.2-.4-.4-.7-.6-1.2-.8-.4-.2-1-.3-2.2-.4-1.3-.1-1.7-.1-5-.1z"/>
+        <path d="M12 5.8A6.2 6.2 0 1 0 12 18.2 6.2 6.2 0 1 0 12 5.8zm0 10.2a4 4 0 1 1 0-8.1 4 4 0 1 1 0 8.1zM18.4 4.6a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 1 0 0-2.88z"/>
+      </svg>
+      Ver no Instagram
+    </a>
   </section>
 
-  <!-- LAZER / RESERVA AMBIENTAL -->
-  <section id="lazer" style="background:#f3f6fb">
-    <div class="container">
-      <h2 class="section-title">Lazer</h2>
-      <p class="section-sub">Piscinas, saunas, jogos, quadras e passeios em meio à natureza.</p>
-      <div class="grid grid-2">
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1499363536502-87642509e31b?auto=format&fit=crop&w=1300&q=60" alt="Área de lazer" loading="lazy" />
-          <div class="content">
-            <h3>Complexo de Lazer</h3>
-            <p>Piscina climatizada com vista, saunas, sala de jogos e quadras poliesportivas.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1300&q=60" alt="Reserva ambiental" loading="lazy" />
-          <div class="content">
-            <h3>Reserva Ambiental</h3>
-            <p>Trilhas em área preservada para contemplação e observação de aves.</p>
-          </div>
-        </div>
-      </div>
+  <section class="depoimentos">
+    <div class="depoimento">
+      <h3>Juliana F.</h3>
+      <p>"Fomos muito bem acolhidos para descansar e seguir viagem. Quarto muito confortável e limpo. Café da manhã muito gostoso. Recomendadíssimo 👏👏👏"</p>
     </div>
-  </section>
-
-  <!-- GALERIA -->
-  <section id="galeria">
-    <div class="container">
-      <h2 class="section-title">Galeria de Fotos</h2>
-      <p class="section-sub">Conheça um pouco dos ambientes.</p>
-      <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=700&q=60" alt="Lobby" loading="lazy" />
-        <img src="https://images.unsplash.com/photo-1488747279002-c8523379faaa?auto=format&fit=crop&w=700&q=60" alt="Apartamento" loading="lazy" />
-        <img src="https://images.unsplash.com/photo-1542089363-5c07b3f3c88b?auto=format&fit=crop&w=700&q=60" alt="Gastronomia" loading="lazy" />
-        <img src="https://images.unsplash.com/photo-1551776235-dde6d4829808?auto=format&fit=crop&w=700&q=60" alt="Piscina" loading="lazy" />
-        <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=700&q=60" alt="Jardins" loading="lazy" />
-        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=700&q=60" alt="Detalhes" loading="lazy" />
-      </div>
+    <div class="depoimento">
+      <h3>Ricardo M.</h3>
+      <p>"Fui muito bem tratado, cada detalhe na limpeza no cuidado com as roupas de cama e banho, até os talheres ali arrumados e certinho. 😌"</p>
     </div>
-  </section>
-
-  <!-- CTA TARIFAS / OFERTAS -->
-  <section class="container" id="reservas">
-    <div class="cta-strip">
-      <div>
-        <h3 style="margin:0">Tarifas e Ofertas</h3>
-        <p style="margin:6px 0 0;opacity:.9">Consulte promoções sazonais por telefone, WhatsApp ou e-mail.</p>
-      </div>
-      <a class="btn" href="https://wa.me/5599999999999" target="_blank" rel="noopener">Falar no WhatsApp</a>
-    </div>
-  </section>
-
-  <!-- LOCALIZAÇÃO / CONTATO -->
-  <section id="localizacao">
-    <div class="container">
-      <h2 class="section-title">Onde estamos</h2>
-      <p class="section-sub">Rodovia BR-000, Km 00 – Sua Cidade/UF • Estacionamento no local</p>
-      <iframe class="map" src="https://www.google.com/maps?q=-20.404, -40.659&hl=pt-BR&z=12&output=embed" allowfullscreen loading="lazy" title="Mapa do Hotel"></iframe>
-
-      <div class="grid grid-3" style="margin-top:24px">
-        <div class="card"><div class="content"><h3>Reservas</h3><p><a href="tel:+5527999024417">(27) 99902-4417</a><br><a href="mailto:reservas@seudominio.com.br">reservas@seudominio.com.br</a></p></div></div>
-        <div class="card"><div class="content"><h3>Horário</h3><p>Check-in a partir de 14h • Check-out até 12h</p></div></div>
-        <div class="card"><div class="content"><h3>Redes sociais</h3><p><a href="#">Instagram</a> • <a href="#">Facebook</a></p></div></div>
-      </div>
+    <div class="depoimento">
+      <h3>Camila R.</h3>
+      <p>"Lugar lindo onde fui atendida como parte da família. Podemos ter contato direto com a natureza, ótimo lugar para relaxar e curtir com a família.☘️"</p>
     </div>
   </section>
 
   <footer>
-    <div class="container foot">
-      <div>
-        <h4>Hotel/Pousada</h4>
-        <p>Tradição em hospitalidade na montanha. CNPJ 00.000.000/0001-00</p>
-      </div>
-      <div>
-        <h4>Links</h4>
-        <p><a href="#acomodacoes">Acomodações</a><br><a href="#lazer">Lazer</a><br><a href="#reservas">Tarifas</a></p>
-      </div>
-      <div>
-        <h4>Políticas</h4>
-        <p><a href="/politica-de-privacidade.html">Política de Privacidade</a><br><a href="/politica-de-reservas.pdf">Política de Reservas</a></p>
-      </div>
-    </div>
-    <div class="copyright">© <span id="year"></span> Hotel/Pousada. Todos os direitos reservados.</div>
+    Av. Thomaz Alberto Whately, 9315 – Faz da Barra, Ribeirão Preto - SP, 14078-560
   </footer>
 
-  <!-- Botões flutuantes -->
-  <div class="float-wrap" aria-label="Acesso rápido">
-    <a class="float-btn" href="https://wa.me/5527999024417" target="_blank" rel="noopener" aria-label="WhatsApp">
-      <span>WhatsApp</span>
-    </a>
-    <a class="float-btn instagram" href="https://instagram.com/seuperfil" target="_blank" rel="noopener" aria-label="Instagram">
-      <span>Instagram</span>
-    </a>
-  </div>
+  <a class="reserva-button" id="whatsapp-float" href="https://wa.me/5516997073816" target="_blank">
+    <i data-feather="message-circle" class="info-icon"></i> Fale conosco
+  </a>
 
+  <script>feather.replace()</script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426807866"></script>
   <script>
-    // Ano automático
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-11426807866');
 
-  <!-- Schema.org (Hotel) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Hotel",
-    "name": "Hotel/Pousada",
-    "url": "https://seudominio.com.br/",
-    "image": "https://seudominio.com.br/assets/fachada.jpg",
-    "telephone": "+55 27 99902-4417",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Rodovia BR-000, Km 00",
-      "addressLocality": "Sua Cidade",
-      "addressRegion": "UF",
-      "postalCode": "00000-000",
-      "addressCountry": "BR"
-    },
-    "amenityFeature": [
-      {"@type":"LocationFeatureSpecification","name":"Piscina climatizada","value":true},
-      {"@type":"LocationFeatureSpecification","name":"Wi-Fi gratuito","value":true},
-      {"@type":"LocationFeatureSpecification","name":"Restaurante","value":true},
-      {"@type":"LocationFeatureSpecification","name":"Sauna","value":true}
-    ],
-    "checkinTime": "14:00",
-    "checkoutTime": "12:00"
-  }
+    document.addEventListener('DOMContentLoaded', function () {
+      const btn = document.querySelector('#whatsapp-float');
+      btn.addEventListener('click', function () {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-11426807866/0ly3CNKVxu4aELqA3cgq'
+        });
+      });
+    });
   </script>
 </body>
 </html>
