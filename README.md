@@ -94,7 +94,7 @@ section{padding:48px 0}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
 .chip{border:1px solid #e5e7eb;padding:5px 8px;border-radius:999px;font-size:11px;color:#374151}
 
-.gallery{display:grid;grid-template-columns:repeat(6,1fr);gap:6px}
+.gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
 .gallery img{border-radius:12px;height:120px;object-fit:cover}
 
 .cta-strip{background:linear-gradient(90deg,var(--bg),var(--bg-2));color:#fff;padding:28px;border-radius:var(--radius);display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
@@ -183,18 +183,65 @@ footer{background:#000;color:#dfe6f7;margin-top:40px}
   </div>
 </section>
 
-<!-- Script WhatsApp -->
 <script>
-document.getElementById("cotacaoForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-  let checkin = this.checkin.value;
-  let checkout = this.checkout.value;
-  let hospedes = this.hospedes.value;
-  let msg = `Olá, gostaria de uma cotação:%0A- Check-in: ${checkin}%0A- Check-out: ${checkout}%0A- Hóspedes: ${hospedes}`;
-  let phone = "5516997073816";
-  window.open(`https://wa.me/${phone}?text=${msg}`, "_blank");
+window.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById("cotacaoForm");
+  const checkinInput = form.querySelector('input[name="checkin"]');
+  const checkoutInput = form.querySelector('input[name="checkout"]');
+
+  // Define mínimo das datas como hoje
+  const hoje = new Date();
+  const yyyy = hoje.getFullYear();
+  const mm = String(hoje.getMonth() + 1).padStart(2, '0');
+  const dd = String(hoje.getDate()).padStart(2, '0');
+  const hojeStr = `${yyyy}-${mm}-${dd}`;
+  checkinInput.min = hojeStr;
+  checkoutInput.min = hojeStr;
+
+  // Atualiza checkout mínimo quando checkin mudar
+  checkinInput.addEventListener('change', () => {
+    const checkinVal = new Date(checkinInput.value);
+    const proximoDia = new Date(checkinVal);
+    proximoDia.setDate(proximoDia.getDate() + 1);
+    const yyyy = proximoDia.getFullYear();
+    const mm = String(proximoDia.getMonth() + 1).padStart(2, '0');
+    const dd = String(proximoDia.getDate()).padStart(2, '0');
+    checkoutInput.min = `${yyyy}-${mm}-${dd}`;
+    if (new Date(checkoutInput.value) <= checkinVal) {
+      checkoutInput.value = '';
+    }
+  });
+
+  // Submissão do formulário
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const checkin = new Date(checkinInput.value);
+    const checkout = new Date(checkoutInput.value);
+    const hospedes = parseInt(form.hospedes.value, 10);
+
+    if (isNaN(checkin) || isNaN(checkout)) {
+      alert("Por favor, selecione datas válidas.");
+      return;
+    }
+
+    if (checkout <= checkin) {
+      alert("A data de saída deve ser depois da data de entrada.");
+      return;
+    }
+
+    if (hospedes < 1) {
+      alert("Informe pelo menos 1 hóspede.");
+      return;
+    }
+
+    const msg = `Olá tudo bem, gostaria de fazer um reserva para esta data, tem disponibilidade?%0A- Check-in: ${checkinInput.value}%0A- Check-out: ${checkoutInput.value}%0A- Hóspedes: ${hospedes}`;
+    const phone = "5516997073816";
+    window.open(`https://wa.me/${phone}?text=${msg}`, "_blank");
+  });
 });
 </script>
+
 
 <!-- VANTAGENS -->
 <section>
@@ -233,10 +280,12 @@ document.getElementById("cotacaoForm").addEventListener("submit", function(e) {
         </div>
       </article>
       <article class="card">
-        <img src="https://github.com/user-attachments/assets/5fc55ea6-4893-48ba-bf3e-3dece7705531" />
-        <div class="content">
-          <h3>Piscina</h3>
-          <p>Vista com pôr do sol.</p>
+  <img src="https://github.com/user-attachments/assets/5fc55ea6-4893-48ba-bf3e-3dece7705531" 
+       alt="Piscina com vista para o pôr do sol" 
+       loading="lazy" />
+  <div class="content">
+    <h3>Piscina</h3>
+    <p>Vista com pôr do sol.</p>
           <div class="chips">
             <span class="chip">Wi-Fi</span>
             <span class="chip">Hidromassagem</span>
@@ -270,7 +319,12 @@ document.getElementById("cotacaoForm").addEventListener("submit", function(e) {
       <h3 style="margin:0">Tarifas e Ofertas</h3>
       <p style="margin:6px 0 0;opacity:.9">Consulte promoções sazonais por telefone, WhatsApp ou e-mail.</p>
     </div>
-    <a class="btn" href="https://wa.me/16997073816" target="_blank" rel="noopener">Falar no WhatsApp</a>
+    <a class="btn" 
+   href="https://wa.me/5516997073816?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20reseva%20na%20Pousada%20e%20Maks." 
+   target="_blank" 
+   rel="noopener">
+  Falar no WhatsApp
+</a>
   </div>
 </section>
 
@@ -279,21 +333,25 @@ document.getElementById("cotacaoForm").addEventListener("submit", function(e) {
     <div class="container">
       <h2 class="section-title">Onde estamos</h2>
       <p class="section-sub">Endereço: Av. Thomaz Alberto Whately, 9315 - Parque Res. Candido Portinari, Ribeirão Preto - SP, 14078-560 • Estacionamento no local</p>
-      <iframe class="map" src="https://www.google.com/maps?q=-21.15046, -47.75003&hl=pt-BR&z=12&output=embed" allowfullscreen loading="lazy" title="Mapa do Hotel"></iframe>
+      <iframe class="map" src="https://www.google.com/maps?q=-21.15046,-47.75003&hl=pt-BR&z=12&output=embed" allowfullscreen loading="lazy" title="Mapa do Hotel"></iframe>
 
      <div class="grid grid-3" style="margin-top:24px">
         <div class="card"><div class="content"><h3>Reservas</h3><p><a href="tel:+5516997073816">(16) 99707-3816</a><br><a href="mailto:pousadamaks@gmail.com">pousadamaks@gmail.com</a></p></div></div>
         <div class="card"><div class="content"><h3>Horário</h3><p>Check-in a partir de 14h • Check-out até 12h</p></div></div>
-        <div class="card"><div class="content"><h3>Redes sociais</h3><p><a href="#">Instagram</a> • <a href="#">Facebook</a></p></div></div>
+        <div class="card"><div class="content"><h3>Redes sociais</h3><p><a href="#"></a> • <a href="#">Facebook</a></p></div></div>
       </div>
     </div>
   </section>
 
     <!-- Botões flutuantes -->
   <div class="float-wrap" aria-label="Acesso rápido">
-    <a class="float-btn" href="https://wa.me/16997073816" target="_blank" rel="noopener" aria-label="WhatsApp">
-      <span>WhatsApp</span>
-    </a>
+    <a class="float-btn" 
+   href="https://wa.me/5516997073816?text=Olá,%20gostaria%20de%20fazer%20uma%20reserva,%20tem%20disponibilidade?" 
+   target="_blank" 
+   rel="noopener" 
+   aria-label="WhatsApp">
+  <span>WhatsApp</span>
+</a>
     <a class="float-btn instagram" href="https://www.instagram.com/pousada_maks/" target="_blank" rel="noopener" aria-label="Instagram">
       <span>Instagram</span>
     </a>
@@ -316,11 +374,6 @@ document.getElementById("cotacaoForm").addEventListener("submit", function(e) {
     <div>
       <h4>Contato</h4>
       <p>Telefone: (16) 99707-3816</p>
-      <p>Email: contato@pousadamaks.com.br</p>
+      <p>Email: pousadamaks@gamil.com</p>
     </div>
   </div>
-  <div class="copyright">© 2025 Pousada Maks. Todos os direitos reservados.</div>
-</footer>
-</body>
-</html>
-
