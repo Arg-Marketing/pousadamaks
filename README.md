@@ -289,6 +289,16 @@ document.getElementById("cotacaoForm").addEventListener("submit", function(e) {
     </div>
   </section>
 
+    <!-- Botões flutuantes -->
+  <div class="float-wrap" aria-label="Acesso rápido">
+    <a class="float-btn" href="https://wa.me/16997073816" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <span>WhatsApp</span>
+    </a>
+    <a class="float-btn instagram" href="https://www.instagram.com/pousada_maks/" target="_blank" rel="noopener" aria-label="Instagram">
+      <span>Instagram</span>
+    </a>
+  </div>
+
 <!-- FOOTER -->
 <footer>
   <div class="foot container">
