@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8" />
@@ -73,6 +74,7 @@ nav a:hover{background:rgba(255,255,255,.12)}
     z-index: 40;
     transform: translateY(-150%);
     transition: transform 0.3s ease-in-out;
+    list-style: none; /* Adicionado para remover bolinhas da lista */
 }
 .nav-mobile.active {
     transform: translateY(0);
@@ -90,15 +92,18 @@ nav a:hover{background:rgba(255,255,255,.12)}
 /* Hero */
 .hero{
   position:relative;
+  /* CORRIGIDO: Aplicando o background na seção inteira */
   background:linear-gradient(180deg,rgba(0,200,83,.70),rgba(0,200,83,.50)),url('https://github.com/user-attachments/assets/62b02553-5f06-43a6-86f1-02e1da142cf7')center/cover no-repeat;
+  background-size: cover; /* Adicionado para garantir que a imagem cubra toda a área */
   color:#1b1b1b;
+  width: 100%; /* Garantindo que a seção ocupe a largura total */
+  min-height: 72vh; /* Adicionado para garantir uma altura mínima */
 }
 .hero .container{
   display:grid;
   grid-template-columns:1.2fr .8fr;
   gap:28px;
   align-items:center;
-  min-height:72vh;
   padding:56px 20px;
 }
 .hero h1{font-size:clamp(24px,5vw,40px);line-height:1.2;margin:0 0 14px}
@@ -311,7 +316,6 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
----
 
 <section>
   <div class="container">
@@ -329,8 +333,6 @@ window.addEventListener('DOMContentLoaded', () => {
     </div>
   </div>
 </section>
-
----
 
 <section id="acomodacoes">
   <div class="container">
@@ -365,8 +367,6 @@ window.addEventListener('DOMContentLoaded', () => {
   </div>
 </section>
 
----
-
 <section id="galeria">
   <div class="container">
     <h2 class="section-title">Galeria de Fotos</h2>
@@ -381,8 +381,6 @@ window.addEventListener('DOMContentLoaded', () => {
   </div>
 </section>
 
----
-
 <section class="container" id="reservas">
   <div class="cta-strip">
     <div>
@@ -394,8 +392,6 @@ window.addEventListener('DOMContentLoaded', () => {
     </a>
   </div>
 </section>
-
----
 
 <section id="localizacao">
   <div class="container">
@@ -440,7 +436,7 @@ window.addEventListener('DOMContentLoaded', () => {
     </div>
   </div>
   <div class="copyright">
-    <p>&copy; 2024 Pousada Maks. Todos os direitos reservados.</p>
+    <p>© 2024 Pousada Maks. Todos os direitos reservados.</p>
   </div>
 </footer>
 
