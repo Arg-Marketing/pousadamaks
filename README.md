@@ -234,42 +234,17 @@
     </div>
   </section>
 
-  <!-- LAZER EM RIBEIRAO PRETO/ RESERVA AMBIENTAL -->
-  <section id="lazer" style="background:#f3f6fb">
-    <div class="container">
-      <h2 class="section-title">Lazer</h2>
-      <p class="section-sub">Bares, restaurantes e locais publicos.</p>
-      <div class="grid grid-2">
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1499363536502-87642509e31b?auto=format&fit=crop&w=1300&q=60" alt="Área de lazer" loading="lazy" />
-          <div class="content">
-            <h3>Complexo de Lazer</h3>
-            <p>Piscina climatizada com vista, saunas, sala de jogos e quadras poliesportivas.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1300&q=60" alt="Reserva ambiental" loading="lazy" />
-          <div class="content">
-            <h3>Reserva Ambiental</h3>
-            <p>Trilhas em área preservada para contemplação e observação de aves.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- GALERIA -->
   <section id="galeria">
     <div class="container">
       <h2 class="section-title">Galeria de Fotos</h2>
       <p class="section-sub">Conheça um pouco dos nossos ambientes.</p>
       <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=700&q=60" alt="Lobby" loading="lazy" />
-        <img src="https://images.unsplash.com/photo-1488747279002-c8523379faaa?auto=format&fit=crop&w=700&q=60" alt="Apartamento" loading="lazy" />
-        <img src="https://images.unsplash.com/photo-1542089363-5c07b3f3c88b?auto=format&fit=crop&w=700&q=60" alt="Gastronomia" loading="lazy" />
-        <img src="https://images.unsplash.com/photo-1551776235-dde6d4829808?auto=format&fit=crop&w=700&q=60" alt="Piscina" loading="lazy" />
-        <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=700&q=60" alt="Jardins" loading="lazy" />
-        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=700&q=60" alt="Detalhes" loading="lazy" />
+        <img src="https://github.com/user-attachments/assets/8846ba84-26fc-4048-a126-0e49d21baf6d?auto=format&fit=crop&w=700&q=60" alt="Lobby" loading="lazy" />
+        <img src="https://github.com/user-attachments/assets/0188e4ac-6529-46ef-b73c-889b2a0d023b?auto=format&fit=crop&w=700&q=60" alt="Apartamento" loading="lazy" />
+        <img src="https://github.com/user-attachments/assets/849110c0-b2c6-4dec-9881-ef2b94b71831?auto=format&fit=crop&w=700&q=60" alt="Gastronomia" loading="lazy" />
+        <img src="https://github.com/user-attachments/assets/715ed7ba-d458-461a-a309-895f47568393?auto=format&fit=crop&w=700&q=60" alt="Piscina" loading="lazy" />
+        <img src="https://github.com/user-attachments/assets/91f7f8ae-d2c0-49a1-ab25-1244f87d1c3c?auto=format&fit=crop&w=700&q=60" alt="Jardins" loading="lazy" />
       </div>
     </div>
   </section>
