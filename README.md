@@ -1,4 +1,4 @@
- <html lang="pt-BR">
+  <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -54,7 +54,7 @@
 
 
     /* Hero */
-    .hero{position:relative;background:linear-gradient(180deg,rgba(0,200,83,.70),rgba(0,200,83,.50)),url('https://private-user-images.githubusercontent.com/220231022/480305407-62b02553-5f06-43a6-86f1-02e1da142cf7.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU3NDU5NzUsIm5iZiI6MTc1NTc0NTY3NSwicGF0aCI6Ii8yMjAyMzEwMjIvNDgwMzA1NDA3LTYyYjAyNTUzLTVmMDYtNDNhNi04NmYxLTAyZTFkYTE0MmNmNy5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgyMVQwMzA3NTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hOWZjZjY3ZTA4MzQ1Mzg1MTFiZGNmOGIyODZkZGM3ODhhMmQ4ZmM4ODNkYWQ5M2QxZThhNmYxNTFjYTFmYTE2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.LbUQ61eXuc7LrHpSBQWvSxoPlH5ytn0JAqnmW38Rt-M?auto=format&fit=crop&w=1600&q=60')center/cover no-repeat;color:#1b1b1b}
+    .hero{position:relative;background:linear-gradient(180deg,rgba(0,200,83,.70),rgba(0,200,83,.50)),url('https://github.com/user-attachments/assets/a7d6cc3c-bb98-4544-8a82-6413b1c72137?auto=format&fit=crop&w=1600&q=60')center/cover no-repeat;color:#1b1b1b}
     .hero .container{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;min-height:72vh;padding:56px 20px}
     .hero h1{font-size:clamp(28px,5vw,50px);line-height:1.1;margin:0 0 14px}
     .hero p{font-size:clamp(15px,1.7vw,18px);opacity:.95;margin:0 0 22px}
@@ -362,4 +362,3 @@
   </script>
 </body>
 </html>
-
