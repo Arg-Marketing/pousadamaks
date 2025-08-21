@@ -207,7 +207,7 @@
       <p class="section-sub">Opções para casais, famílias e grupos.</p>
       <div class="grid grid-3">
         <article class="card">
-          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=60" alt="Suíte com sacada" loading="lazy" />
+          <img src="https://github.com/user-attachments/assets/afb57732-8b4e-4657-9d11-ced69b6d8f81" alt="Suíte com varanda" loading="lazy" />
           <div class="content">
             <h3>Quarto familia</h3>
             <p>A tranquilidade de acordar com o som os passaros.</p>
@@ -219,7 +219,7 @@
           </div>
         </article>
         <article class="card">
-          <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3b2b8a?auto=format&fit=crop&w=1200&q=60" alt="Apartamento luxo" loading="lazy" />
+          <img src="https://github.com/user-attachments/assets/5fc55ea6-4893-48ba-bf3e-3dece7705531" />
           <div class="content">
             <h3>Piscina</h3>
             <p>Vista com por do sol.</p>
@@ -362,3 +362,4 @@
   </script>
 </body>
 </html>
+
