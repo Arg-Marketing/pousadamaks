@@ -12,10 +12,10 @@
 <meta property="og:image" content="https://seudominio.com.br/assets/og-image.jpg" />
 <meta name="theme-color" content="#00c853" />
 
-<!-- Favicon -->
 <link rel="icon" href="/assets/favicon.png" />
 
-<!-- CSS base e responsivo -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 <style>
 :root{
   --bg:#00c853;
@@ -51,6 +51,41 @@ nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
 nav a{color:#fff;font-weight:500;padding:10px 12px;border-radius:12px}
 nav a:hover{background:rgba(255,255,255,.12)}
 .cta{background:var(--gold);color:#000;padding:10px 16px;border-radius:14px;font-weight:700}
+.menu-toggle {
+    display: none; /* Escondido por padrão */
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+/* Estilo do menu mobile */
+.nav-mobile {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0,.9);
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    z-index: 40;
+    transform: translateY(-150%);
+    transition: transform 0.3s ease-in-out;
+}
+.nav-mobile.active {
+    transform: translateY(0);
+}
+.nav-mobile li {
+    margin-bottom: 15px;
+}
+.nav-mobile a {
+    display: block;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
 
 /* Hero */
 .hero{
@@ -95,7 +130,7 @@ section{padding:48px 0}
 .chip{border:1px solid #e5e7eb;padding:5px 8px;border-radius:999px;font-size:11px;color:#374151}
 
 .gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
-.gallery img{border-radius:12px;height:120px;object-fit:cover}
+.gallery img{border-radius:12px;height:120px;object-fit:cover; width: 100%;}
 
 .cta-strip{background:linear-gradient(90deg,var(--bg),var(--bg-2));color:#fff;padding:28px;border-radius:var(--radius);display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
 .cta-strip .btn{background:var(--gold);color:#1b1b1b;font-weight:700;padding:10px 16px;border-radius:12px}
@@ -120,17 +155,25 @@ footer{background:#000;color:#dfe6f7;margin-top:40px}
   .grid-3{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width: 768px){
+  /* Esconde o menu normal e mostra o botão do menu hamburguer */
+  nav ul{display:none}
+  .menu-toggle {display: block;}
+  
   .gallery{grid-template-columns:repeat(3,1fr)}
   .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
-  nav ul{display:none}
   .hero h1{font-size:clamp(22px,6vw,32px)}
   .hero p{font-size:clamp(13px,4vw,16px)}
+  
+  /* Ajuste do rodapé para uma coluna */
+  .foot {grid-template-columns: 1fr; text-align: center; gap: 20px;}
 }
 @media (max-width: 480px){
   .hero .card{padding:14px}
   .badge{padding:5px 8px;font-size:12px}
   .feature{padding:10px;gap:8px}
   .cta-strip{padding:20px;flex-direction:column;align-items:flex-start}
+  /* Ajuste da galeria para 2 colunas em telas pequenas */
+  .gallery{grid-template-columns:repeat(2,1fr)}
 }
 </style>
 </head>
@@ -142,7 +185,7 @@ footer{background:#000;color:#dfe6f7;margin-top:40px}
       <img src="https://github.com/user-attachments/assets/a7d6cc3c-bb98-4544-8a82-6413b1c72137?auto=format&fit=crop&w=1600&q=60" alt="Logo da Pousada" width="350" />
       <strong>Pousada Maks</strong>
     </a>
-    <nav aria-label="Principal">
+    <nav role="navigation" aria-label="Principal">
       <ul>
         <li><a href="#acomodacoes">Acomodações</a></li>
         <li><a href="#lazer">Lazer</a></li>
@@ -151,10 +194,19 @@ footer{background:#000;color:#dfe6f7;margin-top:40px}
         <li><a class="cta" href="#reservas">Reservas</a></li>
       </ul>
     </nav>
+    <button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu">
+      <i class="fas fa-bars"></i>
+    </button>
   </div>
+  <ul id="mobile-menu" class="nav-mobile" aria-labelledby="mobile-menu-label">
+    <li><a href="#acomodacoes">Acomodações</a></li>
+    <li><a href="#lazer">Lazer</a></li>
+    <li><a href="#galeria">Galeria</a></li>
+    <li><a href="#localizacao">Localização</a></li>
+    <li><a class="cta" href="#reservas">Reservas</a></li>
+  </ul>
 </header>
 
-<!-- HERO -->
 <section class="hero" id="inicio">
   <div class="container">
     <div>
@@ -188,6 +240,23 @@ window.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById("cotacaoForm");
   const checkinInput = form.querySelector('input[name="checkin"]');
   const checkoutInput = form.querySelector('input[name="checkout"]');
+  const menuToggle = document.querySelector('.menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  // Funcionalidade do menu hambúrguer
+  menuToggle.addEventListener('click', () => {
+    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+    menuToggle.setAttribute('aria-expanded', !isExpanded);
+    mobileMenu.classList.toggle('active');
+  });
+
+  // Fecha o menu ao clicar em um link
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
 
   // Define mínimo das datas como hoje
   const hoje = new Date();
@@ -242,8 +311,8 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
+---
 
-<!-- VANTAGENS -->
 <section>
   <div class="container">
     <h2 class="section-title">Algumas vantagens</h2>
@@ -261,7 +330,8 @@ window.addEventListener('DOMContentLoaded', () => {
   </div>
 </section>
 
-<!-- ACOMODAÇÕES -->
+---
+
 <section id="acomodacoes">
   <div class="container">
     <h2 class="section-title">Acomodações</h2>
@@ -280,12 +350,10 @@ window.addEventListener('DOMContentLoaded', () => {
         </div>
       </article>
       <article class="card">
-  <img src="https://github.com/user-attachments/assets/5fc55ea6-4893-48ba-bf3e-3dece7705531" 
-       alt="Piscina com vista para o pôr do sol" 
-       loading="lazy" />
-  <div class="content">
-    <h3>Piscina</h3>
-    <p>Vista com pôr do sol.</p>
+        <img src="https://github.com/user-attachments/assets/5fc55ea6-4893-48ba-bf3e-3dece7705531" alt="Piscina com vista para o pôr do sol" loading="lazy" />
+        <div class="content">
+          <h3>Piscina</h3>
+          <p>Vista com pôr do sol.</p>
           <div class="chips">
             <span class="chip">Wi-Fi</span>
             <span class="chip">Hidromassagem</span>
@@ -297,67 +365,61 @@ window.addEventListener('DOMContentLoaded', () => {
   </div>
 </section>
 
-<!-- GALERIA -->
+---
+
 <section id="galeria">
   <div class="container">
     <h2 class="section-title">Galeria de Fotos</h2>
     <p class="section-sub">Conheça um pouco dos nossos ambientes.</p>
     <div class="gallery">
-      <img src="https://github.com/user-attachments/assets/8846ba84-26fc-4048-a126-0e49d21baf6d?auto=format&fit=crop&w=700&q=60" alt="Lobby" loading="lazy" />
-      <img src="https://github.com/user-attachments/assets/0188e4ac-6529-46ef-b73c-889b2a0d023b?auto=format&fit=crop&w=700&q=60" alt="Apartamento" loading="lazy" />
-      <img src="https://github.com/user-attachments/assets/849110c0-b2c6-4dec-9881-ef2b94b71831?auto=format&fit=crop&w=700&q=60" alt="Gastronomia" loading="lazy" />
-      <img src="https://github.com/user-attachments/assets/715ed7ba-d458-461a-a309-895f47568393?auto=format&fit=crop&w=700&q=60" alt="Piscina" loading="lazy" />
-      <img src="https://github.com/user-attachments/assets/91f7f8ae-d2c0-49a1-ab25-1244f87d1c3c?auto=format&fit=crop&w=700&q=60" alt="Jardins" loading="lazy" />
+      <img src="https://github.com/user-attachments/assets/8846ba84-26fc-4048-a126-0e49d21baf6d?auto=format&fit=crop&w=700&q=60" alt="Lobby da Pousada Maks" loading="lazy" />
+      <img src="https://github.com/user-attachments/assets/0188e4ac-6529-46ef-b73c-889b2a0d023b?auto=format&fit=crop&w=700&q=60" alt="Apartamento com cama de casal" loading="lazy" />
+      <img src="https://github.com/user-attachments/assets/849110c0-b2c6-4dec-9881-ef2b94b71831?auto=format&fit=crop&w=700&q=60" alt="Mesa de café da manhã com frutas e pães" loading="lazy" />
+      <img src="https://github.com/user-attachments/assets/715ed7ba-d458-461a-a309-895f47568393?auto=format&fit=crop&w=700&q=60" alt="Piscina da pousada com espreguiçadeiras" loading="lazy" />
+      <img src="https://github.com/user-attachments/assets/91f7f8ae-d2c0-49a1-ab25-1244f87d1c3c?auto=format&fit=crop&w=700&q=60" alt="Vista dos jardins da pousada" loading="lazy" />
     </div>
   </div>
 </section>
 
-<!-- CTA TARIFAS / OFERTAS -->
+---
+
 <section class="container" id="reservas">
   <div class="cta-strip">
     <div>
       <h3 style="margin:0">Tarifas e Ofertas</h3>
       <p style="margin:6px 0 0;opacity:.9">Consulte promoções sazonais por telefone, WhatsApp ou e-mail.</p>
     </div>
-    <a class="btn" 
-   href="https://wa.me/5516997073816?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20reseva%20na%20Pousada%20e%20Maks." 
-   target="_blank" 
-   rel="noopener">
-  Falar no WhatsApp
-</a>
+    <a class="btn" href="https://wa.me/5516997073816?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20reservas%20na%20Pousada%20Maks." target="_blank" rel="noopener">
+      Falar no WhatsApp
+    </a>
   </div>
 </section>
 
-<!-- LOCALIZAÇÃO / CONTATO -->
-  <section id="localizacao">
-    <div class="container">
-      <h2 class="section-title">Onde estamos</h2>
-      <p class="section-sub">Endereço: Av. Thomaz Alberto Whately, 9315 - Parque Res. Candido Portinari, Ribeirão Preto - SP, 14078-560 • Estacionamento no local</p>
-      <iframe class="map" src="https://www.google.com/maps?q=-21.15046,-47.75003&hl=pt-BR&z=12&output=embed" allowfullscreen loading="lazy" title="Mapa do Hotel"></iframe>
+---
 
-     <div class="grid grid-3" style="margin-top:24px">
-        <div class="card"><div class="content"><h3>Reservas</h3><p><a href="tel:+5516997073816">(16) 99707-3816</a><br><a href="mailto:pousadamaks@gmail.com">pousadamaks@gmail.com</a></p></div></div>
-        <div class="card"><div class="content"><h3>Horário</h3><p>Check-in a partir de 14h • Check-out até 12h</p></div></div>
-        <div class="card"><div class="content"><h3>Redes sociais</h3><p><a href="#"></a> • <a href="#">Facebook</a></p></div></div>
-      </div>
+<section id="localizacao">
+  <div class="container">
+    <h2 class="section-title">Onde estamos</h2>
+    <p class="section-sub">Endereço: Av. Thomaz Alberto Whately, 9315 - Parque Res. Candido Portinari, Ribeirão Preto - SP, 14078-560 • Estacionamento no local</p>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.312959664556!2d-47.78189678502394!3d-21.255959085871227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bbd0a793a52f%3A0x6a5d4002e21b06c6!2sAv.%20Thomaz%20Alberto%20Whately%2C%209315%20-%20Parque%20Res.%20Candido%20Portinari%2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014078-560!5e0!3m2!1spt-BR!2sbr!4v1625698305608!5m2!1spt-BR!2sbr" allowfullscreen loading="lazy" title="Mapa da Pousada Maks"></iframe>
+
+    <div class="grid grid-3" style="margin-top:24px">
+      <div class="card"><div class="content"><h3>Reservas</h3><p><a href="tel:+5516997073816">(16) 99707-3816</a><br><a href="mailto:pousadamaks@gmail.com">pousadamaks@gmail.com</a></p></div></div>
+      <div class="card"><div class="content"><h3>Horário</h3><p>Check-in a partir de 14h • Check-out até 12h</p></div></div>
+      <div class="card"><div class="content"><h3>Redes sociais</h3><p><a href="https://www.instagram.com/pousada_maks/" target="_blank">Instagram</a> • <a href="#">Facebook</a></p></div></div>
     </div>
-  </section>
-
-    <!-- Botões flutuantes -->
-  <div class="float-wrap" aria-label="Acesso rápido">
-    <a class="float-btn" 
-   href="https://wa.me/5516997073816?text=Olá,%20gostaria%20de%20fazer%20uma%20reserva,%20tem%20disponibilidade?" 
-   target="_blank" 
-   rel="noopener" 
-   aria-label="WhatsApp">
-  <span>WhatsApp</span>
-</a>
-    <a class="float-btn instagram" href="https://www.instagram.com/pousada_maks/" target="_blank" rel="noopener" aria-label="Instagram">
-      <span>Instagram</span>
-    </a>
   </div>
+</section>
 
-<!-- FOOTER -->
+<div class="float-wrap" aria-label="Acesso rápido">
+  <a class="float-btn" href="https://wa.me/5516997073816?text=Olá,%20gostaria%20de%20fazer%20uma%20reserva,%20tem%20disponibilidade?" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <span>WhatsApp</span>
+  </a>
+  <a class="float-btn instagram" href="https://www.instagram.com/pousada_maks/" target="_blank" rel="noopener" aria-label="Instagram">
+    <span>Instagram</span>
+  </a>
+</div>
+
 <footer>
   <div class="foot container">
     <div>
@@ -377,3 +439,10 @@ window.addEventListener('DOMContentLoaded', () => {
       <p>Email: pousadamaks@gamil.com</p>
     </div>
   </div>
+  <div class="copyright">
+    <p>&copy; 2024 Pousada Maks. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+</body>
+</html>
