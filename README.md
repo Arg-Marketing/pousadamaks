@@ -1,4 +1,3 @@
- <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -76,12 +75,11 @@
       margin-top: 20px;
     }
     .formulario {
-      background: rgba(255, 255, 255, 0.2);
+      background: #fff;
       padding: 20px;
       border-radius: 12px;
       width: 300px;
       color: #000;
-      background-color: #fff;
     }
     .formulario h2 {
       font-size: 1.2em;
@@ -160,12 +158,12 @@
     <div class="formulario">
       <h2>Consulta rápida de tarifas</h2>
       <form>
-        <label>Data de entrada</label>
-        <input type="date" required />
-        <label>Data de saída</label>
-        <input type="date" required />
-        <label>Espécies</label>
-        <select>
+        <label for="entrada">Data de entrada</label>
+        <input type="date" id="entrada" required />
+        <label for="saida">Data de saída</label>
+        <input type="date" id="saida" required />
+        <label for="pessoas">Hóspedes</label>
+        <select id="pessoas">
           <option>1 pessoa</option>
           <option>2 pessoas</option>
           <option>3 pessoas</option>
@@ -182,4 +180,5 @@
   </div>
 </body>
 </html>
+
 
