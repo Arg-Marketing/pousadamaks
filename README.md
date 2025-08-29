@@ -8,9 +8,8 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(rgba(0, 100, 0, 0.7), rgba(0, 100, 0, 0.7)),
-                  url('https://picsum.photos/1600/900?blur=3') no-repeat center/cover;
-      color: #fff;
+      background: #f9f9f9;
+      color: #333;
     }
     header {
       background: #111;
@@ -37,24 +36,25 @@
       color: #000;
       font-weight: bold;
     }
-    main {
+    .hero {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       padding: 50px;
-    }
-    .texto {
-      max-width: 500px;
-    }
-    .texto h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
+      background: linear-gradient(rgba(0, 100, 0, 0.6), rgba(0, 100, 0, 0.6)),
+                  url('https://picsum.photos/1600/900?blur=2') no-repeat center/cover;
       color: #fff;
     }
-    .texto p {
+    .hero .texto {
+      max-width: 500px;
+    }
+    .hero h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    .hero p {
       font-size: 1.1em;
       margin-bottom: 20px;
-      color: #f1f1f1;
     }
     .tags span {
       display: inline-block;
@@ -64,7 +64,7 @@
       border-radius: 20px;
       font-size: 0.9em;
     }
-    .texto .btn {
+    .hero .btn {
       display: inline-block;
       background: #cfff68;
       color: #000;
@@ -79,7 +79,7 @@
       padding: 20px;
       border-radius: 12px;
       width: 300px;
-      color: #000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     .formulario h2 {
       font-size: 1.2em;
@@ -107,6 +107,30 @@
       border-radius: 6px;
       font-weight: bold;
       cursor: pointer;
+    }
+    .galeria {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      background: #fff;
+    }
+    .galeria img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .localizacao {
+      padding: 40px;
+      background: #f0f0f0;
+    }
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
     }
     .social {
       position: fixed;
@@ -142,7 +166,7 @@
     </nav>
   </header>
 
-  <main>
+  <section class="hero">
     <div class="texto">
       <h1>Seu refúgio de conforto e tranquilidade</h1>
       <p>Viva dias de sossego entre a natureza, com a tranquilidade que você merece. Piscina com hidromassagem, café da manhã e muito mais.</p>
@@ -158,12 +182,12 @@
     <div class="formulario">
       <h2>Consulta rápida de tarifas</h2>
       <form>
-        <label for="entrada">Data de entrada</label>
-        <input type="date" id="entrada" required />
-        <label for="saida">Data de saída</label>
-        <input type="date" id="saida" required />
-        <label for="pessoas">Hóspedes</label>
-        <select id="pessoas">
+        <label>Data de entrada</label>
+        <input type="date" required />
+        <label>Data de saída</label>
+        <input type="date" required />
+        <label>Hóspedes</label>
+        <select>
           <option>1 pessoa</option>
           <option>2 pessoas</option>
           <option>3 pessoas</option>
@@ -172,7 +196,24 @@
         <button type="submit">Solicitar cotação</button>
       </form>
     </div>
-  </main>
+  </section>
+
+  <section class="galeria">
+    <img src="https://picsum.photos/400/300?1" alt="Quarto" loading="lazy">
+    <img src="https://picsum.photos/400/300?2" alt="Piscina" loading="lazy">
+    <img src="https://picsum.photos/400/300?3" alt="Natureza" loading="lazy">
+    <img src="https://picsum.photos/400/300?4" alt="Área comum" loading="lazy">
+  </section>
+
+  <section class="localizacao">
+    <h2>Como chegar</h2>
+    <p>Estamos localizados em meio à natureza, a poucos minutos do centro.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <footer>
+    <p>© 2025 Pousada Maks - Todos os direitos reservados</p>
+  </footer>
 
   <div class="social">
     <a href="https://wa.me/seunumerowhatsapp" target="_blank">W</a>
@@ -180,5 +221,6 @@
   </div>
 </body>
 </html>
+
 
 
