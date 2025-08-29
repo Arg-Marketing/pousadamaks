@@ -2,9 +2,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Pousada Maks – Seu chalé rústico em meio a natureza</title>
 <meta name="description" content="Pousada Maks: Seu refugio de conforto e tranquilidade. Faça sua reserva." />
-<link rel="canonical" href="https://seudominio.com.br/" />
 <meta property="og:title" content="Pousada Maks – Conforto e Natureza" />
 <meta property="og:description" content="Acomodações charmosas, lazer e tranquilidade." />
 <meta property="og:type" content="website" />
