@@ -1,4 +1,3 @@
----
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8" />
@@ -389,78 +388,4 @@ window.addEventListener('DOMContentLoaded', () => {
     <h2 class="section-title">Galeria de Fotos</h2>
     <p class="section-sub">Conheça um pouco dos nossos ambientes.</p>
     <div class="gallery">
-      <img src="https://github.com/user-attachments/assets/8846ba84-26fc-4048-a126-0e49d21baf6d?auto=format&fit=crop&w=700&q=60" alt="Lobby da Pousada Maks" loading="lazy" />
-      <img src="https://github.com/user-attachments/assets/0188e4ac-6529-46ef-b73c-889b2a0d023b?auto=format&fit=crop&w=700&q=60" alt="Apartamento com cama de casal" loading="lazy" />
-      <img src="https://github.com/user-attachments/assets/849110c0-b2c6-4dec-9881-ef2b94b71831?auto=format&fit=crop&w=700&q=60" alt="Mesa de café da manhã com frutas e pães" loading="lazy" />
-      <img src="https://github.com/user-attachments/assets/715ed7ba-d458-461a-a309-895f47568393?auto=format&fit=crop&w=700&q=60" alt="Piscina da pousada com espreguiçadeiras" loading="lazy" />
-      <img src="https://github.com/user-attachments/assets/91f7f8ae-d2c0-49a1-ab25-1244f87d1c3c?auto=format&fit=crop&w=700&q=60" alt="Vista dos jardins da pousada" loading="lazy" />
-    </div>
-  </div>
-</section>
-
----
-
-<section class="container" id="reservas">
-  <div class="cta-strip">
-    <div>
-      <h3 style="margin:0">Tarifas e Ofertas</h3>
-      <p style="margin:6px 0 0;opacity:.9">Consulte promoções sazonais por telefone, WhatsApp ou e-mail.</p>
-    </div>
-    <a class="btn" href="https://wa.me/5516997073816?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20reservas%20na%20Pousada%20Maks." target="_blank" rel="noopener">
-      Falar no WhatsApp
-    </a>
-  </div>
-</section>
-
----
-
-<section id="localizacao">
-  <div class="container">
-    <h2 class="section-title">Onde estamos</h2>
-    <p class="section-sub">Endereço: Av. Thomaz Alberto Whately, 9315 - Parque Res. Candido Portinari, Ribeirão Preto - SP, 14078-560 • Estacionamento no local</p>
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.312959664556!2d-47.78189678502394!3d-21.255959085871227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bbd0a793a52f%3A0x6a5d4002e21b06c6!2sAv.%20Thomaz%20Alberto%20Whately%2C%209315%20-%20Parque%20Res.%20Candido%20Portinari%2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014078-560!5e0!3m2!1spt-BR!2sbr!4v1625698305608!5m2!1spt-BR!2sbr" allowfullscreen loading="lazy" title="Mapa da Pousada Maks"></iframe>
-
-    <div class="grid grid-3" style="margin-top:24px">
-      <div class="card"><div class="content"><h3>Reservas</h3><p><a href="tel:+5516997073816">(16) 99707-3816</a><br><a href="mailto:pousadamaks@gmail.com">pousadamaks@gmail.com</a></p></div></div>
-      <div class="card"><div class="content"><h3>Horário</h3><p>Check-in a partir de 14h • Check-out até 12h</p></div></div>
-      <div class="card"><div class="content"><h3>Redes sociais</h3><p><a href="https://www.instagram.com/pousada_maks/" target="_blank">Instagram</a> • <a href="#">Facebook</a></p></div></div>
-    </div>
-  </div>
-</section>
-
-<div class="float-wrap" aria-label="Acesso rápido">
-  <a class="float-btn" href="https://wa.me/5516997073816?text=Olá,%20gostaria%20de%20fazer%20uma%20reserva,%20tem%20disponibilidade?" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <span>WhatsApp</span>
-  </a>
-  <a class="float-btn instagram" href="https://www.instagram.com/pousada_maks/" target="_blank" rel="noopener" aria-label="Instagram">
-    <span>Instagram</span>
-  </a>
-</div>
-
-<footer>
-  <div class="foot container">
-    <div>
-      <h4>Pousada Maks</h4>
-      <p>Seu chalé rústico em meio à natureza, perfeito para relaxar.</p>
-    </div>
-    <div>
-      <h4>Links úteis</h4>
-      <a href="#inicio">Início</a><br>
-      <a href="#acomodacoes">Acomodações</a><br>
-      <a href="#galeria">Galeria</a><br>
-      <a href="#localizacao">Localização</a>
-    </div>
-    <div>
-      <h4>Contato</h4>
-      <p>Telefone: (16) 99707-3816</p>
-      <p>Email: pousadamaks@gamil.com</p>
-    </div>
-  </div>
-  <div class="copyright">
-    <p>© 2024 Pousada Maks. Todos os direitos reservados.</p>
-  </div>
-</footer>
-
-</body>
-</html>
-
+      <img src="
