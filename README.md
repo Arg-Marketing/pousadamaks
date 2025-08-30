@@ -55,7 +55,7 @@ nav a:hover{background:rgba(255,255,255,.12)}
 /* Hero */
 .hero{
   position:relative;
-  background:linear-gradient(180deg,rgba(0,200,83,.70),rgba(0,200,83,.50)),url('https://github.com/user-attachments/assets/62b02553-5f06-43a6-86f1-02e1da142cf7')center/cover no-repeat;
+  background:linear-gradient(180deg,rgba(0,200,83,.70),rgba(0,200,83,.50)),url('https://github.com/user-attachments/assets/f6a77721-2b7f-42f9-8a3c-a2e271258970')center/cover no-repeat;
   color:#1b1b1b;
 }
 .hero .container{
