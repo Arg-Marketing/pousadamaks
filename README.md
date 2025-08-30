@@ -1,4 +1,4 @@
-<html lang="pt-BR">
+ <html lang="pt-BR">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,7 +24,6 @@
   --text:#1b1b1b;
   --muted:#6b7280;
   --card-bg:#ffffff;
-  --max:1200px;
   --radius:18px;
   --shadow:0 10px 30px rgba(0,0,0,.12);
 }
@@ -32,9 +31,15 @@
 html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;color:var(--text);background:#f7f7fb}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
-.container{max-width:var(--max);margin:0 auto;padding:0 20px}
 
-/* Header */
+/* Full width for all containers */
+.container {
+  width: 100vw;
+  max-width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
 header{
   position:sticky;
   top:0;
@@ -374,6 +379,12 @@ window.addEventListener('DOMContentLoaded', () => {
     <div>
       <h4>Contato</h4>
       <p>Telefone: (16) 99707-3816</p>
-      <p>Email: pousadamaks@gamil.com</p>
+      <p>Email: pousadamaks@gmail.com</p>
     </div>
   </div>
+  <div class="copyright">
+    &copy; 2025 Pousada Maks. Todos os direitos reservados.
+  </div>
+</footer>
+</body>
+</html>
