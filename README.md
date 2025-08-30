@@ -24,6 +24,7 @@
   --text:#1b1b1b;
   --muted:#6b7280;
   --card-bg:#ffffff;
+  --max:1200px;
   --radius:18px;
   --shadow:0 10px 30px rgba(0,0,0,.12);
 }
@@ -31,18 +32,7 @@
 html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;color:var(--text);background:#f7f7fb}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
-
-/* Remover todas as margens e limitações de largura */
-.container,
-.grid,
-.foot,
-.gallery {
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+.container{max-width:var(--max);margin:0 auto;padding:0 20px}
 
 /* Header */
 header{
@@ -52,7 +42,6 @@ header{
   background:rgba(0,0,0,.95);
   backdrop-filter:saturate(1.2) blur(8px);
   border-bottom:1px solid rgba(255,255,255,.08);
-  width: 100%;
 }
 .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
 .brand{display:flex;align-items:center;gap:12px;color:#fff}
@@ -77,7 +66,6 @@ nav a:hover{background:rgba(255,255,255,.12)}
   align-items:center;
   min-height:72vh;
   padding:56px 20px;
-  width: 100%;
 }
 .hero h1{font-size:clamp(24px,5vw,40px);line-height:1.2;margin:0 0 14px}
 .hero p{font-size:clamp(14px,3vw,18px);opacity:.95;margin:0 0 22px}
@@ -86,12 +74,12 @@ nav a:hover{background:rgba(255,255,255,.12)}
 .hero .card{background:rgba(255,255,255,.50);border:1px solid rgba(255,255,255,.18);padding:18px;border-radius:var(--radius);margin-top:20px}
 
 /* Seções */
-section{padding:48px 0; width:100%;}
+section{padding:48px 0}
 .section-title{font-size:clamp(22px,5vw,30px);margin:0 0 8px;text-align:center}
 .section-sub{color:var(--muted);text-align:center;margin:0 0 28px}
 
 /* Grid */
-.grid{gap:18px; width: 100%;}
+.grid{display:grid;gap:18px}
 .grid-4{grid-template-columns:repeat(4,1fr)}
 .grid-3{grid-template-columns:repeat(3,1fr)}
 .grid-2{grid-template-columns:repeat(2,1fr)}
@@ -107,7 +95,7 @@ section{padding:48px 0; width:100%;}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
 .chip{border:1px solid #e5e7eb;padding:5px 8px;border-radius:999px;font-size:11px;color:#374151}
 
-.gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:6px; width: 100%;}
+.gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
 .gallery img{border-radius:12px;height:120px;object-fit:cover}
 
 .cta-strip{background:linear-gradient(90deg,var(--bg),var(--bg-2));color:#fff;padding:28px;border-radius:var(--radius);display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
@@ -115,11 +103,11 @@ section{padding:48px 0; width:100%;}
 
 .map{border:0;width:100%;height:300px;border-radius:14px;box-shadow:var(--shadow)}
 
-footer{background:#000;color:#dfe6f7;margin-top:40px; width:100%;}
-.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px;padding:40px 20px; width:100%;}
+footer{background:#000;color:#dfe6f7;margin-top:40px}
+.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px;padding:40px 20px}
 .foot h4{margin:0 0 10px}
 .foot a{color:#dfe6f7;opacity:.9}
-.copyright{border-top:1px solid rgba(255,255,255,.1);padding:18px;text-align:center;color:#b9c3de; width:100%;}
+.copyright{border-top:1px solid rgba(255,255,255,.1);padding:18px;text-align:center;color:#b9c3de}
 
 /* Botões flutuantes */
 .float-wrap{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:10px;z-index:60}
@@ -372,7 +360,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 <!-- FOOTER -->
 <footer>
-  <div class="foot">
+  <div class="foot container">
     <div>
       <h4>Pousada Maks</h4>
       <p>Seu chalé rústico em meio à natureza, perfeito para relaxar.</p>
@@ -387,12 +375,6 @@ window.addEventListener('DOMContentLoaded', () => {
     <div>
       <h4>Contato</h4>
       <p>Telefone: (16) 99707-3816</p>
-      <p>Email: pousadamaks@gmail.com</p>
+      <p>Email: pousadamaks@gamil.com</p>
     </div>
   </div>
-  <div class="copyright">
-    &copy; 2025 Pousada Maks. Todos os direitos reservados.
-  </div>
-</footer>
-</body>
-</html>
