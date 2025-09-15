@@ -1,384 +1,389 @@
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Pousada Maks – Seu chalé rústico em meio a natureza</title>
-<meta name="description" content="Pousada Maks: Seu refugio de conforto e tranquilidade. Faça sua reserva." />
-<link rel="canonical" href="https://seudominio.com.br/" />
-<meta property="og:title" content="Pousada Maks – Conforto e Natureza" />
-<meta property="og:description" content="Acomodações charmosas, lazer e tranquilidade." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://seudominio.com.br/" />
-<meta property="og:image" content="https://seudominio.com.br/assets/og-image.jpg" />
-<meta name="theme-color" content="#00c853" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJ75CGY3PG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-<!-- Favicon -->
-<link rel="icon" href="/assets/favicon.png" />
+        gtag('config', 'G-RJ75CGY3PG');
+    </script>
+    <!-- Event snippet for Botão de contato - WhatsApp - Pousada MAKS conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-17076601497/0FMvCOCl748bEJmF4c4_',
+                'value': 0.0,
+                'currency': 'BRL',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
 
-<!-- CSS base e responsivo -->
-<style>
-:root{
-  --bg:#00c853;
-  --bg-2:#009624;
-  --gold:#ccff90;
-  --text:#1b1b1b;
-  --muted:#6b7280;
-  --card-bg:#f7f7fb; /* Alterado de #fff para suavizar as bordas */
-  --max:1200px;
-  --radius:18px;
-  --shadow:0 10px 30px rgba(0,0,0,.12);
-}
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;color:var(--text);background:#f7f7fb}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
-.container{max-width:var(--max);margin:0 auto;padding:0 20px}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pousada MAKS</title>
+    <script src="index/mains.js"></script>
+    <link rel="stylesheet" href="index/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="icon" href="logo.png" type="image/png">
 
-/* Header */
-header{
-  position:sticky;
-  top:0;
-  z-index:50;
-  background:rgba(0,0,0,.95);
-  backdrop-filter:saturate(1.2) blur(8px);
-  border-bottom:1px solid rgba(255,255,255,.08);
-}
-.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
-.brand{display:flex;align-items:center;gap:12px;color:#fff}
-.brand img{height:38px;width:auto;border-radius:8px}
-.brand strong{font-size:18px;letter-spacing:.4px;color:#fff}
-nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
-nav a{color:#fff;font-weight:500;padding:10px 12px;border-radius:12px}
-nav a:hover{background:rgba(255,255,255,.12)}
-.cta{background:var(--gold);color:#000;padding:10px 16px;border-radius:14px;font-weight:700}
 
-/* Hero */
-.hero{
-  position:relative;
-  background:linear-gradient(180deg,rgba(0,200,83,.20),rgba(0,200,83,.10)),url('https://github.com/user-attachments/assets/f512c689-6dd0-4aaf-9b55-bf061a0cb3ef')center/cover no-repeat;
-  color:#1b1b1b;
-  width: 100%;
-}
-.hero .container{
-  display:grid;
-  grid-template-columns:1.2fr .8fr;
-  gap:28px;
-  align-items:center;
-  min-height:72vh;
-  padding:56px 20px;
-}
-.hero h1{font-size:clamp(24px,5vw,40px);line-height:1.2;margin:0 0 14px}
-.hero p{font-size:clamp(14px,3vw,18px);opacity:.95;margin:0 0 22px}
-.hero .badges{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
-.badge{background:rgba(255,255,255,.50);border:1px solid rgba(255,255,255,.50);padding:6px 10px;border-radius:999px;font-size:13px}
-.hero .card{background:rgba(255,255,255,.50);border:1px solid rgba(255,255,255,.18);padding:18px;border-radius:var(--radius);margin-top:20px}
-
-/* Seções */
-section{padding:48px 0}
-.section-title{font-size:clamp(22px,5vw,30px);margin:0 0 8px;text-align:center}
-.section-sub{color:var(--muted);text-align:center;margin:0 0 28px}
-
-/* Grid */
-.grid{display:grid;gap:18px}
-.grid-4{grid-template-columns:repeat(4,1fr)}
-.grid-3{grid-template-columns:repeat(3,1fr)}
-.grid-2{grid-template-columns:repeat(2,1fr)}
-
-.feature{background:var(--card-bg);border-radius:var(--radius);padding:14px;box-shadow:var(--shadow);display:flex;gap:10px;align-items:flex-start}
-.feature .icon{font-size:22px}
-.feature h3{margin:4px 0 6px;font-size:16px}
-.feature p{margin:0;color:#4b5563;font-size:13px}
-
-.card{background:var(--card-bg);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
-.card .content{padding:12px}
-.card h3{margin:0 0 8px;font-size:16px}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
-.chip{border:1px solid #e5e7eb;padding:5px 8px;border-radius:999px;font-size:11px;color:#374151}
-
-.gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
-.gallery img{border-radius:12px;height:120px;object-fit:cover}
-
-.cta-strip{background:linear-gradient(90deg,var(--bg),var(--bg-2));color:#fff;padding:28px;border-radius:var(--radius);display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
-.cta-strip .btn{background:var(--gold);color:#1b1b1b;font-weight:700;padding:10px 16px;border-radius:12px}
-
-.map{border:0;width:100%;height:300px;border-radius:14px;box-shadow:var(--shadow)}
-
-footer{background:#000;color:#dfe6f7;margin-top:40px}
-.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px;padding:40px 20px}
-.foot h4{margin:0 0 10px}
-.foot a{color:#dfe6f7;opacity:.9}
-.copyright{border-top:1px solid rgba(255,255,255,.1);padding:18px;text-align:center;color:#b9c3de}
-
-/* Botões flutuantes */
-.float-wrap{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:10px;z-index:60}
-.float-btn{display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;padding:12px 14px;border-radius:999px;box-shadow:var(--shadow);font-weight:700}
-.float-btn.instagram{background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4)}
-
-/* RESPONSIVO */
-@media (max-width: 1024px){
-  .hero .container{grid-template-columns:1fr;gap:24px;padding:40px 20px}
-  .grid-4{grid-template-columns:repeat(2,1fr)}
-  .grid-3{grid-template-columns:repeat(2,1fr)}
-}
-@media (max-width: 768px){
-  .gallery{grid-template-columns:repeat(3,1fr)}
-  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
-  nav ul{display:none}
-  .hero h1{font-size:clamp(22px,6vw,32px)}
-  .hero p{font-size:clamp(13px,4vw,16px)}
-}
-@media (max-width: 480px){
-  .hero .card{padding:14px}
-  .badge{padding:5px 8px;font-size:12px}
-  .feature{padding:10px;gap:8px}
-  .cta-strip{padding:20px;flex-direction:column;align-items:flex-start}
-}
-</style>
 </head>
 
 <body>
-<header>
-  <div class="container nav">
-    <a class="brand" href="#inicio" aria-label="Página inicial">
-      <img src="https://github.com/user-attachments/assets/a7d6cc3c-bb98-4544-8a82-6413b1c72137?auto=format&fit=crop&w=1600&q=60" alt="Logo da Pousada" width="350" />
-      <strong>Pousada Maks</strong>
-    </a>
-    <nav aria-label="Principal">
-      <ul>
-        <li><a href="#acomodacoes">Acomodações</a></li>
-        <li><a href="#lazer">Lazer</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#localizacao">Localização</a></li>
-        <li><a class="cta" href="#reservas">Reservas</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<!-- HERO -->
-<section class="hero" id="inicio">
-  <div class="container">
-    <div>
-      <h1>Seu refugio de conforto e tranquilidade</h1>
-      <p>Viva dias de sossego entre a natureza, a tranquilidade que você precisa. Piscina com hidromassagem e muito mais.</p>
-      <div class="badges">
-        <span class="badge">Recepção 24h</span>
-        <span class="badge">Café da manhã grátis</span>
-        <span class="badge">Wi-Fi gratuito</span>
-        <span class="badge">Piscina com hidromassagem</span>
-        <span class="badge">Estacionamento amplo</span>
-        <span class="badge">Pescaria</span>
-      </div>
-      <a class="cta" href="#reservas">Reserve agora</a>
-    </div>
-    <div class="card">
-      <h3 style="margin-top:0">Consulta rápida de tarifas</h3>
-      <form id="cotacaoForm">
-        <label>Data de entrada<br><input type="date" name="checkin" required></label><br><br>
-        <label>Data de saída<br><input type="date" name="checkout" required></label><br><br>
-        <label>Hóspedes<br><input type="number" name="hospedes" min="1" value="2"></label><br><br>
-        <button class="cta" type="submit">Solicitar cotação</button>
-      </form>
-      <p style="font-size:12px;opacity:.9;margin-top:8px">* aguardamos você.</p>
-    </div>
-  </div>
-</section>
-
-<script>
-window.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById("cotacaoForm");
-  const checkinInput = form.querySelector('input[name="checkin"]');
-  const checkoutInput = form.querySelector('input[name="checkout"]');
-
-  // Define mínimo das datas como hoje
-  const hoje = new Date();
-  const yyyy = hoje.getFullYear();
-  const mm = String(hoje.getMonth() + 1).padStart(2, '0');
-  const dd = String(hoje.getDate()).padStart(2, '0');
-  const hojeStr = `${yyyy}-${mm}-${dd}`;
-  checkinInput.min = hojeStr;
-  checkoutInput.min = hojeStr;
-
-  // Atualiza checkout mínimo quando checkin mudar
-  checkinInput.addEventListener('change', () => {
-    const checkinVal = new Date(checkinInput.value);
-    const proximoDia = new Date(checkinVal);
-    proximoDia.setDate(proximoDia.getDate() + 1);
-    const yyyy = proximoDia.getFullYear();
-    const mm = String(proximoDia.getMonth() + 1).padStart(2, '0');
-    const dd = String(proximoDia.getDate()).padStart(2, '0');
-    checkoutInput.min = `${yyyy}-${mm}-${dd}`;
-    if (new Date(checkoutInput.value) <= checkinVal) {
-      checkoutInput.value = '';
-    }
-  });
-
-  // Submissão do formulário
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const checkin = new Date(checkinInput.value);
-    const checkout = new Date(checkoutInput.value);
-    const hospedes = parseInt(form.hospedes.value, 10);
-
-    if (isNaN(checkin) || isNaN(checkout)) {
-      alert("Por favor, selecione datas válidas.");
-      return;
-    }
-
-    if (checkout <= checkin) {
-      alert("A data de saída deve ser depois da data de entrada.");
-      return;
-    }
-
-    if (hospedes < 1) {
-      alert("Informe pelo menos 1 hóspede.");
-      return;
-    }
-
-    const msg = `Olá tudo bem, gostaria de fazer um reserva para esta data, tem disponibilidade?%0A- Check-in: ${checkinInput.value}%0A- Check-out: ${checkoutInput.value}%0A- Hóspedes: ${hospedes}`;
-    const phone = "5516997073816";
-    window.open(`https://wa.me/${phone}?text=${msg}`, "_blank");
-  });
-});
-</script>
 
 
-<!-- VANTAGENS -->
-<section>
-  <div class="container">
-    <h2 class="section-title">Algumas vantagens</h2>
-    <p class="section-sub">Conforto, lazer e natureza para sua estadia.</p>
-    <div class="grid grid-4">
-      <div class="feature"><div class="icon">🕑</div><div><h3>Recepção 24h</h3><p>Equipe pronta para ajudar a qualquer hora.</p></div></div>
-      <div class="feature"><div class="icon">☕</div><div><h3>Café da manhã</h3><p>Café da manhã tradicional.</p></div></div>
-      <div class="feature"><div class="icon">📶</div><div><h3>Wi-Fi gratuito</h3><p>Conexão disponível nas áreas comuns.</p></div></div>
-      <div class="feature"><div class="icon">🏊</div><div><h3>Piscina com hidromassagem</h3><p>Vista para natureza.</p></div></div>
-      <div class="feature"><div class="icon">🚗</div><div><h3>Estacionamento</h3><p>Espaço amplo para seu veículo.</p></div></div>
-      <div class="feature"><div class="icon">🐟</div><div><h3>Pescaria</h3><p>Agende sua pescaria de dourado no rio Pardo.</p></div></div>
-      <div class="feature"><div class="icon">🛶</div><div><h3>Passeio de Caiaque</h3><p>Agende seu passeio com muita adrenalina.</p></div></div>
-      <div class="feature"><div class="icon">🛏️</div><div><h3>Quartos confortáveis</h3><p>O seu descanso merecido.</p></div></div>
-    </div>
-  </div>
-</section>
 
-<!-- ACOMODAÇÕES -->
-<section id="acomodacoes">
-  <div class="container">
-    <h2 class="section-title">Acomodações</h2>
-    <p class="section-sub">Opções para casais, famílias e grupos.</p>
-    <div class="grid grid-3">
-      <article class="card">
-        <img src="https://github.com/user-attachments/assets/afb57732-8b4e-4657-9d11-ced69b6d8f81" alt="Suíte com varanda" loading="lazy" />
-        <div class="content">
-          <h3>Quarto família</h3>
-          <p>A tranquilidade de acordar com o som dos pássaros.</p>
-          <div class="chips">
-            <span class="chip">Wi-Fi</span>
-            <span class="chip">Ar-condicionado</span>
-            <span class="chip">Café incluso</span>
-          </div>
+    <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">&#9776;</div>
+    <div id="sidebar" class="sidebar">
+
+        <div class="tituloinfovision">
+            <img class="logo-ifv" src="logo.png" alt="logo da nossa empresa infovision">
+            <h1>Pousada MAKS</h1>
         </div>
-      </article>
-      <article class="card">
-        <img src="https://github.com/user-attachments/assets/5fc55ea6-4893-48ba-bf3e-3dece7705531" 
-             alt="Piscina com vista para o pôr do sol" 
-             loading="lazy" />
-        <div class="content">
-          <h3>Piscina</h3>
-          <p>Vista com pôr do sol.</p>
-          <div class="chips">
-            <span class="chip">Wi-Fi</span>
-            <span class="chip">Hidromassagem</span>
-            <span class="chip">Vista jardim</span>
-          </div>
+        <div class="links">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+            <a href="index.html">
+                <li>Início</li>
+            </a>
+            <a href="revenda.html">
+                <li>Reservas Automáticas</li>
+            </a>
+            <a
+                href="https://wa.me/5516988532041?text=Ol%C3%A1!%20Gostaria%20de%20verificar%20a%20disponibilidade%20de%20alguns%20quartos!">
+                <li>Contato</li>
+            </a>
         </div>
-      </article>
     </div>
-  </div>
-</section>
+    <style>
+        @media (min-width:736px) {
 
-<!-- GALERIA -->
-<section id="galeria">
-  <div class="container">
-    <h2 class="section-title">Galeria de Fotos</h2>
-    <p class="section-sub">Conheça um pouco dos nossos ambientes.</p>
-    <div class="gallery">
-      <img src="https://github.com/user-attachments/assets/8846ba84-26fc-4048-a126-0e49d21baf6d?auto=format&fit=crop&w=700&q=60" alt="Lobby" loading="lazy" />
-      <img src="https://github.com/user-attachments/assets/0188e4ac-6529-46ef-b73c-889b2a0d023b?auto=format&fit=crop&w=700&q=60" alt="Apartamento" loading="lazy" />
-      <img src="https://github.com/user-attachments/assets/849110c0-b2c6-4dec-9881-ef2b94b71831?auto=format&fit=crop&w=700&q=60" alt="Gastronomia" loading="lazy" />
-      <img src="https://github.com/user-attachments/assets/715ed7ba-d458-461a-a309-895f47568393?auto=format&fit=crop&w=700&q=60" alt="Piscina" loading="lazy" />
-      <img src="https://github.com/user-attachments/assets/91f7f8ae-d2c0-49a1-ab25-1244f87d1c3c?auto=format&fit=crop&w=700&q=60" alt="Jardins" loading="lazy" />
-    </div>
-  </div>
-</section>
+            .img_top {
+                background-image: url(img1.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 600px;
+                margin-top: 70px;
+                display: flex;
+                padding-bottom: 3rem;
+            }
 
-<!-- CTA TARIFAS / OFERTAS -->
-<section class="container" id="reservas">
-  <div class="cta-strip">
-    <div>
-      <h3 style="margin:0">Tarifas e Ofertas</h3>
-      <p style="margin:6px 0 0;opacity:.9">Consulte promoções sazonais por telefone, WhatsApp ou e-mail.</p>
-    </div>
-    <a class="btn" 
-   href="https://wa.me/5516997073816?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20reseva%20na%20Pousada%20e%20Maks." 
-   target="_blank" 
-   rel="noopener">
-  Falar no WhatsApp
-</a>
-  </div>
-</section>
+        }
 
-<!-- LOCALIZAÇÃO / CONTATO -->
-<section id="localizacao">
-  <div class="container">
-    <h2 class="section-title">Onde estamos</h2>
-    <p class="section-sub">Endereço: Av. Thomaz Alberto Whately, 9315 - Parque Res. Candido Portinari, Ribeirão Preto - SP, 14078-560 • Estacionamento no local</p>
-    <iframe class="map" src="https://www.google.com/maps?q=-21.15046,-47.75003&hl=pt-BR&z=12&output=embed" allowfullscreen loading="lazy" title="Mapa do Hotel"></iframe>
 
-    <div class="grid grid-3" style="margin-top:24px">
-      <div class="card"><div class="content"><h3>Reservas</h3><p><a href="tel:+5516997073816">(16) 99707-3816</a><br><a href="mailto:pousadamaks@gmail.com">pousadamaks@gmail.com</a></p></div></div>
-      <div class="card"><div class="content"><h3>Horário</h3><p>Check-in a partir de 14h • Check-out até 12h</p></div></div>
-      <div class="card"><div class="content"><h3>Redes sociais</h3><p><a href="#">Instagram</a> • <a href="#">Facebook</a></p></div></div>
-    </div>
-  </div>
-</section>
 
-<!-- Botões flutuantes -->
-<div class="float-wrap" aria-label="Acesso rápido">
-  <a class="float-btn" 
-   href="https://wa.me/5516997073816?text=Olá,%20gostaria%20de%20fazer%20uma%20reserva,%20tem%20disponibilidade?" 
-   target="_blank" 
-   rel="noopener" 
-   aria-label="WhatsApp">
-    <span>WhatsApp</span>
-  </a>
-  <a class="float-btn instagram" href="https://www.instagram.com/pousada_maks/" target="_blank" rel="noopener" aria-label="Instagram">
-    <span>Instagram</span>
-  </a>
-</div>
+        @media (max-width:735px) {
 
-<!-- FOOTER -->
-<footer>
-  <div class="foot container">
-    <div>
-      <h4>Pousada Maks</h4>
-      <p>Seu chalé rústico em meio à natureza, perfeito para relaxar.</p>
+            .img_top {
+                background-image: url(img1.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 600px;
+
+                display: flex;
+                padding-bottom: 0px;
+            }
+
+
+            .btn-whatsapp {
+                display: inline-block;
+                margin-top: 10px;
+                padding: 10px 16px;
+                background-color: #2e7d32;
+                color: white;
+                text-decoration: none;
+                border-radius: 6px;
+                transition: background-color 0.3s ease;
+                margin-top: 20px;
+            }
+
+            .btn-whatsapp:hover {
+                background-color: #000000;
+            }
+
+
+            @media (min-width:735px) {
+
+                .menu-icon {
+                    display: none;
+                }
+
+            }
+
+
+        }
+    </style>
+    <div class="img_top">
+        <br>
+        <div class="container">
+            <h1>🌿 Pousada MAKS!</h1>
+            <p class="subtitulo">Faça sua reserva rapidamente</p>
+            <form id="reservaForm">
+                <label for="datas">Período da Reserva:</label>
+                <input calss="inputdatas" type="text" id="datas" placeholder="Escolha o período" required>
+
+                <label for="hospedes">Número de Hóspedes:</label>
+                <select id="hospedes" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="1">1 pessoa</option>
+                    <option value="2">2 pessoas</option>
+                    <option value="3">3 pessoas</option>
+                    <option value="4">4 pessoas</option>
+                    <option value="5">5 pessoas</option>
+                    <option value="6">6 pessoas</option>
+                    <option value="7">7 pessoas</option>
+                    <option value="8">8 pessoas</option>
+                    <option value="9">9 pessoas</option>
+                    <option value="10">10 pessoas</option>
+                    <option value="11">11 pessoas</option>
+                    <option value="12">12 pessoas</option>
+                    <option value="13">13 pessoas</option>
+                    <option value="14">14 pessoas</option>
+                    <option value="15">15 pessoas</option>
+                </select>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="resposta" class="resposta-box"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
+        <script>
+
+            let datasSelecionadas = [];
+
+            flatpickr("#datas", {
+                mode: "range",
+                locale: "pt",
+                dateFormat: "d/m/Y",
+                onChange: function (selectedDates) {
+                    datasSelecionadas = selectedDates;
+                    mostrarBotaoDisponibilidade();
+                }
+            });
+
+            function formatarData(data) {
+                const dia = String(data.getDate()).padStart(2, '0');
+                const mes = String(data.getMonth() + 1).padStart(2, '0');
+                const ano = data.getFullYear();
+                return `${dia}/${mes}/${ano}`;
+            }
+
+            function formatarMoeda(valor) {
+                return valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+            }
+
+            function mostrarResposta(mensagem) {
+                const box = document.getElementById('resposta');
+                box.classList.remove('fade-in');
+                void box.offsetWidth;
+                box.innerHTML = mensagem;
+                box.classList.add('fade-in');
+            }
+
+            function mostrarBotaoDisponibilidade() {
+                const botaoDisponibilidade = document.querySelector('#reservaForm button[type="submit"]');
+                botaoDisponibilidade.style.display = 'inline-block';
+
+                // Remove o botão do WhatsApp se ele estiver visível
+                const respostaBox = document.getElementById('resposta');
+                respostaBox.innerHTML = '';
+            }
+
+            document.getElementById('hospedes').addEventListener('change', mostrarBotaoDisponibilidade);
+
+            document.getElementById('reservaForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+
+
+
+                if (datasSelecionadas.length < 2) {
+                    mostrarResposta('Selecione o período da reserva.');
+                    return;
+                }
+
+                const checkin = datasSelecionadas[0];
+                const checkout = datasSelecionadas[1];
+                const hospedes = parseInt(document.getElementById('hospedes').value);
+
+                if (isNaN(hospedes) || hospedes < 1 || hospedes > 15) {
+                    mostrarResposta('Selecione um número de hóspedes válido.');
+                    return;
+                }
+
+                const diariaSemana = 112;
+                const diariaFds = 130;
+                const dias = (checkout - checkin) / (1000 * 60 * 60 * 24);
+
+                if (dias <= 0) {
+                    mostrarResposta('Datas inválidas.');
+                    return;
+                }
+
+                let total = 0;
+                for (let i = 0; i < dias; i++) {
+                    const dia = new Date(checkin);
+                    dia.setDate(dia.getDate() + i);
+                    const diaSemana = dia.getDay();
+                    total += (diaSemana === 0 || diaSemana === 6) ? diariaFds : diariaSemana;
+                }
+
+                const valorFinal = total * hospedes;
+                const valorFormatado = formatarMoeda(valorFinal);
+                const checkinStr = formatarData(checkin);
+                const checkoutStr = formatarData(checkout);
+
+                const mensagem = `Olá! Gostaria de verificar a disponibilidade de uma data! \n\nCheck-in: ${checkinStr} \n Check-out: ${checkoutStr}.\n\nHóspedes: ${hospedes} pessoa(s).`;
+                const encodedMensagem = encodeURIComponent(mensagem);
+                const linkWhatsApp = `https://api.whatsapp.com/send?phone=5516988532041&text=${encodedMensagem}`;
+
+                mostrarResposta(`
+      <a class="btn-whatsapp" href="${linkWhatsApp}" onclick="gtag_report_conversion('${linkWhatsApp}'); return false;" target="_blank">Verificar Disponibilidade</a>`);
+      
+
+                // Oculta o botão "Ver Disponibilidade"
+                document.querySelector('#reservaForm button[type="submit"]').style.display = 'none';
+            });
+        </script>
     </div>
-    <div>
-      <h4>Links úteis</h4>
-      <a href="#inicio">Início</a><br>
-      <a href="#acomodacoes">Acomodações</a><br>
-      <a href="#galeria">Galeria</a><br>
-      <a href="#localizacao">Localização</a>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="divnocha">
+        <t class="nocha">Nossos chalés:</t>
     </div>
-    <div>
-      <h4>Contato</h4>
-      <p>Telefone: (16) 99707-3816</p>
-      <p>Email: pousadamaks@gmail.com</p>
+    <div class="banner-container">
+
+        <div class="banner-slide" id="slide">
+
+            <img class="img_index" src="imagem1.jpg" alt="Imagem 1">
+            <img class="img_index" src="imagem2.jpg" alt="Imagem 1">
+            <img class="img_index" src="imagem3.jpg" alt="Imagem 1">
+            <img class="img_index" src="imagem4.jpg" alt="Imagem 1">
+            <img class="img_index" src="imagem5.jpg" alt="Imagem 1">
+            <img class="img_index" src="imagem6.jpg" alt="Imagem 1">
+            <img class="img_index" src="imagem7.jpg" alt="Imagem 1">
+
+        </div>
+
     </div>
-  </div>
-  <div class="copyright">
+
+    <script>
+
+        const slide = document.getElementById('slide');
+        const images = slide.querySelectorAll('img');
+        let index = 0;
+        let startX = 0;
+        let isDragging = false;
+        let autoSlideInterval;
+        let autoSlideDelay = 3000;
+
+        // Função para atualizar o slide
+        function updateSlide() {
+            slide.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        // Função para iniciar o slide automático
+        function startAutoSlide() {
+            clearInterval(autoSlideInterval);
+            autoSlideInterval = setInterval(() => {
+                index = (index + 1) % images.length;
+                updateSlide();
+            }, autoSlideDelay);
+        }
+
+        // Função para pausar e reiniciar com delay maior
+        function pauseAndDelayAutoSlide() {
+            clearInterval(autoSlideInterval);
+            setTimeout(() => {
+                autoSlideDelay = 5000; // aumenta para 5 segundos
+                startAutoSlide();
+            }, 5000); // espera 5 segundos antes de reiniciar
+        }
+
+        // Eventos de toque/mouse
+        slide.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startX = e.pageX;
+        });
+
+        slide.addEventListener('touchstart', (e) => {
+            isDragging = true;
+            startX = e.touches[0].pageX;
+        });
+
+        slide.addEventListener('mouseup', (e) => {
+            if (!isDragging) return;
+            const endX = e.pageX;
+            handleSwipe(endX);
+            isDragging = false;
+        });
+
+        slide.addEventListener('touchend', (e) => {
+            if (!isDragging) return;
+            const endX = e.changedTouches[0].pageX;
+            handleSwipe(endX);
+            isDragging = false;
+        });
+
+        // Lógica do swipe
+        function handleSwipe(endX) {
+            const diff = endX - startX;
+            if (diff > 50 && index > 0) {
+                index--;
+            } else if (diff < -50 && index < images.length - 1) {
+                index++;
+            }
+            updateSlide();
+            pauseAndDelayAutoSlide(); // pausa e reinicia com delay maior
+        }
+
+        // Inicia o slide automático
+        startAutoSlide();
+    </script>
+    <div class="mapa-container">
+
+        <br>
+        <br>
+        <h2>📍 Localização da Pousada MAKS</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119073.51789521833!2d-47.8942169566406!3d-21.150510500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9c062fbadd56b%3A0x3ff82f6aa62b259a!2sPOUSADA%20MAKS!5e0!3m2!1spt-BR!2sbr!4v1755976305002!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade""
+    width=" 100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+
+    <br>
+</body>
+
+<footer class="rodape">
+    <div class="conteudo-rodape">
+        <p>&copy; 2025 Pousada MAKS — Todos os direitos reservados.</p>
+        <p>Contato: <a href="mailto:pousadamaks@gmail.com">pousadamaks@gmail.com</a></p>
+        <p><a href="https://wa.me/5516988532041" target="_blank" onclick=gtag_report_conversion();>Fale conosco pelo WhatsApp</a></p>
+    </div>
+</footer>
+
+</html>
+
     © 2025 Pousada Maks. Todos os direitos reservados.
   </div>
 </footer>
