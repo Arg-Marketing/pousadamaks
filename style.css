@@ -97,9 +97,39 @@ section{padding:48px 0}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
 .chip{border:1px solid #e5e7eb;padding:5px 8px;border-radius:999px;font-size:11px;color:#374151}
 
-.gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
-.gallery img{border-radius:12px;height:120px;object-fit:cover}
+/* === NOVA GALERIA EM CARROSSEL === */
+.gallery-slider{
+  position:relative;
+  width:100%;
+  max-width:900px;      /* ajuste conforme necessário */
+  margin:0 auto;
+  overflow:hidden;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  height:400px;         /* altura das fotos grandes */
+}
+.gallery-slider .slide{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  opacity:0;
+  transition:opacity 1s ease-in-out;
+}
+.gallery-slider .slide img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  border-radius:var(--radius);
+}
+.gallery-slider .slide.active{
+  opacity:1;
+  position:relative;
+}
 
+/* CTA Strip */
 .cta-strip{
   background:linear-gradient(90deg,var(--bg),var(--bg-2));
   color:#fff;
