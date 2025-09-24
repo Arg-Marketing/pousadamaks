@@ -10,6 +10,7 @@
   --shadow:0 10px 30px rgba(0,0,0,.12);
 }
 
+/* RESET BÁSICO */
 *{box-sizing:border-box}
 html,body{
   margin:0;
@@ -22,7 +23,7 @@ a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 .container{max-width:var(--max);margin:0 auto;padding:0 20px}
 
-/* Header */
+/* ================= HEADER ================= */
 header{
   position:sticky;
   top:0;
@@ -40,7 +41,7 @@ nav a{color:#fff;font-weight:500;padding:10px 12px;border-radius:12px}
 nav a:hover{background:rgba(255,255,255,.12)}
 .cta{background:var(--gold);color:#000;padding:10px 16px;border-radius:14px;font-weight:700}
 
-/* Hero */
+/* ================= HERO ================= */
 .hero{
   position:relative;
   background:linear-gradient(180deg,rgba(0,200,83,.20),rgba(0,200,83,.10)),
@@ -62,12 +63,12 @@ nav a:hover{background:rgba(255,255,255,.12)}
 .badge{background:rgba(255,255,255,.50);border:1px solid rgba(255,255,255,.50);padding:6px 10px;border-radius:999px;font-size:13px}
 .hero .card{background:rgba(255,255,255,.50);border:1px solid rgba(255,255,255,.18);padding:18px;border-radius:var(--radius);margin-top:20px}
 
-/* Seções */
+/* ================= SEÇÕES ================= */
 section{padding:48px 0}
 .section-title{font-size:clamp(22px,5vw,30px);margin:0 0 8px;text-align:center}
 .section-sub{color:var(--muted);text-align:center;margin:0 0 28px}
 
-/* Grid */
+/* ================= GRID UTILITIES ================= */
 .grid{display:grid;gap:18px}
 .grid-4{grid-template-columns:repeat(4,1fr)}
 .grid-3{grid-template-columns:repeat(3,1fr)}
@@ -80,7 +81,7 @@ section{padding:48px 0}
   box-shadow:var(--shadow);
   display:flex;
   gap:10px;
-  align-items:flex-start
+  align-items:flex-start;
 }
 .feature .icon{font-size:22px}
 .feature h3{margin:4px 0 6px;font-size:16px}
@@ -90,23 +91,42 @@ section{padding:48px 0}
   background:var(--card-bg);
   border-radius:var(--radius);
   box-shadow:var(--shadow);
-  overflow:hidden
+  overflow:hidden;
 }
 .card .content{padding:12px}
 .card h3{margin:0 0 8px;font-size:16px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
 .chip{border:1px solid #e5e7eb;padding:5px 8px;border-radius:999px;font-size:11px;color:#374151}
 
-/* === NOVA GALERIA EM CARROSSEL === */
+/* ================= GALERIA DE MINIATURAS ================= */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+  padding: 20px 0;
+}
+.gallery img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* ================= GALERIA EM CARROSSEL ================= */
 .gallery-slider{
   position:relative;
   width:100%;
-  max-width:900px;      /* ajuste conforme necessário */
+  max-width:900px;
   margin:0 auto;
   overflow:hidden;
   border-radius:var(--radius);
   box-shadow:var(--shadow);
-  height:400px;         /* altura das fotos grandes */
+  height:400px;
 }
 .gallery-slider .slide{
   position:absolute;
@@ -129,7 +149,7 @@ section{padding:48px 0}
   position:relative;
 }
 
-/* CTA Strip */
+/* ================= CTA STRIP ================= */
 .cta-strip{
   background:linear-gradient(90deg,var(--bg),var(--bg-2));
   color:#fff;
@@ -139,24 +159,26 @@ section{padding:48px 0}
   align-items:center;
   justify-content:space-between;
   gap:18px;
-  flex-wrap:wrap
+  flex-wrap:wrap;
 }
 .cta-strip .btn{
   background:var(--gold);
   color:#1b1b1b;
   font-weight:700;
   padding:10px 16px;
-  border-radius:12px
+  border-radius:12px;
 }
 
+/* ================= MAPA ================= */
 .map{
   border:0;
   width:100%;
   height:300px;
   border-radius:14px;
-  box-shadow:var(--shadow)
+  box-shadow:var(--shadow);
 }
 
+/* ================= FOOTER ================= */
 footer{background:#000;color:#dfe6f7;margin-top:40px}
 .foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px;padding:40px 20px}
 .foot h4{margin:0 0 10px}
@@ -169,7 +191,7 @@ footer{background:#000;color:#dfe6f7;margin-top:40px}
   color:#aaa;
 }
 
-/* Botões flutuantes WhatsApp e Instagram */
+/* ================= BOTÕES FLUTUANTES ================= */
 .float-wrap{
   position:fixed;
   bottom:20px;
