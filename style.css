@@ -1,93 +1,216 @@
-/* Hero com overlay para legibilidade */
-.hero {
-  position: relative;
-  background: url("images/background.jpg") no-repeat center center/cover;
-  color: #fff;
-}
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  z-index: 1;
-}
-.hero-content {
-  position: relative;
-  z-index: 2;
+:root{
+  --bg:#00c853;
+  --bg-2:#009624;
+  --gold:#ccff90;
+  --text:#1b1b1b;
+  --muted:#6b7280;
+  --card-bg:#ffffff;
+  --max:1200px;
+  --radius:18px;
+  --shadow:0 10px 30px rgba(0,0,0,.12);
 }
 
-/* Botão CTA principal */
-.main-cta {
-  background: #00c853;
-  color: #fff;
-  font-size: 18px;
-  padding: 14px 28px;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-  transition: all 0.3s ease;
+/* RESET BÁSICO */
+*{box-sizing:border-box}
+html,body{
+  margin:0;
+  padding:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;
+  color:var(--text);
+  background:#f7f7fb;
 }
-.main-cta:hover {
-  background: #009624;
-  transform: translateY(-2px);
-}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{max-width:var(--max);margin:0 auto;padding:0 20px}
 
-/* Card do formulário */
-.form-card {
-  max-width: 300px;
-  padding: 20px;
+/* ================= HEADER ================= */
+header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(0,0,0,.95);
+  backdrop-filter:saturate(1.2) blur(8px);
+  border-bottom:1px solid rgba(255,255,255,.08);
 }
-.form-card input, 
-.form-card button {
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff}
+.brand img{height:38px;width:auto;border-radius:8px}
+.brand strong{font-size:18px;letter-spacing:.4px;color:#fff}
+nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+nav a{color:#fff;font-weight:500;padding:10px 12px;border-radius:12px}
+nav a:hover{background:rgba(255,255,255,.12)}
+.cta{background:var(--gold);color:#000;padding:10px 16px;border-radius:14px;font-weight:700}
+
+/* ================= HERO ================= */
+.hero{
+  position:relative;
+  background:linear-gradient(180deg,rgba(0,200,83,.20),rgba(0,200,83,.10)),
+             url('images/background.jpg') center/cover no-repeat;
+  color:#1b1b1b;
+  width:100%;
+}
+.hero .container{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:28px;
+  align-items:center;
+  min-height:72vh;
+  padding:56px 20px;
+}
+.hero h1{font-size:clamp(24px,5vw,40px);line-height:1.2;margin:0 0 14px}
+.hero p{font-size:clamp(14px,3vw,18px);opacity:.95;margin:0 0 22px}
+.hero .badges{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+.badge{background:rgba(255,255,255,.50);border:1px solid rgba(255,255,255,.50);padding:6px 10px;border-radius:999px;font-size:13px}
+.hero .card{background:rgba(255,255,255,.50);border:1px solid rgba(255,255,255,.18);padding:18px;border-radius:var(--radius);margin-top:20px}
+
+/* ================= SEÇÕES ================= */
+section{padding:48px 0}
+.section-title{font-size:clamp(22px,5vw,30px);margin:0 0 8px;text-align:center}
+.section-sub{color:var(--muted);text-align:center;margin:0 0 28px}
+
+/* ================= GRID UTILITIES ================= */
+.grid{display:grid;gap:18px}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+
+.feature{
+  background:var(--card-bg);
+  border-radius:var(--radius);
+  padding:14px;
+  box-shadow:var(--shadow);
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+}
+.feature .icon{font-size:22px}
+.feature h3{margin:4px 0 6px;font-size:16px}
+.feature p{margin:0;color:#4b5563;font-size:13px}
+
+.card{
+  background:var(--card-bg);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.card .content{padding:12px}
+.card h3{margin:0 0 8px;font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.chip{border:1px solid #e5e7eb;padding:5px 8px;border-radius:999px;font-size:11px;color:#374151}
+
+/* ================= GALERIA DE MINIATURAS ================= */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+  padding: 20px 0;
+}
+.gallery img {
   width: 100%;
-  padding: 8px;
-  margin-top: 6px;
-  border-radius: 6px;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  transition: transform 0.3s ease;
 }
-.form-card label {
-  font-weight: 600;
-  font-size: 14px;
-}
-.form-card .note {
-  font-size: 12px;
-  opacity: 0.85;
-  margin-top: 8px;
-  text-align: center;
+.gallery img:hover {
+  transform: scale(1.03);
 }
 
-/* Header responsivo */
-header .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+/* ================= GALERIA EM CARROSSEL ================= */
+.gallery-slider{
+  position:relative;
+  width:100%;
+  max-width:900px;
+  margin:0 auto;
+  overflow:hidden;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  height:400px;
 }
-header nav ul {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
+.gallery-slider .slide{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  opacity:0;
+  transition:opacity 1s ease-in-out;
 }
-header nav ul li a {
-  padding: 6px 10px;
-  font-weight: 500;
-  transition: color 0.3s;
+.gallery-slider .slide img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  border-radius:var(--radius);
 }
-header nav ul li a:hover {
-  color: #00c853;
+.gallery-slider .slide.active{
+  opacity:1;
+  position:relative;
 }
 
-/* Logo adaptável */
-.brand img {
-  max-width: 200px;
-  height: auto;
+/* ================= CTA STRIP ================= */
+.cta-strip{
+  background:linear-gradient(90deg,var(--bg),var(--bg-2));
+  color:#fff;
+  padding:28px;
+  border-radius:var(--radius);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  flex-wrap:wrap;
 }
-@media (max-width: 768px) {
-  .brand img {
-    max-width: 150px;
-  }
-  .form-card {
-    max-width: 100%;
-    margin: 20px auto;
-  }
-  header nav ul {
-    justify-content: center;
-  }
+.cta-strip .btn{
+  background:var(--gold);
+  color:#1b1b1b;
+  font-weight:700;
+  padding:10px 16px;
+  border-radius:12px;
 }
+
+/* ================= MAPA ================= */
+.map{
+  border:0;
+  width:100%;
+  height:300px;
+  border-radius:14px;
+  box-shadow:var(--shadow);
+}
+
+/* ================= FOOTER ================= */
+footer{background:#000;color:#dfe6f7;margin-top:40px}
+.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px;padding:40px 20px}
+.foot h4{margin:0 0 10px}
+.foot a{color:#dfe6f7;opacity:.9}
+.copyright{
+  border-top:1px solid rgba(255,255,255,.1);
+  padding:18px;
+  text-align:center;
+  font-size:14px;
+  color:#aaa;
+}
+
+/* ================= BOTÕES FLUTUANTES ================= */
+.float-wrap{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  z-index:9999;
+}
+.float-btn{
+  background:#25d366;
+  color:#fff;
+  padding:12px 18px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:600;
+  box-shadow:0 4px 6px rgba(0,0,0,.2);
+  transition:transform .2s ease;
+}
+.float-btn.instagram{background:#E1306C;}
+.float-btn:hover{transform:scale(1.05);}
+

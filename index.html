@@ -16,13 +16,37 @@
   <link rel="icon" href="images/favicon.png" />
   <link rel="stylesheet" href="style.css">
   <script defer src="main.js"></script>
+
+  <style>
+    /* Ajuste da largura da caixinha de reserva (hero) */
+    .hero .card {
+      max-width: 320px;   /* largura máxima da caixa */
+      width: 100%;        /* ocupa o espaço até esse limite */
+      margin-left: auto;
+      margin-right: auto;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .hero .card h3 { margin-top: 0; text-align:center }
+    .hero .card form { display:flex; flex-direction:column; gap:12px }
+    .hero .card input, .hero .card button { width:100% }
+
+    /* Mobile tweaks */
+    @media (max-width: 700px) {
+      .hero .card { max-width: 92vw; padding: 14px; }
+      .brand img { width: 200px; }
+      header .nav { padding: 10px 16px; }
+    }
+  </style>
 </head>
 
 <body>
 <header>
   <div class="container nav">
     <a class="brand" href="#inicio" aria-label="Página inicial">
-      <img src="images/logo.png" alt="Logo da Pousada" />
+      <img src="images/logo.png" alt="Logo da Pousada" width="350" />
       <strong>Pousada Maks</strong>
     </a>
     <nav aria-label="Principal">
@@ -38,8 +62,7 @@
 </header>
 
 <section class="hero" id="inicio">
-  <div class="hero-overlay"></div>
-  <div class="container hero-content">
+  <div class="container">
     <div>
       <h1>Seu refúgio de conforto e tranquilidade</h1>
       <p>Viva dias de sossego entre a natureza, a tranquilidade que você precisa. Piscina com hidromassagem e muito mais.</p>
@@ -51,17 +74,18 @@
         <span class="badge">Estacionamento amplo</span>
         <span class="badge">Pescaria</span>
       </div>
-      <a class="cta main-cta" href="#reservas">Reserve agora</a>
+      <a class="cta" href="#reservas">Reserve agora</a>
     </div>
-    <div class="card form-card">
-      <h3 style="margin-top:0">Consulta rápida de tarifas</h3>
+
+    <div class="card">
+      <h3>Consulta rápida de tarifas</h3>
       <form id="cotacaoForm">
-        <label>Data de entrada<br><input type="date" name="checkin" required></label><br><br>
-        <label>Data de saída<br><input type="date" name="checkout" required></label><br><br>
-        <label>Hóspedes<br><input type="number" name="hospedes" min="1" value="2"></label><br><br>
+        <label>Data de entrada<br><input type="date" name="checkin" required></label>
+        <label>Data de saída<br><input type="date" name="checkout" required></label>
+        <label>Hóspedes<br><input type="number" name="hospedes" min="1" value="2"></label>
         <button class="cta" type="submit">Solicitar cotação</button>
       </form>
-      <p class="note">* aguardamos você.</p>
+      <p style="font-size:12px;opacity:.9;margin-top:8px;text-align:center">* aguardamos você.</p>
     </div>
   </div>
 </section>
@@ -127,6 +151,7 @@
       <div class="slide"><img src="images/galeria4.jpg" alt="Foto 4"></div>
       <div class="slide"><img src="images/galeria5.jpg" alt="Foto 5"></div>
      </div>
+
   </div>
 </section>
 
@@ -137,7 +162,7 @@
       <p style="margin:6px 0 0;opacity:.9">Consulte promoções sazonais por telefone, WhatsApp ou e-mail.</p>
     </div>
     <a class="btn" 
-       href="https://wa.me/5516997073816?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20reserva%20na%20Pousada%20Maks." 
+       href="https://wa.me/5516997073816?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20reserva%20na%20Pousada%20Maks." 
        target="_blank" 
        rel="noopener">
       Falar no WhatsApp
@@ -150,6 +175,7 @@
     <h2 class="section-title">Onde estamos</h2>
     <p class="section-sub">Endereço: Av. Thomaz Alberto Whately, 9315 - Parque Res. Candido Portinari, Ribeirão Preto - SP, 14078-560 • Estacionamento no local</p>
     
+    <!-- iframe atualizado -->
     <iframe 
       class="map" 
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3745.899746147592!2d-47.75221838479134!3d-21.150464985998774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bde8f4a0d5e6d7%3A0xabc1234567890def!2sPousada%20Maks!5e0!3m2!1spt-BR!2sbr!4v1695567890123!5m2!1spt-BR!2sbr" 
@@ -172,7 +198,7 @@
 
 <div class="float-wrap" aria-label="Acesso rápido">
   <a class="float-btn" 
-     href="https://wa.me/5516997073816?text=Olá,%20gostaria%20de%20fazer%20uma%20reserva,%20tem%20disponibilidade?" 
+     href="https://wa.me/5516997073816?text=Ol%C3%A1,%20gostaria%20de%20fazer%20uma%20reserva,%20tem%20disponibilidade?" 
      target="_blank" 
      rel="noopener" 
      aria-label="WhatsApp">
@@ -203,5 +229,19 @@
     </div>
   </div>
 </footer>
+
+<!-- Música de fundo (inicia mudo para evitar bloqueio) -->
+<audio autoplay loop muted id="bg-music">
+  <source src="audio/musica.mp3" type="audio/mpeg">
+  Seu navegador não suporta áudio.
+</audio>
+
+<script>
+  // Ativa o som no primeiro clique do usuário
+  document.addEventListener("click", () => {
+    const music = document.getElementById("bg-music");
+    if (music) music.muted = false;
+  }, { once: true });
+</script>
 </body>
 </html>
