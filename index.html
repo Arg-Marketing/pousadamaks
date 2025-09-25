@@ -18,9 +18,9 @@
   <script defer src="main.js"></script>
 
   <style>
-    /* Ajuste da largura da caixinha de reserva */
+    /* Ajuste da largura da caixinha de reserva (hero) */
     .hero .card {
-      max-width: 320px;   /* define a largura máxima */
+      max-width: 320px;   /* largura máxima da caixa */
       width: 100%;        /* ocupa o espaço até esse limite */
       margin-left: auto;
       margin-right: auto;
@@ -29,18 +29,15 @@
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
-    .hero .card h3 {
-      margin-top: 0;
-      text-align: center;
-    }
-    .hero .card form {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .hero .card input,
-    .hero .card button {
-      width: 100%;
+    .hero .card h3 { margin-top: 0; text-align:center }
+    .hero .card form { display:flex; flex-direction:column; gap:12px }
+    .hero .card input, .hero .card button { width:100% }
+
+    /* Mobile tweaks */
+    @media (max-width: 700px) {
+      .hero .card { max-width: 92vw; padding: 14px; }
+      .brand img { width: 200px; }
+      header .nav { padding: 10px 16px; }
     }
   </style>
 </head>
@@ -79,6 +76,7 @@
       </div>
       <a class="cta" href="#reservas">Reserve agora</a>
     </div>
+
     <div class="card">
       <h3>Consulta rápida de tarifas</h3>
       <form id="cotacaoForm">
@@ -92,7 +90,158 @@
   </div>
 </section>
 
-<!-- resto do site igual ao seu -->
+<section>
+  <div class="container">
+    <h2 class="section-title">Algumas vantagens</h2>
+    <p class="section-sub">Conforto, lazer e natureza para sua estadia.</p>
+    <div class="grid grid-4">
+      <div class="feature"><div class="icon">🕑</div><div><h3>Recepção 24h</h3><p>Equipe pronta para ajudar a qualquer hora.</p></div></div>
+      <div class="feature"><div class="icon">☕</div><div><h3>Café da manhã</h3><p>Café da manhã tradicional.</p></div></div>
+      <div class="feature"><div class="icon">📶</div><div><h3>Wi-Fi gratuito</h3><p>Conexão disponível nas áreas comuns.</p></div></div>
+      <div class="feature"><div class="icon">🏊</div><div><h3>Piscina com hidromassagem</h3><p>Vista para a natureza.</p></div></div>
+      <div class="feature"><div class="icon">🚗</div><div><h3>Estacionamento</h3><p>Espaço amplo para seu veículo.</p></div></div>
+      <div class="feature"><div class="icon">🐟</div><div><h3>Pescaria</h3><p>Agende sua pescaria de dourado no rio Pardo.</p></div></div>
+      <div class="feature"><div class="icon">🛶</div><div><h3>Passeio de Caiaque</h3><p>Agende seu passeio com muita adrenalina.</p></div></div>
+      <div class="feature"><div class="icon">🛏️</div><div><h3>Quartos confortáveis</h3><p>O seu descanso merecido.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="acomodacoes">
+  <div class="container">
+    <h2 class="section-title">Acomodações</h2>
+    <p class="section-sub">Opções para casais, famílias e grupos.</p>
+    <div class="grid grid-3">
+      <article class="card">
+        <img src="images/acomodacoes1.jpg" alt="Suíte com varanda" loading="lazy" />
+        <div class="content">
+          <h3>Quarto família</h3>
+          <p>A tranquilidade de acordar com o som dos pássaros.</p>
+          <div class="chips">
+            <span class="chip">Wi-Fi</span>
+            <span class="chip">Ar-condicionado</span>
+            <span class="chip">Café incluso</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="images/acomodacoes2.jpg" alt="Piscina com vista para o pôr do sol" loading="lazy" />
+        <div class="content">
+          <h3>Piscina</h3>
+          <p>Vista com pôr do sol.</p>
+          <div class="chips">
+            <span class="chip">Wi-Fi</span>
+            <span class="chip">Hidromassagem</span>
+            <span class="chip">Vista jardim</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="galeria">
+  <div class="container">
+    <h2 class="section-title">Galeria de Fotos</h2>
+    <p class="section-sub">Conheça um pouco dos nossos ambientes.</p>
+     <div class="gallery-slider">
+      <div class="slide"><img src="images/galeria1.jpg" alt="Foto 1"></div>
+      <div class="slide"><img src="images/galeria2.jpg" alt="Foto 2"></div>
+      <div class="slide"><img src="images/galeria3.jpg" alt="Foto 3"></div>
+      <div class="slide"><img src="images/galeria4.jpg" alt="Foto 4"></div>
+      <div class="slide"><img src="images/galeria5.jpg" alt="Foto 5"></div>
+     </div>
+
+  </div>
+</section>
+
+<section class="container" id="reservas">
+  <div class="cta-strip">
+    <div>
+      <h3 style="margin:0">Tarifas e Ofertas</h3>
+      <p style="margin:6px 0 0;opacity:.9">Consulte promoções sazonais por telefone, WhatsApp ou e-mail.</p>
+    </div>
+    <a class="btn" 
+       href="https://wa.me/5516997073816?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20reserva%20na%20Pousada%20Maks." 
+       target="_blank" 
+       rel="noopener">
+      Falar no WhatsApp
+    </a>
+  </div>
+</section>
+
+<section id="localizacao">
+  <div class="container">
+    <h2 class="section-title">Onde estamos</h2>
+    <p class="section-sub">Endereço: Av. Thomaz Alberto Whately, 9315 - Parque Res. Candido Portinari, Ribeirão Preto - SP, 14078-560 • Estacionamento no local</p>
+    
+    <!-- iframe atualizado -->
+    <iframe 
+      class="map" 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3745.899746147592!2d-47.75221838479134!3d-21.150464985998774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bde8f4a0d5e6d7%3A0xabc1234567890def!2sPousada%20Maks!5e0!3m2!1spt-BR!2sbr!4v1695567890123!5m2!1spt-BR!2sbr" 
+      width="600" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade" 
+      title="Mapa da Pousada Maks">
+    </iframe>
+
+    <div class="grid grid-3" style="margin-top:24px">
+      <div class="card"><div class="content"><h3>Reservas</h3><p><a href="tel:+5516997073816">(16) 99707-3816</a><br><a href="mailto:pousadamaks@gmail.com">pousadamaks@gmail.com</a></p></div></div>
+      <div class="card"><div class="content"><h3>Horário</h3><p>Check-in a partir de 14h • Check-out até 12h</p></div></div>
+      <div class="card"><div class="content"><h3>Redes sociais</h3><p><a href="#">Instagram</a> • <a href="#">Facebook</a></p></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="float-wrap" aria-label="Acesso rápido">
+  <a class="float-btn" 
+     href="https://wa.me/5516997073816?text=Ol%C3%A1,%20gostaria%20de%20fazer%20uma%20reserva,%20tem%20disponibilidade?" 
+     target="_blank" 
+     rel="noopener" 
+     aria-label="WhatsApp">
+    <span>WhatsApp</span>
+  </a>
+  <a class="float-btn instagram" href="https://www.instagram.com/pousada_maks/" target="_blank" rel="noopener" aria-label="Instagram">
+    <span>Instagram</span>
+  </a>
+</div>
+
+<footer>
+  <div class="foot container">
+    <div>
+      <h4>Pousada Maks</h4>
+      <p>Seu chalé rústico em meio à natureza, perfeito para relaxar.</p>
+    </div>
+    <div>
+      <h4>Links úteis</h4>
+      <a href="#inicio">Início</a><br>
+      <a href="#acomodacoes">Acomodações</a><br>
+      <a href="#galeria">Galeria</a><br>
+      <a href="#localizacao">Localização</a>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <p>Telefone: (16) 99707-3816</p>
+      <p>Email: pousadamaks@gmail.com</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Música de fundo (inicia mudo para evitar bloqueio) -->
+<audio autoplay loop muted id="bg-music">
+  <source src="audio/musica.mp3" type="audio/mpeg">
+  Seu navegador não suporta áudio.
+</audio>
+
+<script>
+  // Ativa o som no primeiro clique do usuário
+  document.addEventListener("click", () => {
+    const music = document.getElementById("bg-music");
+    if (music) music.muted = false;
+  }, { once: true });
+</script>
 </body>
 </html>
-
